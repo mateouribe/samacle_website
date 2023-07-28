@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { Home, Services, Projects, About, Contact, StudyCase } from "./screens";
+import Navbar from "./components/Navbar";
+import { AnimatePresence } from "framer-motion";
+// import Footer from "./components/Footer";
+import { useStatesContext } from "./context/StatesProvider";
 
-function App() {
+const App = () => {
+  const { isFirstLoading, setIsFirstLoading } = useStatesContext();
+
+  const location = useLocation();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      {!isFirstLoading ? (
+        <AnimatePresence mode="wait" initial={false}>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/study_case/:name" element={<StudyCase />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
+      ) : (
+        <>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/study_case/:name" element={<StudyCase />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </>
+      )}
+      {/* <Footer /> */}
+    </>
   );
-}
+};
 
 export default App;
