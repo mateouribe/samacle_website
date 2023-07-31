@@ -3,12 +3,37 @@ import CustomLink from "./CustomLink";
 import { Expo, gsap } from "gsap";
 import colors from "../utils/constants";
 import SplitText from "../utils/Split3.min.js";
+import { useStatesContext } from "../context/StatesProvider";
 
 const Navbar = () => {
   const mobileTl = useRef(null);
   const mobileContainer = useRef(null);
+  const desktopTl = useRef(null);
+  const desktopContainer = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { animateNavbar, setAnimateNavbar } = useStatesContext();
 
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      //Create tl
+      desktopTl.current = gsap.timeline();
+      const tl = desktopTl.current;
+
+      gsap.set(desktopContainer.current, {
+        y: -100,
+      });
+
+      tl.to(desktopContainer.current, {
+        y: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+      });
+    }, desktopContainer);
+
+    return () => ctx.revert();
+  }, []);
+
+  //Mobile animation
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       mobileTl.current = gsap.timeline({ paused: true });
@@ -19,12 +44,6 @@ const Navbar = () => {
       items.forEach((item) => {
         const split = new SplitText(item, {
           type: "words",
-          wordsClass: "word",
-        });
-
-        const splitParent = new SplitText(item, {
-          type: "words",
-          wordsClass: "wordsParent",
         });
 
         splitMobileItems.push(split.words);
@@ -134,36 +153,47 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="w-full">
-      <ul className="hidden lg:flex w-full flex-row justify-between p-mobile md:px-tablet lg:px-desktop">
+    <nav className="w-full ">
+      <ul
+        className="hidden lg:flex w-full flex-row justify-between p-mobile md:px-tablet lg:px-desktop"
+        ref={desktopContainer}
+      >
         <CustomLink route="/" className="text-black">
           <img className="" src="/images/icon.svg" alt="Samacle icon" />
         </CustomLink>
         <li>
           <ul className="w-full flex gap-30 text-sm text-black">
-            <CustomLink route="/" className="" image="/images/homeSs.png">
+            <CustomLink
+              route="/"
+              className="desktopItem"
+              image="/images/homeSs.png"
+            >
               Home
             </CustomLink>
             <CustomLink
               route="/services"
-              className=""
+              className="desktopItem"
               image="/images/homeSs.png"
             >
               Services
             </CustomLink>
             <CustomLink
               route="/projects"
-              className=""
+              className="desktopItem"
               image="/images/projectsSs.png"
             >
               Projects
             </CustomLink>
-            <CustomLink route="/about" className="" image="/images/aboutSs.png">
+            <CustomLink
+              route="/about"
+              className="desktopItem"
+              image="/images/aboutSs.png"
+            >
               About
             </CustomLink>
             <CustomLink
               route="/contact"
-              className=""
+              className="desktopItem"
               image="/images/contactSs.png"
             >
               Contact
@@ -172,15 +202,16 @@ const Navbar = () => {
         </li>
       </ul>
 
+      {/* Mobile */}
       <div
-        className="fixed flex lg:hidden w-full justify-between items-start p-mobile md:p-tablet"
+        className="fixed flex lg:hidden w-full justify-between items-start p-mobile md:p-tablet z-[9999]"
         ref={mobileContainer}
       >
         {/* Burger */}
         <img
           src="/images/icon.svg"
           alt="Samacle icon"
-          className="w-[134px] blacklogo"
+          className="w-[134px] blacklogo bg-white rounded-full"
         />
         <div
           className="w-[50px] h-[50px] border-[3px] border-black flex flex-col justify-center items-center gap-[5px] rounded-full z-[9999] burgerCircle"

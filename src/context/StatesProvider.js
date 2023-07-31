@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const StatesContext = createContext();
 
 const StatesProvider = ({ children }) => {
-  const [isFirstLoading, setIsFirstLoading] = useState(true);
+  const [animateNavbar, setAnimateNavbar] = useState(false);
   const desktopSize = 1024; // The minimum screen width to be considered as a desktop
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= desktopSize);
 
@@ -21,17 +21,13 @@ const StatesProvider = ({ children }) => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("isFirstTime?", isFirstLoading);
-  }, [isFirstLoading]);
-
   return (
     <StatesContext.Provider
       value={{
         isDesktop,
         setIsDesktop,
-        isFirstLoading,
-        setIsFirstLoading,
+        animateNavbar,
+        setAnimateNavbar,
       }}
     >
       {children}

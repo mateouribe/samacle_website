@@ -30,9 +30,16 @@ module.exports = {
         xsm: "12px",
       },
       spacing: {
+        5: "5px",
+        10: "10px",
         20: "20px",
         30: "30px",
+        50: "50px",
         100: "100px",
+        view: "100vh",
+      },
+      screens: {
+        lg: "1180px",
       },
     },
   },

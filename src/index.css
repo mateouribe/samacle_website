@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  /* background: red; */
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  border: 0px;
+}
+
+*::selection {
+  background-color: #ff6a00d9;
+}
+
 @layer base {
   @font-face {
     font-family: "NeueHaasGroteskDisp Pro";
@@ -58,6 +75,16 @@
   }
 }
 
+html {
+  scroll-behavior: initial !important;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: auto;
+  background: #ffffff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -65,10 +92,7 @@
   font-family: "NeueHaasGroteskDisp Pro", sans-serif;
 }
 
-.words {
-  color: white;
-}
-
+/* Page transition */
 .slide-in {
   position: fixed;
   top: 0;
@@ -87,4 +111,59 @@
   height: 100vh;
   background-color: #282828;
   transform-origin: top;
+}
+
+.blackWords {
+  color: #282828;
+}
+
+.whiteWords {
+  color: #ffffff;
+}
+
+.swearFont {
+  font-family: "Swear Display", sans-serif;
+}
+
+.wordsParent {
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .wordsParent {
+    max-height: 136.62px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wordsParent {
+    max-height: 99px;
+  }
+}
+@media (max-width: 640px) {
+  .wordsParent {
+    max-height: 79.2px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .left {
+    display: none;
+  }
+
+  .desktopPhotos {
+    display: none;
+  }
+
+  .mobileContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .right {
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
 }
