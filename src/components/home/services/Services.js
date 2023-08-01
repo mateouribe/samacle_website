@@ -110,7 +110,6 @@ const Services = () => {
         trigger: container.current,
         start: "top 50%",
         end: "bottom 50%",
-        // toggleActions: "play reverse play reverse",
         animation: gsap.fromTo(
           splitTitle.chars,
           {
@@ -130,8 +129,6 @@ const Services = () => {
         trigger: container.current,
         start: "top 50%",
         end: "bottom 50%",
-        // toggleActions: "play none play none",
-        //              enter leave reenter leave
         animation: gsap.fromTo(
           ".content-services",
           {

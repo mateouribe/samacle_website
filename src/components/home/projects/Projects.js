@@ -1,12 +1,12 @@
 import React, { useLayoutEffect, useRef } from "react";
-import CustomSection from "../CustomSection";
+import CustomSection from "../../CustomSection";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { colors, projects } from "../../utils/constants";
-import { changeBgColorAnimation } from "../../utils/gsapAnimations";
-import SplitText from "../../utils/Split3.min.js";
-import CustomImage from "../CustomImage";
-import ProjectItem from "./projects/ProjectItem";
+import { colors, projects } from "../../../utils/constants";
+import { changeBgColorAnimation } from "../../../utils/gsapAnimations";
+import SplitText from "../../../utils/Split3.min.js";
+import CustomImage from "../../CustomImage";
+import ProjectItem from "./ProjectItem";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -39,7 +39,6 @@ const Projects = () => {
         trigger: container.current,
         start: "top 50%",
         end: "bottom 50%",
-        toggleActions: "play reverse play reverse",
         animation: gsap.fromTo(
           splitTitle.chars,
           {

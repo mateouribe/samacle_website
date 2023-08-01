@@ -8,7 +8,7 @@ import Services from "../components/home/services/Services";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitText from "../utils/Split3.min.js";
-import Projects from "../components/home/Projects";
+import Projects from "../components/home/projects/Projects";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
