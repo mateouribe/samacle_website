@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import CustomSection from "../CustomSection";
 import { AiOutlineBehance, AiOutlineInstagram } from "react-icons/ai";
-import colors from "../../utils/constants";
+import { colors } from "../../utils/constants";
 import { Expo, gsap } from "gsap";
 import SplitText from "../../utils/Split3.min";
 import { useStatesContext } from "../../context/StatesProvider";
@@ -41,7 +41,7 @@ const Hero = () => {
         }
       );
       tl.to(
-        ".coverImage",
+        ".slideOut",
         {
           scaleY: 0,
           duration: 1.5,
@@ -49,13 +49,27 @@ const Hero = () => {
         },
         "-=2"
       );
-      tl.to(
+      tl.from(
+        ".coverImage",
+        {
+          scale: 1.3,
+          duration: 2,
+          ease: Expo.easeInOut,
+        },
+        "-=2"
+      );
+      tl.fromTo(
         ".followGroup",
         {
-          opacity: 1,
-          duration: 0.3,
+          opacity: 0,
+          scale: 0.8,
         },
-        "-=1"
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+        },
+        "-=1.5"
       );
     }, container);
 
@@ -76,28 +90,24 @@ const Hero = () => {
           Designing Dreams, <br />
           Delivering Results.
         </h2>
-        {/* <img
-          src="images/orange_process.png"
-          alt="3d illustration of the process of developing a website with orange background"
-          className="absolute bottom-0  left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] z-[-1] origin-bottom process_img "
-        /> */}
-        {/* <div
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] h-[30%] md:h-[40%] lg:h-[50%] origin-bottom bg-purple-500 process_img"
-        /> */}
+
         <figure className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] h-[50%] origin-bottom z-[10]">
           <div className="w-full h-full relative">
-            <div className="w-full h-full absolute top-0 left-0 bg-white z-[9] origin-top coverImage" />
-            <div
-              className="w-full h-full absolute top-0 left-0 z-[5]"
-              style={{
-                backgroundImage: "url(images/orange_process.png)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            />
+            <div className="w-full h-full absolute top-0 left-0 bg-white z-[9] origin-top slideOut" />
+            <div className="w-full h-full overflow-hidden relative">
+              <div
+                className="w-full h-full absolute top-0 left-0 z-[5] coverImage"
+                style={{
+                  backgroundImage: "url(images/orange_process.png)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              />
+            </div>
           </div>
         </figure>
+
         <div className="absolute right-[10px] md:right-[20px] lg.right-[30px] bottom-[50px] lg:bottom-[100px] flex flex-col justify-center items-center gap-10 followGroup">
           <span
             className="text-[10px] text-main"

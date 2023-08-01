@@ -1,7 +1,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import CustomLink from "./CustomLink";
 import { Expo, gsap } from "gsap";
-import colors from "../utils/constants";
+import { colors } from "../utils/constants";
 import SplitText from "../utils/Split3.min.js";
 import { useStatesContext } from "../context/StatesProvider";
 

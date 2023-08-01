@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DesktopContentSection from "./DesktopContentSection";
-import colors from "../../../utils/constants";
+import { colors } from "../../../utils/constants";
 import DesktopPhoto from "./DesktopPhoto";
 import MobileContentSections from "./MobileContentSections";
 gsap.registerPlugin(ScrollTrigger);
@@ -64,7 +64,7 @@ const WhyUs = () => {
               title="Statistics don't lie"
               text="Companies with compelling websites and top-notch SEO experience a staggering 30% increase in client acquisition every month. With our meticulous strategies, we aim to propel your business towards similar growth."
               bgColor="#FAEEFF"
-              backToWhite
+              // backToWhite
             />
           </div>
         </div>
@@ -100,7 +100,7 @@ const WhyUs = () => {
             />
           </div>
           {/* <!-- desktop content --> */}
-          <div className="desktopPhotos w-[100%] h-[40vw] relative overflow-hidden ">
+          <div className="desktopPhotos w-[100%] h-[40vw] relative overflow-hidden rounded-[10px]">
             <DesktopPhoto
               image="/images/orange.png"
               color="#FFF0E3 #FFDEC7 #FFA057"
@@ -114,8 +114,8 @@ const WhyUs = () => {
               color="#DEFFDE #ACFFAE #78E47A"
             />
             <DesktopPhoto
-              image="/images/orange.png"
-              color="#F1DEFF #DBACFF #FFB277"
+              image="/images/purple.png"
+              color="#F1DEFF #DBACFF #B420FA"
             />
           </div>
         </div>

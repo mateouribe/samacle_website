@@ -41,6 +41,9 @@ module.exports = {
       screens: {
         lg: "1180px",
       },
+      borderRadius: {
+        10: "10px",
+      },
     },
   },
   plugins: [],

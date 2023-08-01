@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-import colors from "../../../utils/constants";
+import { colors } from "../../../utils/constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -60,7 +60,7 @@ const DesktopContentSection = ({
         <h3 className="text-black text-subtitleTablet italic">{title}</h3>
         <p className="text-black">{text}</p>
       </div>
-      <button className="max-w-fit bg-main px-[50px] py-[20px] text-white flex items-center gap-10">
+      <button className="max-w-fit bg-main px-[50px] py-[20px] text-white flex items-center gap-10 rounded-[10px]">
         Become a client <FiArrowUpRight color={colors.white} size={20} />
       </button>
     </div>

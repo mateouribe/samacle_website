@@ -117,6 +117,9 @@ body {
   color: #282828;
 }
 
+.orangeWords {
+  color: #ff6b00;
+}
 .whiteWords {
   color: #ffffff;
 }
@@ -165,5 +168,15 @@ body {
     height: auto;
     width: 100%;
     align-items: center;
+  }
+}
+
+.sectionTitle div {
+  max-height: 42px !important;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle div {
+    max-height: 62px !important;
   }
 }

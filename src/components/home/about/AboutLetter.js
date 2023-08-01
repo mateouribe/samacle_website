@@ -7,7 +7,7 @@ const AboutLetter = ({
   large = false,
 }) => {
   return (
-    <div className="relative flex flex-col items-center lg:block">
+    <div className="relative flex flex-col items-center lg:block aboutBlock">
       <p
         className={`font-swearDisplay inline-block leading-[80%] lg:leading-[0] aboutWord relative z-[10]
         ${

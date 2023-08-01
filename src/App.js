@@ -24,11 +24,6 @@ const App = () => {
     }
 
     requestAnimationFrame(raf);
-
-    // function raf(time) {
-    //   lenis.render(time);
-    //   requestAnimationFrame(raf);
-    // }
   }, []);
 
   return (

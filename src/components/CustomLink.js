@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { navigateToPage } from "../utils/navigateToPage";
 import { useNavigate } from "react-router-dom";
 import { Expo, gsap } from "gsap";
-import colors from "../utils/constants";
+import { colors } from "../utils/constants";
 
 const CustomLink = ({ children, className, route, image = "", onClick }) => {
   const navigate = useNavigate();
