@@ -4,7 +4,7 @@ import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
-const ProjectItem = ({ project, alignLeft = false, isFirstOne }) => {
+const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
   const positions = isFirstOne
     ? { start: "top 62.5%", end: "bottom 62.5%" }
     : { start: "top 70%", end: "bottom 70%" };
@@ -44,10 +44,16 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne }) => {
     >
       <div className="w-[100%] md:w-[45%] h-[90vh] flex flex-col gap-10">
         <div className="w-full h-full overflow-hidden rounded-10">
-          <CustomImage image={project.image} position={positions} />
+          <CustomImage
+            image={project.image}
+            position={positions}
+            index={index}
+          />
         </div>
         <div className="flex justify-between items-start projectInfo">
-          <h5 className="text-black">{project.title}</h5>
+          <h5 className="text-black">
+            {project.title} - {project.place}
+          </h5>
           <div className="flex flex-col">
             {project.tags.map((tag) => (
               <span className="text-xsm text-gray">{tag}</span>

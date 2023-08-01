@@ -7,6 +7,7 @@ import { changeBgColorAnimation } from "../../../utils/gsapAnimations";
 import SplitText from "../../../utils/Split3.min.js";
 import CustomImage from "../../CustomImage";
 import ProjectItem from "./ProjectItem";
+import SectionTitle from "../../SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -28,7 +29,7 @@ const Projects = () => {
       let tl = gsap.timeline();
       changeBgColorAnimation({
         trigger: container.current,
-        colors: { enter: colors.white, exit: colors.black },
+        colors: { enter: colors.white, exit: colors.white },
         position: {
           start: "top 30%",
           end: "bottom 30%",
@@ -59,17 +60,28 @@ const Projects = () => {
   return (
     <div ref={container}>
       <CustomSection hasPadding className="flex flex-col gap-50 min-h-[100vh]">
-        <h3 className="text-titleMobile md:text-titleTablet text-main font-normal projectTitle sectionTitle">
+        <SectionTitle className="projectTitle text-main">
           Our projects
-        </h3>
+        </SectionTitle>
         <div className="w-full h-full grid gap-50 grid-cols-1 md:grid-cols-12 ">
           {projects.map((project, index) =>
             index === 0 ? (
-              <ProjectItem key={index} project={project} alignLeft isFirstOne />
+              <ProjectItem
+                key={index}
+                project={project}
+                index={index}
+                alignLeft
+                isFirstOne
+              />
             ) : index % 2 === 0 ? (
-              <ProjectItem key={index} project={project} alignLeft />
+              <ProjectItem
+                key={index}
+                project={project}
+                index={index}
+                alignLeft
+              />
             ) : (
-              <ProjectItem key={index} project={project} />
+              <ProjectItem key={index} project={project} index={index} />
             )
           )}
         </div>

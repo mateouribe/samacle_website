@@ -217,8 +217,8 @@ const Navbar = () => {
           className="w-[50px] h-[50px] border-[3px] border-black flex flex-col justify-center items-center gap-[5px] rounded-full z-[9999] burgerCircle"
           onClick={onClickBurgerMenu}
         >
-          <span className="w-[30px] h-[3px] bg-black rounded-full topLine origin-center" />
-          <span className="w-[30px] h-[3px] bg-black rounded-full bottomLine origin-center" />
+          <span className="w-[30px] h-[3px] bg-black rounded-full topLine origin-center lineBurger" />
+          <span className="w-[30px] h-[3px] bg-black rounded-full bottomLine origin-center lineBurger" />
         </div>
 
         {/* Menu */}

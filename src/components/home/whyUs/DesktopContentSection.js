@@ -3,6 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { colors } from "../../../utils/constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import CustomButton from "../../CustomButton";
 gsap.registerPlugin(ScrollTrigger);
 
 const DesktopContentSection = ({
@@ -60,9 +61,10 @@ const DesktopContentSection = ({
         <h3 className="text-black text-subtitleTablet italic">{title}</h3>
         <p className="text-black">{text}</p>
       </div>
-      <button className="max-w-fit bg-main px-[50px] py-[20px] text-white flex items-center gap-10 rounded-[10px]">
+      {/* <button className="max-w-fit bg-main px-[50px] py-[20px] text-white flex items-center gap-10 rounded-[10px]">
         Become a client <FiArrowUpRight color={colors.white} size={20} />
-      </button>
+      </button> */}
+      <CustomButton>Become a client</CustomButton>
     </div>
   );
 };

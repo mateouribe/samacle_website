@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import DesktopContentSection from "./DesktopContentSection";
 import { colors } from "../../../utils/constants";

@@ -8,6 +8,7 @@ import ServiceCard from "./ServiceCard";
 import { services } from "../../../utils/constants";
 import ServiceImage from "./ServiceImage";
 import SplitText from "../../../utils/Split3.min.js";
+import SectionTitle from "../../SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
@@ -157,9 +158,9 @@ const Services = () => {
   return (
     <div ref={container}>
       <CustomSection hasPadding className="flex flex-col gap-50 min-h-[100vh]">
-        <h3 className="text-titleMobile md:text-titleTablet text-main font-normal servicesTitle sectionTitle">
+        <SectionTitle className="textMain servicesTitle">
           Our services
-        </h3>
+        </SectionTitle>
         <section className="services flex flex-col relative">
           <div className="container-services w-full m-auto">
             <div className="content-services w-full h-full flex flex-col">

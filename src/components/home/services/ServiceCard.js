@@ -9,7 +9,7 @@ const ServiceCard = ({ service }) => {
       className="item-service w-full grid grid-cols-2 border-b-[1px] border-white py-tablet gap-20 lg:pl-tablet opacity-70 hover:opacity-100 cursor-pointer"
       ref={container}
       style={{
-        "-webkit-transition": "0.5s",
+        transition: "0.5s",
       }}
     >
       <div className="w-full h-full">

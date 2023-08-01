@@ -9,6 +9,8 @@ import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitText from "../utils/Split3.min.js";
 import Projects from "../components/home/projects/Projects";
+import Contact from "../components/home/Contact";
+import SectionTitle from "../components/SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -60,13 +62,12 @@ const Home = () => {
         className="px-mobile md:px-tablet lg:px-desktop pb-tablet md:ob-0"
         ref={textAbout}
       >
-        <h3 className="text-titleMobile md:text-titleTablet text-main whyUs max-h-[42px] md:max-h-[62px] sectionTitle">
-          Why choose us?
-        </h3>
+        <SectionTitle className="whyUs text-main">Why choose us?</SectionTitle>
       </div>
       <WhyUs />
       <Services />
       <Projects />
+      <Contact />
       {/* <div className="w-full h-[200vh]" /> */}
     </main>
   );
