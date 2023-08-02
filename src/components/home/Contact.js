@@ -9,6 +9,7 @@ import { colors } from "../../utils/constants";
 import CustomInput from "../CustomInput";
 import CustomATag from "../CustomATag";
 import CustomButton from "../CustomButton";
+import SocialMedia from "../SocialMedia";
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
@@ -19,7 +20,6 @@ const Contact = () => {
         trigger: container.current,
         start: "top 80%",
         end: "bottom 80%",
-        toggleActions: "play reverse play reverse",
         animation: gsap.fromTo(
           ".contactContainer",
           {
@@ -80,29 +80,28 @@ const Contact = () => {
             <ul className="text-black">
               <li>
                 {/* <a href="22">hello@samacle.com</a> */}
-                <CustomATag href="22">hello@samacle.com</CustomATag>
+                <CustomATag href="22" colorHover="#9E9E9E">
+                  hello@samacle.com
+                </CustomATag>
               </li>
               <li>
-                <CustomATag href="22">+1 (437) 518-6019</CustomATag>
+                <CustomATag href="22" colorHover="#9E9E9E">
+                  +1 (437) 518-6019
+                </CustomATag>
               </li>
               <li>
-                <CustomATag href="22">+1 (437) 473-0048</CustomATag>
+                <CustomATag href="22" colorHover="#9E9E9E">
+                  +1 (437) 473-0048
+                </CustomATag>
               </li>
               <li>
-                <CustomATag href="22">Waterloo, ON, Canada.</CustomATag>
+                <CustomATag href="22" colorHover="#9E9E9E">
+                  Waterloo, ON, Canada.
+                </CustomATag>
               </li>
             </ul>
             <ul className="flex gap-5">
-              <li className="p-5 rounded-full bg-black/30 cursor-pointer">
-                <a href="22">
-                  <AiOutlineInstagram color={colors.black} size={20} />
-                </a>
-              </li>
-              <li className="p-5 rounded-full bg-black/30 cursor-pointer">
-                <a href="22">
-                  <AiOutlineBehance color={colors.black} size={20} />
-                </a>
-              </li>
+              <SocialMedia color={colors.gray} bgColor="#ECECEC" />
             </ul>
           </div>
         </div>

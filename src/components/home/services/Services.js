@@ -99,7 +99,12 @@ const Services = () => {
 
       changeBgColorAnimation({
         trigger: container.current,
-        colors: { enter: colors.black, exit: "#FAEEFF" },
+        colors: {
+          enter: colors.black,
+          exit: "#FAEEFF",
+          menuEnter: colors.white,
+          menuExit: colors.black,
+        },
         position: {
           start: "top 50%",
           end: "bottom 30.5%",

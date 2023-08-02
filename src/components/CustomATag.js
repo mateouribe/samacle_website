@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { Expo, gsap } from "gsap";
 import { colors } from "../utils/constants";
 
-const CustomATag = ({ href, children }) => {
+const CustomATag = ({ href, children, colorHover }) => {
   const container = useRef(null);
   const tl = useRef(null);
 
@@ -21,7 +21,7 @@ const CustomATag = ({ href, children }) => {
       tl.current.to(
         container.current,
         {
-          color: "#9E9E9E",
+          color: colorHover,
           duration: 0.7,
         },
         "-=0.7"

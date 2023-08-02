@@ -20,6 +20,17 @@
 }
 
 @layer base {
+  /* Light */
+  @font-face {
+    font-family: "NeueHaasGroteskDisp Pro Lt";
+    src: url("./assets/fonts/NHaasGroteskDSPro-45Lt.woff2") format("woff2"),
+      url("./assets/fonts/NHaasGroteskDSPro-45Lt.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Regular */
   @font-face {
     font-family: "NeueHaasGroteskDisp Pro";
     src: url("./assets/fonts/NHaasGroteskDSPro-55Rg.woff2") format("woff2"),
@@ -29,6 +40,7 @@
     font-display: swap;
   }
 
+  /* Semibold */
   @font-face {
     font-family: "NeueHaasGroteskDisp Pro Md";
     src: url("./assets/fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
@@ -38,6 +50,7 @@
     font-display: swap;
   }
 
+  /* italic */
   @font-face {
     font-family: "NeueHaasGroteskDisp Pro";
     src: url("./assets/fonts/NHaasGroteskDSPro-56It.woff2") format("woff2"),
@@ -47,21 +60,21 @@
     font-display: swap;
   }
 
-  @font-face {
-    font-family: "Swear Display";
-    src: url("./assets/fonts/SwearDisplay-Regular.woff2") format("woff2"),
-      url("./assets/fonts/SwearDisplay-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
+  /* Semibold Italic */
   @font-face {
     font-family: "NeueHaasGroteskDisp Pro Md";
     src: url("./assets/fonts/NHaasGroteskDSPro-66MdIt.woff2") format("woff2"),
       url("./assets/fonts/NHaasGroteskDSPro-66MdIt.woff") format("woff");
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Swear Display";
+    src: url("./assets/fonts/SwearDisplay-Regular.woff2") format("woff2"),
+      url("./assets/fonts/SwearDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
     font-display: swap;
   }
 
@@ -84,6 +97,7 @@ body {
   min-height: 100%;
   height: auto;
   background: #ffffff;
+  overflow: hidden;
 }
 * {
   margin: 0;
@@ -134,18 +148,27 @@ body {
 
 @media (min-width: 1024px) {
   .wordsParent {
-    max-height: 136.62px;
+    max-height: 136.62px !important;
+  }
+  #aboutTitle div {
+    max-height: 100.7px !important;
   }
 }
 
 @media (max-width: 1000px) {
   .wordsParent {
-    max-height: 99px;
+    max-height: 99px !important;
+  }
+  #aboutTitle div {
+    max-height: 81.7px !important;
   }
 }
 @media (max-width: 640px) {
   .wordsParent {
-    max-height: 79.2px;
+    max-height: 79.2px !important;
+  }
+  #aboutTitle div {
+    max-height: 61.75px !important;
   }
 }
 

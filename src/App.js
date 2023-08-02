@@ -9,6 +9,7 @@ import { Home, Services, Projects, About, Contact, StudyCase } from "./screens";
 import Navbar from "./components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
+import Footer from "./components/Footer";
 // import Footer from "./components/Footer";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 2,
+      infinite: false,
     });
 
     function raf(time) {
@@ -40,7 +42,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
-
+      <Footer />
       {/* <Footer /> */}
     </>
   );

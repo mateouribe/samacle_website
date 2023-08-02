@@ -56,7 +56,25 @@ const projects = [
     technologies: ["React", "GSAP", "Tailwind CSS"],
   },
 ];
-export { colors, services, projects };
+
+const processes = [
+  {
+    title: "Strategy",
+    description:
+      "We kickstart every project with a data-driven strategy that sets the foundation for your success. Our team dives deep into market insights, customer behavior, and industry trends to craft a tailored plan that aligns with your goals.",
+  },
+  {
+    title: "Design",
+    description:
+      "Our design wizards bring imagination to life, conjuring captivating visuals that leave a lasting impression. From sleek interfaces to stunning graphics, we create an enchanting user experience that keeps visitors spellbound.",
+  },
+  {
+    title: "Development",
+    description:
+      "Our development sorcerers work their magic, transforming design into functional reality. With cutting-edge technology and meticulous attention to detail, we weave a seamless web of code that powers your website's performance.",
+  },
+];
+export { colors, services, projects, processes };
 
 // description:
 //       "Paula, (or 'The Cat Whisperer', as some people call her) has been in the pet grooming industry for over 20 years. <i>Graduated from the Nash Pet Grooming Academy in Kentucky</i>, she has dedicated most of her life to work with dogs and cats. She's passionate about nature and animal care. Her vast experience with all kind of dogs and cats is something we have the privilege to share with our customers.",

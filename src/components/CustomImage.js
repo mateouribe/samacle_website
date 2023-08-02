@@ -33,17 +33,6 @@ const CustomImage = ({
           ease: Expo.easeInOut,
         }),
       });
-
-      //Hover effect
-      // tl.current = gsap.timeline({ paused: true });
-      // gsap.set(".coverImage", {
-      //   transformOrigin: index % 2 === 0 ? "top left" : "top right",
-      // });
-      // tl.current.to(".coverImage", {
-      //   scale: 0.99,
-      //   duration: 0.5,
-      //   ease: Expo.easeOut,
-      // });
     }, container);
 
     return () => ctx.revert();
@@ -60,7 +49,7 @@ const CustomImage = ({
       //   tl.current.reverse();
       // }}
     >
-      <div className="w-full h-full absolute top-0 left-0 z-[9] origin-top slideOut dependsOnBgColor" />
+      <div className="w-full h-full absolute top-0 left-0 z-[9] origin-top slideOut dependsOnBgColor bg-white" />
       <div className="w-full h-full overflow-hidden relative">
         <div
           className="w-full h-full absolute top-0 left-0 z-[5] coverImage rounded-10"

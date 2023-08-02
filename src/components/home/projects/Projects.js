@@ -29,7 +29,12 @@ const Projects = () => {
       let tl = gsap.timeline();
       changeBgColorAnimation({
         trigger: container.current,
-        colors: { enter: colors.white, exit: colors.white },
+        colors: {
+          enter: colors.white,
+          exit: colors.white,
+          menuEnter: colors.black,
+          menuExit: colors.black,
+        },
         position: {
           start: "top 30%",
           end: "bottom 30%",
