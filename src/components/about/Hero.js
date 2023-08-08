@@ -29,7 +29,7 @@ const Hero = () => {
           y: 0,
           duration: 1.5,
           ease: Expo.easeInOut,
-          stagger: 0.015,
+          stagger: 0.008,
         }
       );
     }, container);
