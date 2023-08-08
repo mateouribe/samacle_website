@@ -40,7 +40,7 @@ const DesignSystem = ({ project }) => {
 
   return (
     <section
-      className="w-full min-h-[100vh] md:h-view flex flex-col gap-50 py-tablet px-mobile md:px-tablet lg:px-desktop bg-black"
+      className="w-full min-h-[100vh] md:h-view flex flex-col gap-50 py-desktop px-mobile md:px-tablet lg:px-desktop bg-black"
       ref={container}
     >
       {isLoaded && (
