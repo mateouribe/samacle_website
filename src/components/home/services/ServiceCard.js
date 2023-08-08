@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div
-      className="item-service w-full grid grid-cols-2 border-b-[1px] border-white py-tablet gap-20 lg:pl-tablet opacity-70 hover:opacity-100 cursor-pointer"
+      className="item-service w-full grid grid-cols-2 border-b-[1px] border-white py-tablet gap-20 lg:pl-tablet opacity-70 hover:opacity-100 "
       ref={container}
       style={{
         transition: "0.5s",

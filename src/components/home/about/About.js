@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { colors } from "../../../utils/constants";
 import AboutLetter from "./AboutLetter";
 import SplitText from "../../../utils/Split3.min.js";
-import CustomSection from "../../CustomSection";
+import CustomSection from "../../customElements/CustomSection";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {

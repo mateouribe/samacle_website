@@ -27,7 +27,7 @@ const SocialMedia = ({ color, bgColor }) => {
   return (
     <>
       <li
-        className="p-5 rounded-full cursor-pointer"
+        className="p-5 rounded-full"
         style={{
           backgroundColor: bgColor,
         }}
@@ -39,7 +39,7 @@ const SocialMedia = ({ color, bgColor }) => {
         </a>
       </li>
       <li
-        className="p-5 rounded-full cursor-pointer"
+        className="p-5 rounded-full"
         style={{
           backgroundColor: bgColor,
         }}

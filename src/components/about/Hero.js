@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { Expo, gsap } from "gsap";
-import CustomSection from "../CustomSection";
+import CustomSection from "../customElements/CustomSection";
 import SplitText from "../../utils/Split3.min";
 
 const Hero = () => {
@@ -27,9 +27,9 @@ const Hero = () => {
         },
         {
           y: 0,
-          duration: 2,
+          duration: 1.5,
           ease: Expo.easeInOut,
-          stagger: 0.02,
+          stagger: 0.015,
         }
       );
     }, container);

@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import CustomImage from "../../CustomImage";
+import CustomImage from "../../customElements/CustomImage";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);

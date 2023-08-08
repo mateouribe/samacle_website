@@ -1,8 +1,8 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import CustomSection from "../CustomSection";
-import SectionTitle from "../SectionTitle";
+import CustomSection from "../customElements/CustomSection";
+import SectionTitle from "../customElements/SectionTitle";
 import { changeBgColorAnimation } from "../../utils/gsapAnimations";
 import { colors, processes } from "../../utils/constants";
 import SplitText from "../../utils/Split3.min";

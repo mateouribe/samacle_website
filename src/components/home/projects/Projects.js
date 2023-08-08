@@ -1,13 +1,12 @@
 import React, { useLayoutEffect, useRef } from "react";
-import CustomSection from "../../CustomSection";
+import CustomSection from "../../customElements/CustomSection";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { colors, projects } from "../../../utils/constants";
 import { changeBgColorAnimation } from "../../../utils/gsapAnimations";
 import SplitText from "../../../utils/Split3.min.js";
-import CustomImage from "../../CustomImage";
 import ProjectItem from "./ProjectItem";
-import SectionTitle from "../../SectionTitle";
+import SectionTitle from "../../customElements/SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {

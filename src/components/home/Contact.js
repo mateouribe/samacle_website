@@ -3,12 +3,12 @@ import { AiOutlineBehance, AiOutlineInstagram } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import CustomSection from "../CustomSection";
-import SectionTitle from "../SectionTitle";
+import CustomSection from "../customElements/CustomSection";
+import SectionTitle from "../customElements/SectionTitle";
 import { colors } from "../../utils/constants";
-import CustomInput from "../CustomInput";
-import CustomATag from "../CustomATag";
-import CustomButton from "../CustomButton";
+import CustomInput from "../customElements/CustomInput";
+import CustomATag from "../customElements/CustomATag";
+import CustomButton from "../customElements/CustomButton";
 import SocialMedia from "../SocialMedia";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,7 +67,7 @@ const Contact = () => {
         hasPadding
         className="flex min-h-[100vh] flex-col justify-between md:flex-row md:h-view gap-50 py-desktop contactContainer"
       >
-        <div className="w-full md:w-[30%] md:h-full flex flex-row md:flex-col items-end md:items-start justify-between">
+        <div className="w-full md:w-[30%] md:h-full flex flex-row md:flex-col items-start justify-between">
           <SectionTitle className="text-black leading-[90%]" noMaxHeight>
             Let's <br />
             <i>design,</i>

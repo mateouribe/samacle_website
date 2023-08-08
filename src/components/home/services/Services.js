@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import CustomSection from "../../CustomSection";
+import CustomSection from "../../customElements/CustomSection";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { colors } from "../../../utils/constants";
@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 import { services } from "../../../utils/constants";
 import ServiceImage from "./ServiceImage";
 import SplitText from "../../../utils/Split3.min.js";
-import SectionTitle from "../../SectionTitle";
+import SectionTitle from "../../customElements/SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {

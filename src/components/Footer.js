@@ -1,14 +1,14 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
 import { colors } from "../utils/constants";
-import CustomATag from "./CustomATag";
+import CustomATag from "./customElements/CustomATag";
 import { useNavigate } from "react-router";
 import { navigateToPage } from "../utils/navigateToPage";
 
 const Footer = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-[80vh] bg-lightGray px-mobile md:px-tablet lg:px-desktop pt-tablet flex flex-col rounded-t-[10%]">
+    <footer className="w-full h-[80vh] bg-lightGray px-mobile md:px-tablet lg:px-desktop pt-tablet flex flex-col rounded-t-[10%]">
       <div className="w-full h-full flex flex-col md:flex-row justify-between gap-100 md:gap-0">
         <div className="w-full md:w-[20%] flex flex-row md:flex-col gap-50">
           <span className="text-gray text-sm">
@@ -18,7 +18,7 @@ const Footer = () => {
             <ul>
               <li className="text-black">Menu</li>
               <li
-                className="text-black font-light text-sm cursor-pointer"
+                className="text-black font-light text-sm "
                 onClick={() => {
                   navigateToPage(navigate, "/");
                 }}
@@ -28,7 +28,7 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm cursor-pointer"
+                className="text-black font-light text-sm "
                 onClick={() => {
                   navigateToPage(navigate, "/services");
                 }}
@@ -38,7 +38,7 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm cursor-pointer"
+                className="text-black font-light text-sm "
                 onClick={() => {
                   navigateToPage(navigate, "/projects");
                 }}
@@ -48,7 +48,7 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm cursor-pointer"
+                className="text-black font-light text-sm "
                 onClick={() => {
                   navigateToPage(navigate, "/about");
                 }}
@@ -58,7 +58,7 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm cursor-pointer"
+                className="text-black font-light text-sm "
                 onClick={() => {
                   navigateToPage(navigate, "/contact");
                 }}
@@ -97,7 +97,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="w-full md:w-[50%] h-full">
-          <label className="flex flex-col gap-10">
+          <label className="flex flex-col gap-10 cursor-none">
             <p className="text-[22px] md:text-[32px] text-black">
               Get 10% discount on your next project! Subscribe to our
               newsletter.
@@ -114,7 +114,7 @@ const Footer = () => {
         alt="logo"
         className="w-full relative top-[5%]"
       />
-    </div>
+    </footer>
   );
 };
 

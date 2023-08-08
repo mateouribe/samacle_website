@@ -10,7 +10,7 @@ import { ScrollTrigger } from "gsap/all";
 import SplitText from "../utils/Split3.min.js";
 import Projects from "../components/home/projects/Projects";
 import Contact from "../components/home/Contact";
-import SectionTitle from "../components/SectionTitle";
+import SectionTitle from "../components/customElements/SectionTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {

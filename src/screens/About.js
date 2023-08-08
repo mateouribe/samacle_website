@@ -3,10 +3,10 @@ import { Helmet } from "react-helmet";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Transition from "../components/Transition";
-import CustomSection from "../components/CustomSection";
+import CustomSection from "../components/customElements/CustomSection";
 import SplitText from "../utils/Split3.min";
 import Hero from "../components/about/Hero";
-import CustomImage from "../components/CustomImage";
+import CustomImage from "../components/customElements/CustomImage";
 import Process from "../components/about/Process";
 gsap.registerPlugin(ScrollTrigger);
 

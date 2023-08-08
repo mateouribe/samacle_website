@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
-import CustomSection from "../CustomSection";
+import CustomSection from "../customElements/CustomSection";
 import { AiOutlineBehance, AiOutlineInstagram } from "react-icons/ai";
 import { colors } from "../../utils/constants";
 import { Expo, gsap } from "gsap";

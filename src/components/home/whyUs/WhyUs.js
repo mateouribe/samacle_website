@@ -95,8 +95,8 @@ const WhyUs = () => {
             <MobileContentSections
               title="Statistics don't lie"
               text="Companies with compelling websites and top-notch SEO experience a staggering 30% increase in client acquisition every month. With our meticulous strategies, we aim to propel your business towards similar growth."
-              image="/images/orange.png"
-              color="#F1DEFF #DBACFF #FFB277"
+              image="/images/purple.png"
+              color="#F1DEFF #DBACFF #B420FA"
             />
           </div>
           {/* <!-- desktop content --> */}

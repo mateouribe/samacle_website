@@ -32,28 +32,199 @@ const services = [
 
 const projects = [
   {
+    completed: true,
+    link: "amazing-pet-grooming",
     title: "Amazing Pet Grooming",
     place: "Canada",
-    description: "",
     image: "/images/projects_grooming.png",
+    mockupImages: {
+      big: "/images/mockupBigGrooming.png",
+      mid: "/images/mockupMidGrooming.png",
+      sm: "/images/mockupSmGrooming.png",
+    },
     tags: ["UI Design", "Web Development"],
     technologies: ["React", "GSAP", "Tailwind CSS"],
+    studyCase: {
+      image: "/images/study-main-pago.png",
+      meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
+      background:
+        "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+      development: [
+        {
+          image: "/images/development1-pago.png",
+          title: "Registration processes.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+        {
+          image: "/images/development1-pago.png",
+          title: "Organization and features.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+        {
+          image: "/images/development3-pago.png",
+          title: "Purchase processes.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+      ],
+      challenges:
+        "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+      figmaDesigns: [
+        "/images/figmaDesktopPago.png",
+        "/images/figmaMobilePago.png",
+      ],
+      designSystem: {
+        typography: [
+          { heading: "H1 bold", desktop: "64px", mobile: "32px" },
+          { heading: "H2 bold", desktop: "48px", mobile: "24px" },
+          { heading: "H3 bold", desktop: "32px", mobile: "22px" },
+          { heading: "H5 medium", desktop: "22px", mobile: "20px" },
+          { heading: "P regular", desktop: "16px", mobile: "14px" },
+        ],
+        colors: [
+          { name: "Primary", hex: "#960FCC" },
+          { name: "Secondary", hex: "#F7EEFB" },
+          { name: "White", hex: "#FFFFFF" },
+          { name: "Black", hex: "#3E3E3E" },
+          { name: "Dark blue", hex: "#28292C" },
+          { name: "Gray", hex: "#828385" },
+          { name: "Light gray", hex: "#B0B0B0" },
+          { name: "Main gradient", hex: "#640A88" },
+        ],
+      },
+    },
   },
   {
+    completed: true,
+    link: "pago-tienda",
     title: "Pago Tienda",
     place: "Argentina",
-    description: "",
     image: "/images/projects_pago_tienda.png",
+    mockupImages: {
+      big: "/images/mockupBigPago.png",
+      mid: "/images/mockupMidPago.png",
+      sm: "/images/mockupSmPago.png",
+    },
     tags: ["UI Design", "Web Development"],
     technologies: ["React", "GSAP", "Tailwind CSS"],
+    studyCase: {
+      image: "/images/study-main-pago.png",
+      meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
+      background:
+        "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+      development: [
+        {
+          image: "/images/development1-pago.png",
+          title: "Registration processes.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+        {
+          image: "/images/development1-pago.png",
+          title: "Organization and features.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+        {
+          image: "/images/development3-pago.png",
+          title: "Purchase processes.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+      ],
+      challenges:
+        "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+      figmaDesigns: [
+        "/images/figmaDesktopPago.png",
+        "/images/figmaMobilePago.png",
+      ],
+      designSystem: {
+        typography: [
+          { heading: "H1 bold", desktop: "64px", mobile: "32px" },
+          { heading: "H2 bold", desktop: "48px", mobile: "24px" },
+          { heading: "H3 bold", desktop: "32px", mobile: "22px" },
+          { heading: "H5 medium", desktop: "22px", mobile: "20px" },
+          { heading: "P regular", desktop: "16px", mobile: "14px" },
+        ],
+        colors: [
+          { name: "Primary", hex: "#960FCC" },
+          { name: "Secondary", hex: "#F7EEFB" },
+          { name: "White", hex: "#FFFFFF" },
+          { name: "Black", hex: "#3E3E3E" },
+          { name: "Dark blue", hex: "#28292C" },
+          { name: "Gray", hex: "#828385" },
+          { name: "Light gray", hex: "#B0B0B0" },
+          { name: "Main gradient", hex: "#640A88" },
+        ],
+      },
+    },
   },
   {
-    title: "Amazing Pet Grooming",
-    place: "Canada",
-    description: "",
-    image: "/images/projects_grooming.png",
+    completed: false,
+    link: "pago-tienda",
+    title: "Pago Tienda",
+    place: "Argentina",
+    image: "/images/projects_pago_tienda.png",
+    mockupImages: {
+      big: "/images/mockupBigPago.png",
+      mid: "/images/mockupMidPago.png",
+      sm: "/images/mockupSmPago.png",
+    },
     tags: ["UI Design", "Web Development"],
     technologies: ["React", "GSAP", "Tailwind CSS"],
+    studyCase: {
+      image: "/images/study-main-pago.png",
+      meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
+      background:
+        "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+      development: [
+        {
+          image: "/images/development1-pago.png",
+          title: "Registration processes.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+        {
+          image: "/images/development1-pago.png",
+          title: "Organization and features.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+        {
+          image: "/images/development3-pago.png",
+          title: "Purchase processes.",
+          description:
+            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        },
+      ],
+      challenges:
+        "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+      figmaDesigns: [
+        "/images/figmaDesktopPago.png",
+        "/images/figmaMobilePago.png",
+      ],
+      designSystem: {
+        typography: [
+          { heading: "H1 bold", desktop: "64px", mobile: "32px" },
+          { heading: "H2 bold", desktop: "48px", mobile: "24px" },
+          { heading: "H3 bold", desktop: "32px", mobile: "22px" },
+          { heading: "H5 medium", desktop: "22px", mobile: "20px" },
+          { heading: "P regular", desktop: "16px", mobile: "14px" },
+        ],
+        colors: [
+          { name: "Primary", hex: "#960FCC" },
+          { name: "Secondary", hex: "#F7EEFB" },
+          { name: "White", hex: "#FFFFFF" },
+          { name: "Black", hex: "#3E3E3E" },
+          { name: "Dark blue", hex: "#28292C" },
+          { name: "Gray", hex: "#828385" },
+          { name: "Light gray", hex: "#B0B0B0" },
+          { name: "Main gradient", hex: "#640A88" },
+        ],
+      },
+    },
   },
 ];
 

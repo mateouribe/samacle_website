@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import LineTitle from "../customElements/LineTitle";
 gsap.registerPlugin(ScrollTrigger);
 
 const ProcessItem = ({ process }) => {
@@ -49,13 +50,7 @@ const ProcessItem = ({ process }) => {
       <p className="w-full md:w-1/2 text-justify text-white">
         {process.description}
       </p>
-
-      <div className="w-[30%] hidden md:flex flex-col justify-center items-center relative">
-        <span className="text-main text-sm absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-[calc(50%+10px)] processTitle">
-          {process.title}
-        </span>
-        <div className="w-full h-[1px] bg-main slideLeft origin-left" />
-      </div>
+      <LineTitle title={process.title} />
     </div>
   );
 };
