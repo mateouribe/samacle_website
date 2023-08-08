@@ -119,12 +119,14 @@ const Contact = () => {
               type="text"
               label="Name"
               placeholder="Type your name"
+              required
             />
             <CustomInput
               name="user_email"
               type="email"
               label="Email"
               placeholder="Type your email"
+              required
             />
             <CustomInput
               name="message"
@@ -132,16 +134,11 @@ const Contact = () => {
               label="Message"
               placeholder="What's on your mind?"
               textarea
+              required
             />
-            {/* <button className="bg-main px-100 py-30 text-white max-w-fit self-start mt-20 rounded-10">
-              Send
-            </button> */}
             <CustomButton
               className="mt-20"
               type="submit"
-              // onClick={(e) => {
-              //   sendEmail(e);
-              // }}
             >
               Send
             </CustomButton>
