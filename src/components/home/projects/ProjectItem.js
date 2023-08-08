@@ -45,7 +45,10 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
       key={index}
     >
       <figure className="w-[100%] md:w-[45%] h-[90vh] flex flex-col gap-10">
-        <Link className="h-full" to={`/projects/study_case/${project.link}`}>
+        <Link
+          className="h-full cursor-none"
+          to={`/projects/study_case/${project.link}`}
+        >
           <div className="w-full h-full overflow-hidden rounded-10">
             <CustomImage
               image={project.image}
