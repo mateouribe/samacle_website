@@ -67,7 +67,7 @@ const Projects = () => {
         <SectionTitle className="projectTitle text-main">
           Our projects
         </SectionTitle>
-        <div className="w-full h-full grid gap-50 grid-cols-1 md:grid-cols-12 ">
+        <div className="w-full h-full grid gap-100 md:gap-50 grid-cols-1 md:grid-cols-12 ">
           {projects.map((project, index) =>
             index === 0 ? (
               <ProjectItem
