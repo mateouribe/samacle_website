@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import Transition from "../components/Transition";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
+import Transition from "../components/Transition";
 import { projects } from "../utils/constants";
 import CustomImage from "../components/customElements/CustomImage";
 import Context from "../components/studyCase/context/Context";
@@ -22,6 +23,10 @@ const StudyCase = () => {
 
   return (
     <main>
+      <Helmet>
+        <title>Web Agency - Samacle</title>
+        <meta name="description" content="Web agency in Waterloo, ON, CA." />
+      </Helmet>
       {isLoaded && (
         <>
           <div className="w-full h-[80vh] bg-lightGray relative lg:mt-50">

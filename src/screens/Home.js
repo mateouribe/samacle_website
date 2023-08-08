@@ -68,7 +68,6 @@ const Home = () => {
       <Services />
       <Projects />
       <Contact />
-      {/* <div className="w-full h-[200vh]" /> */}
     </main>
   );
 };
