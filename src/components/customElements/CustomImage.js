@@ -7,6 +7,7 @@ const CustomImage = ({
   image,
   position = { start: "top 70%", end: "bottom 70%" },
   onLoad = false,
+  duration = 1.2,
 }) => {
   const container = useRef(null);
   const tl = useRef(null);
@@ -15,7 +16,7 @@ const CustomImage = ({
     const ctx = gsap.context(() => {
       const animationSlideout = gsap.to(".slideOut", {
         scaleY: 0,
-        duration: 1.2,
+        duration: duration,
         ease: Expo.easeInOut,
       });
 

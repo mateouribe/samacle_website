@@ -52,6 +52,7 @@ const DevelopmentItem = ({ index, item }) => {
             start: "top 80%",
             end: "bottom 80%",
           }}
+          duration={1}
         />
       </div>
 
