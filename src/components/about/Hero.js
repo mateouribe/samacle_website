@@ -44,7 +44,7 @@ const Hero = () => {
         className="py-desktop md:py-desktop lg:py-tablet"
       >
         <h4
-          className="text-[65px] md:text-[86px] lg:text-[106px] font-swearDisplay leading-[95%] w-full lg:w-[90%] text-black"
+          className="text-[65px] md:text-[86px] lg:text-[106px] xl:text-[120px] font-swearDisplay leading-[95%] w-full lg:w-[90%] text-black"
           id="aboutTitle"
         >
           We live and breathe design, innovation, and the thrill of helping

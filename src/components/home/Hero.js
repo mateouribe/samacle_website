@@ -84,7 +84,7 @@ const Hero = () => {
         hasPadding
       >
         <h2
-          className="text-black font-swearDisplay text-[80px] md:text-[100px] lg:text-[138px] leading-[99%] text-left overflow-hidden z-[100] relative"
+          className="text-black font-swearDisplay text-[80px] md:text-[100px] lg:text-[138px] xl:text-[150px] leading-[99%] text-left overflow-hidden z-[100] relative"
           id="heroText"
         >
           Designing Dreams, <br />
