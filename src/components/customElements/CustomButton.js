@@ -35,7 +35,7 @@ const CustomButton = ({
 
   return (
     <button
-      className={`max-w-fit pl-20 pr-[70px] py-[15px] flex text-left gap-10 rounded-[10px] cursor-none ${className} text-sm uppercase font-thin`}
+      className={`max-w-fit pl-20 pr-[70px] py-[15px] flex text-left gap-10 rounded-[10px] cursor-none ${className} text-sm uppercase font-light`}
       style={{
         backgroundColor: blackColor ? colors.black : colors.main,
         color: blackColor ? colors.main : colors.black,
