@@ -18,8 +18,8 @@ const Contact = () => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container.current,
-        start: "top 80%",
-        end: "bottom 80%",
+        start: "top 85%",
+        end: "bottom 85%",
         animation: gsap.fromTo(
           ".contactContainer",
           {
@@ -29,7 +29,7 @@ const Contact = () => {
           {
             opacity: 1,
             yPercent: 0,
-            duration: 1,
+            duration: 2,
             ease: Expo.easeOut,
           }
         ),
@@ -136,10 +136,7 @@ const Contact = () => {
               textarea
               required
             />
-            <CustomButton
-              className="mt-20"
-              type="submit"
-            >
+            <CustomButton className="mt-20" type="submit">
               Send
             </CustomButton>
           </form>

@@ -28,9 +28,9 @@ const Process = () => {
         trigger: container.current,
         colors: {
           enter: colors.black,
-          exit: colors.black,
+          exit: colors.white,
           menuEnter: colors.white,
-          menuExit: colors.white,
+          menuExit: colors.black,
         },
       });
 
@@ -45,9 +45,30 @@ const Process = () => {
           },
           {
             y: 0,
-            duration: 1,
+            duration: 1.5,
             stagger: 0.02,
             ease: Expo.easeOut,
+          }
+        ),
+      });
+      ScrollTrigger.create({
+        trigger: container.current,
+        start: "top 50%",
+        end: "bottom 50%",
+        animation: gsap.fromTo(
+          ".processesContainer",
+          {
+            yPercent: 100,
+          },
+          {
+            yPercent: 0,
+            duration: 1.5,
+            ease: Expo.easeOut,
+            onComplete: () => {
+              gsap.to(".processesContainer", {
+                clearProps: "all",
+              });
+            },
           }
         ),
       });

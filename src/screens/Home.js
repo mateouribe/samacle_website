@@ -40,7 +40,7 @@ const Home = () => {
           },
           {
             y: 0,
-            duration: 1,
+            duration: 1.5,
             stagger: 0.02,
             ease: Expo.easeOut,
           }

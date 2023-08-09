@@ -22,19 +22,16 @@ const About = () => {
       opacity: 1,
       scale: 1,
       yPercent: 0,
-      duration: 1,
+      duration: 2,
       stagger: 0,
-      ease: Expo.easeInOut,
+      ease: Expo.easeOut,
     });
 
-    // gsap.to(texts, {
-    //   overflow: "hidden",
-    // });
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container.current,
-        start: "top 45%",
-        end: "bottom 45%",
+        start: "top 70%",
+        end: "bottom 70%",
         animation: animation,
       });
     }, container);

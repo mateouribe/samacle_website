@@ -30,12 +30,12 @@ const DesignSystem = ({ project }) => {
             ".styleGuideTitle",
             {
               opacity: 0,
-              yPercent: 100,
+              yPercent: 50,
             },
             {
               opacity: 1,
               yPercent: 0,
-              duration: 1,
+              duration: 1.5,
               ease: Expo.easeOut,
             }
           ),
@@ -48,12 +48,12 @@ const DesignSystem = ({ project }) => {
             ".tablesContainer",
             {
               opacity: 0,
-              yPercent: 100,
+              yPercent: 50,
             },
             {
               opacity: 1,
               yPercent: 0,
-              duration: 1,
+              duration: 1.5,
               ease: Expo.easeOut,
             }
           ),

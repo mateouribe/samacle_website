@@ -16,12 +16,12 @@ const ContextItem = ({ title, text, hasButton = false }) => {
           ".contextContainer",
           {
             opacity: 0,
-            yPercent: 100,
+            yPercent: 50,
           },
           {
             opacity: 1,
             yPercent: 0,
-            duration: 1,
+            duration: 1.5,
             ease: Expo.easeOut,
             onComplete: () => {
               gsap.to(".contextContainer", {
@@ -37,7 +37,7 @@ const ContextItem = ({ title, text, hasButton = false }) => {
   }, []);
   return (
     <div
-      className="w-full h-full py-tablet border-b-[1px] border-gray flex justify-end"
+      className="w-full h-full py-tablet border-b-[1px] border-lightGray flex justify-end"
       ref={container}
     >
       <div className="w-full md:w-[70%] flex flex-col md:flex-row gap-20 md:gap-50">

@@ -43,13 +43,17 @@ const ProcessItem = ({ process }) => {
 
   return (
     <div
-      className="w-ful flex flex-col md:flex-row  justify-between items-stretch"
+      className="w-ful flex flex-col md:flex-row justify-between items-stretch gap-100"
       ref={container}
     >
-      <h5 className="text-main text-[20px] block md:hidden">{process.title}</h5>
-      <p className="w-full md:w-1/2 text-justify text-white">
-        {process.description}
-      </p>
+      <div className="processesContainer w-[70%]">
+        <h5 className="text-main text-[20px] block md:hidden">
+          {process.title}
+        </h5>
+        <p className="w-full md:w-full text-justify text-white">
+          {process.description}
+        </p>
+      </div>
       <LineTitle title={process.title} />
     </div>
   );

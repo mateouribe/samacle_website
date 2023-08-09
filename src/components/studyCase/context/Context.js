@@ -19,12 +19,12 @@ const Context = ({ project }) => {
           ".ctxTitle",
           {
             opacity: 0,
-            yPercent: 100,
+            yPercent: 50,
           },
           {
             opacity: 1,
             yPercent: 0,
-            duration: 1,
+            duration: 1.5,
             ease: Expo.easeOut,
           }
         ),

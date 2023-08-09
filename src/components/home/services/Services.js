@@ -114,8 +114,8 @@ const Services = () => {
       // Animate title
       ScrollTrigger.create({
         trigger: container.current,
-        start: "top 50%",
-        end: "bottom 50%",
+        start: "top 60%",
+        end: "bottom 60%",
         animation: gsap.fromTo(
           splitTitle.chars,
           {
@@ -123,7 +123,7 @@ const Services = () => {
           },
           {
             y: 0,
-            duration: 1,
+            duration: 1.5,
             stagger: 0.02,
             ease: Expo.easeOut,
           }
@@ -133,19 +133,19 @@ const Services = () => {
       // Animate table
       ScrollTrigger.create({
         trigger: container.current,
-        start: "top 50%",
-        end: "bottom 50%",
+        start: "top 60%",
+        end: "bottom 60%",
         animation: gsap.fromTo(
           ".content-services",
           {
             opacity: 0,
-            yPercent: 100,
+            yPercent: 50,
           },
           {
             opacity: 1,
             yPercent: 0,
             delay: 0.5,
-            duration: 1,
+            duration: 2,
             ease: Expo.easeOut,
             onComplete: () => {
               gsap.to(".content-services", {

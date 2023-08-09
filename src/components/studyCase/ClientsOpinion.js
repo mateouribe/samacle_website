@@ -40,12 +40,12 @@ const ClientsOpinion = ({ project }) => {
             ".clientOpinion",
             {
               opacity: 0,
-              yPercent: 100,
+              yPercent: 50,
             },
             {
               opacity: 1,
               yPercent: 0,
-              duration: 1,
+              duration: 1.5,
               ease: Expo.easeOut,
             }
           ),
@@ -58,7 +58,7 @@ const ClientsOpinion = ({ project }) => {
 
   return (
     <section
-      className="py-desktop px-mobile md:px-tablet lg:px-desktop flex flex-col gap-100 min-h-[90vh] justify-center items-center"
+      className="py-desktop px-mobile md:px-tablet lg:px-desktop flex flex-col gap-100 min-h-[90vh] justify-center items-center relative"
       ref={container}
     >
       {isLoaded && (
@@ -79,6 +79,13 @@ const ClientsOpinion = ({ project }) => {
           </CustomButton>
         </>
       )}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-9999 select-none pointer-events-none">
+        <img
+          src="/images/fingerPrint.png"
+          alt="fingerprint"
+          className="w-full h-full"
+        />
+      </div>
     </section>
   );
 };
