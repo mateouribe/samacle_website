@@ -3,11 +3,14 @@ import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import { colors } from "../../utils/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 const ProjectItem = ({ project, index }) => {
   const navigate = useNavigate();
   const container = useRef(null);
+  const tl = useRef(null);
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       if (index !== 0) {
@@ -30,27 +33,39 @@ const ProjectItem = ({ project, index }) => {
           ),
         });
       }
+
+      tl.current = gsap.timeline({ paused: true });
+
+      tl.current.to(".projectContainer", {
+        scale: 0.99,
+        duration: 2,
+        ease: Expo.easeOut,
+      });
     }, container);
 
     return () => ctx.revert();
   }, [index]);
 
   return (
-    <figure key={index}>
+    <figure
+      key={index}
+      onMouseEnter={() => {
+        tl.current.play();
+        tl.current.duration(2);
+      }}
+      onMouseLeave={() => {
+        tl.current.reverse();
+        tl.current.duration(0.8);
+      }}
+    >
       <Link
         className={`w-full h-[80vh] flex flex-col gap-10 hoverMouse cursor-none ${
           index === 0 && "animateFirstProject"
         }`}
         ref={container}
-        to={`/projects/study_case/${project.link}`}
+        to={`/projects/study_case/${project.info.link}`}
       >
-        <div
-          className="w-full h-full flex gap-20 projectContainer"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            console.log("scroll top");
-          }}
-        >
+        <div className="w-full h-full flex gap-20 projectContainer">
           {/* image left */}
           <div
             className="w-full md:w-1/2 h-full rounded-10"
@@ -89,12 +104,12 @@ const ProjectItem = ({ project, index }) => {
           </div>
         </div>
         <figcaption className="flex justify-between">
-          <h5 className="text-black">
-            {project.title} - {project.place}
+          <h5 className="text-black textProject">
+            {project.info.title} - {project.info.place}
           </h5>
           <div className="flex flex-col">
-            {project.tags.map((tag, index) => (
-              <span className="text-xsm text-gray" key={index}>
+            {project.info.tags.map((tag, index) => (
+              <span className="text-xsm text-gray textProject" key={index}>
                 {tag}
               </span>
             ))}

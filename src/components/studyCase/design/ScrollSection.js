@@ -6,12 +6,15 @@ import { colors } from "../../../utils/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollSection = ({ className, image, index }) => {
+  const container = useRef(null);
+
   return (
     <div
       className={`w-[100vw] h-view flex justify-center items-center ${className} p-tablet py-tablet ${
         index === 0 && "horizontalColor"
       }`}
       key={index}
+      ref={container}
     >
       <div
         className="hub__wrapper w-[100vw] h-view overflow-hidden relative"

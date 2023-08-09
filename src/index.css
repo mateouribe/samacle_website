@@ -40,7 +40,7 @@
 
   /* Semibold */
   @font-face {
-    font-family: "NeueHaasGroteskDisp Pro Md";
+    font-family: "NeueHaasGroteskDisp Pro";
     src: url("./assets/fonts/NHaasGroteskDSPro-65Md.woff2") format("woff2"),
       url("./assets/fonts/NHaasGroteskDSPro-65Md.woff") format("woff");
     font-weight: 500;
@@ -58,7 +58,7 @@
 
   /* Semibold Italic */
   @font-face {
-    font-family: "NeueHaasGroteskDisp Pro Md";
+    font-family: "NeueHaasGroteskDisp Pro";
     src: url("./assets/fonts/NHaasGroteskDSPro-66MdIt.woff2") format("woff2"),
       url("./assets/fonts/NHaasGroteskDSPro-66MdIt.woff") format("woff");
     font-weight: 500;

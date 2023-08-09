@@ -11,6 +11,7 @@ import SplitText from "../utils/Split3.min.js";
 import Projects from "../components/home/projects/Projects";
 import Contact from "../components/home/Contact";
 import SectionTitle from "../components/customElements/SectionTitle";
+import { colors } from "../utils/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
       type: "words, chars",
       charsClass: "orangeWords",
     });
-
+    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: textAbout.current,
@@ -44,6 +45,9 @@ const Home = () => {
             ease: Expo.easeOut,
           }
         ),
+      });
+      gsap.to(body, {
+        backgroundColor: colors.white,
       });
     }, textAbout);
 

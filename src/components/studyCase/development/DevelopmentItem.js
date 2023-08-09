@@ -12,8 +12,8 @@ const DevelopmentItem = ({ index, item }) => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container.current,
-        start: "top 80%",
-        end: "bottom 80%",
+        start: index === 0 ? "top 92.85%" : "top 120%",
+        end: index === 0 ? "bottom 92.85%" : "bottom 120%",
         animation: gsap.fromTo(
           ".itemText",
           {
@@ -24,7 +24,7 @@ const DevelopmentItem = ({ index, item }) => {
             opacity: 1,
             yPercent: 0,
             duration: 1,
-            delay: 0.4,
+            delay: 0.8,
             ease: Expo.easeOut,
           }
         ),
@@ -48,11 +48,19 @@ const DevelopmentItem = ({ index, item }) => {
       >
         <CustomImage
           image={item.image}
-          position={{
-            start: "top 80%",
-            end: "bottom 80%",
-          }}
-          duration={1}
+          position={
+            index === 0
+              ? {
+                  start: "top 92.85%",
+                  end: "bottom 92.85%",
+                }
+              : {
+                  start: "top 120%",
+                  end: "bottom 120%",
+                }
+          }
+          duration={2}
+          noHover
         />
       </div>
 

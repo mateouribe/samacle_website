@@ -8,14 +8,14 @@ import SplitText from "../utils/Split3.min";
 import Hero from "../components/about/Hero";
 import CustomImage from "../components/customElements/CustomImage";
 import Process from "../components/about/Process";
+import { colors } from "../utils/constants";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const container = useRef(null);
   useLayoutEffect(() => {
+    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
-      let tl = gsap.timeline({});
-
       ScrollTrigger.create({
         trigger: container.current,
         start: "top 70%",
@@ -33,6 +33,9 @@ const About = () => {
             ease: Expo.easeInOut,
           }
         ),
+      });
+      gsap.to(body, {
+        backgroundColor: colors.white,
       });
     }, container);
 

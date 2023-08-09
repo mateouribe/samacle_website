@@ -32,8 +32,8 @@ const Development = ({ project }) => {
       const ctx = gsap.context(() => {
         ScrollTrigger.create({
           trigger: container.current,
-          start: "top 50%",
-          end: "bottom 50%",
+          start: "top 70%",
+          end: "bottom 70%",
           animation: gsap.fromTo(
             splitTitle.chars,
             {

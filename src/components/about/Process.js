@@ -28,9 +28,9 @@ const Process = () => {
         trigger: container.current,
         colors: {
           enter: colors.black,
-          exit: colors.white,
+          exit: colors.black,
           menuEnter: colors.white,
-          menuExit: colors.black,
+          menuExit: colors.white,
         },
       });
 

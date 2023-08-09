@@ -33,17 +33,20 @@ const services = [
 const projects = [
   {
     completed: true,
-    link: "amazing-pet-grooming",
-    title: "Amazing Pet Grooming",
-    place: "Canada",
+    info: {
+      link: "amazing-pet-grooming",
+      title: "Amazing Pet Grooming",
+      place: "Canada",
+      date: "2023",
+      tags: ["UI Design", "Web Development"],
+      technologies: ["React JS", "GSAP", "Tailwind CSS"],
+    },
     image: "/images/projects_grooming.png",
     mockupImages: {
       big: "/images/mockupBigGrooming.png",
       mid: "/images/mockupMidGrooming.png",
       sm: "/images/mockupSmGrooming.png",
     },
-    tags: ["UI Design", "Web Development"],
-    technologies: ["React", "GSAP", "Tailwind CSS"],
     studyCase: {
       image: "/images/study-main-pago.png",
       meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
@@ -98,17 +101,20 @@ const projects = [
   },
   {
     completed: true,
-    link: "pago-tienda",
-    title: "Pago Tienda",
-    place: "Argentina",
+    info: {
+      link: "pago-tienda",
+      title: "Pago Tienda",
+      place: "Argentina",
+      date: "2023",
+      tags: ["UI Design", "Web Development"],
+      technologies: ["React JS", "GSAP", "Tailwind CSS"],
+    },
     image: "/images/projects_pago_tienda.png",
     mockupImages: {
       big: "/images/mockupBigPago.png",
       mid: "/images/mockupMidPago.png",
       sm: "/images/mockupSmPago.png",
     },
-    tags: ["UI Design", "Web Development"],
-    technologies: ["React", "GSAP", "Tailwind CSS"],
     studyCase: {
       image: "/images/study-main-pago.png",
       meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
@@ -163,17 +169,20 @@ const projects = [
   },
   {
     completed: false,
-    link: "pago-tienda",
-    title: "Pago Tienda",
-    place: "Argentina",
+    info: {
+      link: "pago-tienda",
+      title: "Pago Tienda",
+      place: "Argentina",
+      date: "2023",
+      tags: ["UI Design", "Web Development"],
+      technologies: ["React JS", "GSAP", "Tailwind CSS"],
+    },
     image: "/images/projects_pago_tienda.png",
     mockupImages: {
       big: "/images/mockupBigPago.png",
       mid: "/images/mockupMidPago.png",
       sm: "/images/mockupSmPago.png",
     },
-    tags: ["UI Design", "Web Development"],
-    technologies: ["React", "GSAP", "Tailwind CSS"],
     studyCase: {
       image: "/images/study-main-pago.png",
       meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",

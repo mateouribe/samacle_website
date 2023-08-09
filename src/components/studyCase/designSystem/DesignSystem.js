@@ -1,12 +1,10 @@
-import React, { useLayoutEffect, useRef } from "react";
-import SectionTitle from "../../customElements/SectionTitle";
-import TableRow from "./TableRow";
-import Table from "./Table";
-import { useState } from "react";
-import { useEffect } from "react";
-import ColorItem from "./ColorItem";
+import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import SectionTitle from "../../customElements/SectionTitle";
+import Table from "./Table";
+import TableRow from "./TableRow";
+import ColorItem from "./ColorItem";
 import { changeBgColorAnimation } from "../../../utils/gsapAnimations";
 import { colors } from "../../../utils/constants";
 gsap.registerPlugin(ScrollTrigger);
@@ -24,14 +22,55 @@ const DesignSystem = ({ project }) => {
   useLayoutEffect(() => {
     if (isLoaded) {
       const ctx = gsap.context(() => {
-        // ScrollTrigger.create({
-        //   trigger: container.current,
-        //   start: "top 50%",
-        //   end: "bottom 50%",
-        //   animation: gsap.to(container.current, {
-        //     backgroundColor: colors.black,
-        //   }),
-        // });
+        ScrollTrigger.create({
+          trigger: container.current,
+          start: "top 70%",
+          end: "bottom 70%",
+          animation: gsap.fromTo(
+            ".styleGuideTitle",
+            {
+              opacity: 0,
+              yPercent: 100,
+            },
+            {
+              opacity: 1,
+              yPercent: 0,
+              duration: 1,
+              ease: Expo.easeOut,
+            }
+          ),
+        });
+        ScrollTrigger.create({
+          trigger: container.current,
+          start: "top 55%",
+          end: "bottom 55%",
+          animation: gsap.fromTo(
+            ".tablesContainer",
+            {
+              opacity: 0,
+              yPercent: 100,
+            },
+            {
+              opacity: 1,
+              yPercent: 0,
+              duration: 1,
+              ease: Expo.easeOut,
+            }
+          ),
+        });
+        changeBgColorAnimation({
+          trigger: container.current,
+          colors: {
+            enter: colors.black,
+            exit: colors.black,
+            menuEnter: colors.white,
+            menuExit: colors.white,
+          },
+          position: {
+            start: "top 90%",
+            end: "bottom 90%",
+          },
+        });
       }, container);
 
       return () => ctx.revert();
@@ -45,12 +84,12 @@ const DesignSystem = ({ project }) => {
     >
       {isLoaded && (
         <>
-          <SectionTitle noMaxHeight className="text-white">
+          <SectionTitle noMaxHeight className="text-white styleGuideTitle">
             Style
             <br />
             guide.
           </SectionTitle>
-          <div className="w-full h-full flex flex-col md:flex-row gap-50">
+          <div className="w-full h-full flex flex-col md:flex-row gap-50 tablesContainer">
             {/* Typography */}
             <Table title="Typography" subtitle="Font family: Poppins">
               <div className="flex flex-col gap-10">

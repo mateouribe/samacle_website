@@ -8,6 +8,7 @@ const CustomImage = ({
   position = { start: "top 70%", end: "bottom 70%" },
   onLoad = false,
   duration = 1.2,
+  noHover = false,
 }) => {
   const container = useRef(null);
   const tl = useRef(null);
@@ -29,12 +30,15 @@ const CustomImage = ({
       if (onLoad) {
         animationSlideout.play();
         animationCoverImage.play();
+        animationSlideout.delay(0.2);
+        animationCoverImage.delay(0.2);
       } else {
         ScrollTrigger.create({
           trigger: container.current,
           start: position.start,
           end: position.end,
           animation: animationSlideout,
+          // markers: true,
         });
         ScrollTrigger.create({
           trigger: container.current,
@@ -43,13 +47,38 @@ const CustomImage = ({
           animation: animationCoverImage,
         });
       }
+
+      if (!noHover) {
+        tl.current = gsap.timeline({ paused: true });
+
+        tl.current.to(".coverImage", {
+          scale: 0.99,
+          duration: 2,
+          ease: Expo.easeOut,
+        });
+      }
     }, container);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <div className="w-full h-full relative" ref={container}>
+    <div
+      className="w-full h-full relative"
+      ref={container}
+      onMouseEnter={() => {
+        if (!noHover) {
+          tl.current.play();
+          tl.current.duration(2);
+        }
+      }}
+      onMouseLeave={() => {
+        if (!noHover) {
+          tl.current.reverse();
+          tl.current.duration(0.8);
+        }
+      }}
+    >
       <div className="w-full h-full absolute top-0 left-0 z-[9] origin-top slideOut dependsOnBgColor bg-white" />
       <div className="w-full h-full overflow-hidden relative">
         <div

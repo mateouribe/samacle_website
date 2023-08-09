@@ -43,6 +43,24 @@ const Designs = ({ project }) => {
         );
         return () => pin.kill();
       });
+
+      const ctx = gsap.context(() => {
+        changeBgColorAnimation({
+          trigger: container.current,
+          colors: {
+            enter: colors.black,
+            exit: colors.white,
+            menuEnter: colors.white,
+            menuExit: colors.black,
+          },
+          position: {
+            start: "top 10%",
+            end: "bottom 10%",
+          },
+        });
+      }, container);
+
+      return () => ctx.revert();
     }
   }, [isLoaded]);
 
