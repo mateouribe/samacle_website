@@ -38,7 +38,6 @@ const CustomImage = ({
           start: position.start,
           end: position.end,
           animation: animationSlideout,
-          // markers: true,
         });
         ScrollTrigger.create({
           trigger: container.current,
@@ -51,7 +50,7 @@ const CustomImage = ({
       if (!noHover) {
         tl.current = gsap.timeline({ paused: true });
 
-        tl.current.to(".coverImage", {
+        tl.current.to(".containerScale", {
           scale: 0.99,
           duration: 2,
           ease: Expo.easeOut,
@@ -80,7 +79,7 @@ const CustomImage = ({
       }}
     >
       <div className="w-full h-full absolute top-0 left-0 z-[9] origin-top slideOut dependsOnBgColor bg-white" />
-      <div className="w-full h-full overflow-hidden relative">
+      <div className="w-full h-full overflow-hidden relative containerScale">
         <div
           className="w-full h-full absolute top-0 left-0 z-[5] coverImage rounded-10"
           style={{
