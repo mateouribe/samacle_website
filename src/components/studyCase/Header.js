@@ -38,7 +38,7 @@ const Header = ({ project }) => {
 
   return (
     <div className="w-full min-h-[50vh] pt-desktop pb-mobile px-mobile md:px-tabler lg:px-desktop relative">
-      <h5 className="text-[70px] md:text-[80px] lg:text-[90px] text-black font-medium uppercase w-full projectTitle">
+      <h5 className="text-[70px] md:text-[80px] lg:text-[90px] text-black font-medium uppercase w-full projectTitle leading-[90%]">
         {project.info.title} <br /> ©{project.info.date}
       </h5>
     </div>

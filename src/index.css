@@ -141,28 +141,40 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .wordsParent div,
   .wordsParent {
     max-height: 136.62px !important;
   }
   #aboutTitle div {
     max-height: 100.7px !important;
   }
+  .projectTitle div {
+    max-height: 130px !important;
+  }
 }
 
 @media (max-width: 1000px) {
+  .wordsParent div,
   .wordsParent {
     max-height: 99px !important;
   }
   #aboutTitle div {
     max-height: 81.7px !important;
   }
+  .projectTitle div {
+    max-height: 99px !important;
+  }
 }
 @media (max-width: 640px) {
+  .wordsParent div,
   .wordsParent {
     max-height: 79.2px !important;
   }
   #aboutTitle div {
     max-height: 61.75px !important;
+  }
+  .projectTitle div {
+    max-height: 79.2px !important;
   }
 }
 
