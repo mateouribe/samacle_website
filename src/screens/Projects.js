@@ -41,7 +41,6 @@ const Projects = () => {
       type: "words",
       wordsClass: "wordsBlack",
     });
-    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       gsap.set(".animateFirstProject", {
         opacity: 0,
@@ -84,10 +83,6 @@ const Projects = () => {
         },
         "-=1.5"
       );
-
-      gsap.to(body, {
-        backgroundColor: colors.white,
-      });
     }, container);
 
     return () => ctx.revert();

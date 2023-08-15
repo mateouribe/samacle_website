@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -7,17 +7,19 @@ import {
 } from "react-router-dom";
 import { Home, Services, Projects, About, Contact, StudyCase } from "./screens";
 import Navbar from "./components/Navbar";
+import Cursor from "./components/Cursor";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import Footer from "./components/Footer";
 import AnimatedCursor from "react-animated-cursor";
+import { gsap } from "gsap";
 // import Footer from "./components/Footer";
 
 const App = () => {
   const location = useLocation();
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 2,
+      duration: 4,
       infinite: false,
     });
 
@@ -29,9 +31,45 @@ const App = () => {
     requestAnimationFrame(raf);
   }, []);
 
+  const cursor = useRef(null);
+  const cursorFollower = useRef(null);
+
+  useEffect(() => {
+    let posX = 0;
+    let posY = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+
+    gsap.to(
+      {},
+      {
+        repeat: -1,
+        onRepeat: () => {
+          posX = (mouseX - posX) / 9;
+          posY = (mouseY - posY) / 9;
+
+          gsap.set(cursorFollower.current, {
+            left: posX - 20,
+            top: posY - 20,
+          });
+
+          gsap.set(cursor.current, {
+            left: mouseX,
+            top: mouseY,
+          });
+        },
+      }
+    );
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+  }, []);
+
   return (
     <>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={8}
         outerSize={8}
         color="128, 128, 128"
@@ -54,7 +92,7 @@ const App = () => {
           "button",
           ".hoverMouse",
         ]}
-      />
+      /> */}
       <Navbar />
 
       <AnimatePresence mode="wait" initial={false}>
@@ -67,8 +105,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      {/* <Cursor /> */}
       <Footer />
-      {/* <Footer /> */}
     </>
   );
 };

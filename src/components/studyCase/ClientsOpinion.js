@@ -74,7 +74,11 @@ const ClientsOpinion = ({ project }) => {
               Andrés. Pago Tienda, CEO.
             </span>
           </div>
-          <CustomButton blackColor className="self-start clientOpinion">
+          <CustomButton
+            className="self-start clientOpinion"
+            navigateTo="/contact"
+            blackColor
+          >
             Become a client
           </CustomButton>
         </>

@@ -75,7 +75,7 @@ const DevelopmentItem = ({ index, item }) => {
           <p className="text-black">{item.description}</p>
         </div>
 
-        <CustomButton>BECOME CLIENT</CustomButton>
+        <CustomButton navigateTo="/contact">BECOME CLIENT</CustomButton>
       </div>
     </div>
   );

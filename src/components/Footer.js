@@ -103,7 +103,7 @@ const Footer = () => {
               newsletter.
             </p>
             <input
-              className="w-full px-20 py-20 bg-transparent border-[1px] border-gray rounded-10 text-gray placeholder:text-gray focus-visible:outline-none focus-visible:border-main "
+              className="w-full px-20 py-20 bg-transparent border-[1px] border-gray rounded-10 text-gray placeholder:text-gray focus-visible:outline-none focus-visible:border-main cursor-none"
               placeholder="hello@me.com"
             />
           </label>

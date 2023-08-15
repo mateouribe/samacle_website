@@ -6,6 +6,7 @@ const StatesProvider = ({ children }) => {
   const [animateNavbar, setAnimateNavbar] = useState(false);
   const desktopSize = 1024; // The minimum screen width to be considered as a desktop
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= desktopSize);
+  const [language, setLanguage] = useState("en");
 
   useEffect(() => {
     const checkScreenWidth = () => {
@@ -28,6 +29,8 @@ const StatesProvider = ({ children }) => {
         setIsDesktop,
         animateNavbar,
         setAnimateNavbar,
+        language,
+        setLanguage,
       }}
     >
       {children}

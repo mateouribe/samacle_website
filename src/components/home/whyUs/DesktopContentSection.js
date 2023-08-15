@@ -62,7 +62,7 @@ const DesktopContentSection = ({
         <h3 className="text-black text-subtitleTablet italic">{title}</h3>
         <p className="text-black">{text}</p>
       </div>
-      <CustomButton>Become a client</CustomButton>
+      <CustomButton navigateTo="/contact">Become a client</CustomButton>
     </div>
   );
 };

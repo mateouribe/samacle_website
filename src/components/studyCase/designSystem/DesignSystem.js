@@ -91,7 +91,11 @@ const DesignSystem = ({ project }) => {
           </SectionTitle>
           <div className="w-full h-full flex flex-col md:flex-row gap-50 tablesContainer">
             {/* Typography */}
-            <Table title="Typography" subtitle="Font family: Poppins">
+            <Table
+              title="Typography"
+              subtitle="Font family: Poppins"
+              className="overflow-y-scroll"
+            >
               <div className="flex flex-col gap-10">
                 {/* Table header */}
                 <div className="grid grid-cols-4 border-b-[1px] border-gray pb-5">
@@ -126,11 +130,14 @@ const DesignSystem = ({ project }) => {
             </Table>
 
             {/* Colors */}
-            <Table title="Colours palette" className="md:gap-50 md:h-full">
+            <Table
+              title="Colours palette"
+              className="md:gap-50 md:h-full overflow-y-scroll"
+            >
               <div className="w-full h-[60vh] md:h-full grid grid-cols-3 gap-20">
                 {project.studyCase.designSystem.colors.map((item, index) =>
                   index === project.studyCase.designSystem.colors.length - 1 &&
-                  index % 3 !== 0 ? (
+                  (index + 1) % 3 !== 0 ? (
                     <ColorItem index={index} key={index} item={item} spanTwo />
                   ) : (
                     <ColorItem index={index} key={index} item={item} />

@@ -30,8 +30,8 @@ const CustomImage = ({
       if (onLoad) {
         animationSlideout.play();
         animationCoverImage.play();
-        animationSlideout.delay(0.2);
-        animationCoverImage.delay(0.2);
+        animationSlideout.delay(0.5);
+        animationCoverImage.delay(0.5);
       } else {
         ScrollTrigger.create({
           trigger: container.current,
@@ -78,8 +78,8 @@ const CustomImage = ({
         }
       }}
     >
-      <div className="w-full h-full absolute top-0 left-0 z-[9] origin-top slideOut dependsOnBgColor bg-white" />
-      <div className="w-full h-full overflow-hidden relative containerScale">
+      <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 z-[9] origin-top slideOut dependsOnBgColor bg-white rounded-t-10" />
+      <div className="w-full h-full overflow-hidden relative containerScale rounded-10">
         <div
           className="w-full h-full absolute top-0 left-0 z-[5] coverImage rounded-10"
           style={{

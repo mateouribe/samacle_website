@@ -27,7 +27,6 @@ const Home = () => {
       type: "words, chars",
       charsClass: "orangeWords",
     });
-    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: textAbout.current,
@@ -46,9 +45,9 @@ const Home = () => {
           }
         ),
       });
-      gsap.to(body, {
-        backgroundColor: colors.white,
-      });
+      // gsap.to(body, {
+      //   backgroundColor: colors.white,
+      // });
     }, textAbout);
 
     return () => ctx.revert();

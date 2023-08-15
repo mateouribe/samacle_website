@@ -14,7 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   const container = useRef(null);
   useLayoutEffect(() => {
-    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container.current,
@@ -34,9 +33,9 @@ const About = () => {
           }
         ),
       });
-      gsap.to(body, {
-        backgroundColor: colors.white,
-      });
+      // gsap.to(body, {
+      //   backgroundColor: colors.white,
+      // });
     }, container);
 
     return () => ctx.revert();

@@ -8,9 +8,6 @@ const ColorItem = ({ item, index, spanTwo = false }) => {
     >
       <div
         className="w-full h-full rounded-10"
-        //    style={{
-        //      backgroundColor: item.hex,
-        //    }}
         style={
           item.hex.split("-")[1]
             ? {

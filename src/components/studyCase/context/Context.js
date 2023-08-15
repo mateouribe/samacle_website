@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useRef } from "react";
-import CustomButton from "../../customElements/CustomButton";
 import SectionTitle from "../../customElements/SectionTitle";
 import ContextItem from "./ContextItem";
 import { Expo, gsap } from "gsap";

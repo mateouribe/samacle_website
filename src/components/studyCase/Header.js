@@ -28,7 +28,7 @@ const Header = ({ project }) => {
           y: 0,
           duration: 1.5,
           ease: Expo.easeInOut,
-          stagger: 0.008,
+          stagger: 0.025,
         }
       );
     }, container);

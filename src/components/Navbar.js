@@ -11,7 +11,7 @@ const Navbar = () => {
   const desktopTl = useRef(null);
   const desktopContainer = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { animateNavbar, setAnimateNavbar } = useStatesContext();
+  const { language, setLanguage } = useStatesContext();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -161,7 +161,7 @@ const Navbar = () => {
         <CustomLink route="/" className="text-black">
           <img className="" src="/images/icon.svg" alt="Samacle icon" />
         </CustomLink>
-        <li>
+        <li className="flex gap-30 justify-start">
           <ul className="w-full flex gap-30 text-sm text-black">
             <CustomLink
               route="/"
@@ -199,6 +199,21 @@ const Navbar = () => {
               Contact
             </CustomLink>
           </ul>
+          <li
+            className="text-black flex text-sm relative uppercase"
+            onClick={() => {
+              if (language === "en") {
+                setLanguage("fr");
+              } else {
+                setLanguage("en");
+              }
+            }}
+          >
+            {language}
+            <span className="material-symbols-outlined text-[14px] self-start mt-[3px]">
+              language
+            </span>
+          </li>
         </li>
       </ul>
 

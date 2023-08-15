@@ -57,7 +57,7 @@ const StudyCase = () => {
         <>
           <Header project={project} />
           <div className="w-full h-[80vh] imgTrigger">
-            <div className="w-full h-full bg-lightGray relative projectMainImg">
+            <div className="w-full h-full relative projectMainImg">
               <CustomImage
                 image={project.studyCase.image}
                 onLoad

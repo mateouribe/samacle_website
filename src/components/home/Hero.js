@@ -93,7 +93,7 @@ const Hero = () => {
 
         <figure className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] h-[50%] origin-bottom z-[10]">
           <div className="w-full h-full relative">
-            <div className="w-full h-full absolute top-0 left-0 bg-white z-[9] origin-top slideOut" />
+            <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 bg-white z-[9] origin-top slideOut" />
             <div className="w-full h-full overflow-hidden relative">
               <div
                 className="w-full h-full absolute top-0 left-0 z-[5] coverImage"

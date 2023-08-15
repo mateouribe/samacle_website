@@ -98,6 +98,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "NeueHaasGroteskDisp Pro", sans-serif;
+  cursor: none;
 }
 
 /* Page transition */
@@ -228,4 +229,34 @@ body {
     position: absolute;
     border: 2px solid #fff;
   }
+}
+
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url("../public/images/cursor.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.cursor.active {
+  opacity: 1;
+  transform: scale(12);
+}
+
+.cursor.active::before {
+  opacity: 1;
+}
+
+.cursor-follower.active {
+  opacity: 0.3;
+  transform: scale(0);
 }

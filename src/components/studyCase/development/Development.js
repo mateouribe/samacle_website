@@ -1,6 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import SectionTitle from "../../customElements/SectionTitle";
-import CustomButton from "../../customElements/CustomButton";
 import DevelopmentItem from "./DevelopmentItem";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
