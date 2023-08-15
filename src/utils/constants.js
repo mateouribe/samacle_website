@@ -31,6 +31,7 @@ const services = [
 ];
 
 const projects = [
+  // Amazing pet grooming
   {
     completed: true,
     info: {
@@ -74,9 +75,7 @@ const projects = [
       ],
       challenges:
         "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
-      figmaDesigns: [
-        "/images/figmaDesktopGrooming.png",
-      ],
+      figmaDesigns: ["/images/figmaDesktopGrooming.png"],
       designSystem: {
         typography: [
           { heading: "H1 heavy", desktop: "171px", mobile: "80px" },
@@ -99,6 +98,8 @@ const projects = [
       },
     },
   },
+
+  // Pago Tienda
   {
     completed: true,
     info: {
@@ -125,19 +126,19 @@ const projects = [
           image: "/images/development1-pago.png",
           title: "Registration processes.",
           description:
-            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+            "During the registration process, new users will be asked for information such as their email address, name, and preferred addresses for frequent locations, and finally, the user will be asked to use the pre-designed cryptocurrency wallet to facilitate future payments.",
         },
         {
           image: "/images/development1-pago.png",
           title: "Organization and features.",
           description:
-            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+            "Pago Tienda was developed in different phases. The first was to study the popularity of cryptocurrencies in the region. During the second phase, establishments and businesses willing to accept cryptocurrency payments were sought. The third phase was to design the web page and the fourth phase was to develop the web page.",
         },
         {
           image: "/images/development3-pago.png",
           title: "Purchase processes.",
           description:
-            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+            "Once you have selected all the products you want, there will be a section called the cart, the section to make payment for your purchase. You will be asked for certain information such as delivery address and customer name. For payment, in this case, with the integrated method of payment with cryptocurrencies that are linked to the wallet developed to make the purchase process more accessible, a deposit of the crypto with which you decide to pay will be made, and now you just have to wait and enjoy your order.",
         },
       ],
       challenges:
@@ -167,6 +168,8 @@ const projects = [
       },
     },
   },
+
+  //Soon
   {
     completed: false,
     info: {

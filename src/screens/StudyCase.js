@@ -32,7 +32,7 @@ const StudyCase = () => {
       });
       if (isLoaded) {
         gsap.set(".projectMainImg", {
-          scale: 0.95,
+          scale: 0.9,
         });
         ScrollTrigger.create({
           trigger: ".imgTrigger",

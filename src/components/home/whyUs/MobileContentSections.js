@@ -1,4 +1,5 @@
 import React from "react";
+import CustomButton from "../../customElements/CustomButton";
 
 const MobileContentSections = ({ image, title, text, color }) => {
   return (
@@ -24,6 +25,9 @@ const MobileContentSections = ({ image, title, text, color }) => {
         <div className="flex flex-col gap-5">
           <h3 className="text-black italic text-[20px]]">{title}</h3>
           <p className="text-black">{text}</p>
+          <CustomButton navigateTo="/contact" blackColor className="mt-50">
+            Become a client
+          </CustomButton>
         </div>
       </div>
     </div>

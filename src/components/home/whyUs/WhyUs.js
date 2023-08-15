@@ -45,26 +45,25 @@ const WhyUs = () => {
           {/* Desktop content */}
           <div className="desktopContent m-auto px-desktop">
             <DesktopContentSection
-              title="Statistics don't lie"
-              text="Companies with compelling websites and top-notch SEO experience a staggering 30% increase in client acquisition every month. With our meticulous strategies, we aim to propel your business towards similar growth."
-              bgColor="#FFF9F4"
+              title="Expand Horizons: Captivating Design"
+              text="A website extends the horizons of a business and increasing the number of people who have access to your product. Our team will take care of extending those horizons by presenting an outstanding and eye-catching effect."
+              bgColor="#E3F9FC"
               backToWhite
             />
             <DesktopContentSection
-              title="Unleashing Your Sales Potential"
-              text="Are you struggling to convert your leads into paying customers? Our team of experienced marketers and strategists will analyze your sales funnel to identify potential bottlenecks and areas of improvement. We'll craft data-driven strategies to optimize your conversion rates and increase your bottom line."
-              bgColor="#DEFBFF"
+              title="Revolutionize Appeal: Dynamic Presentation"
+              text="Refrain from showing your product or service. Discover revolutionary ways to present it to make it more attractive to customers. Our team will be in charge of generating a much more striking image for customers."
+              bgColor="#FFF3E5"
             />
             <DesktopContentSection
-              title="Unlock your potential"
-              text="Uncover untapped opportunities in your target market through in-depth data analysis. Our team of experts leverages cutting-edge analytics to identify the most lucrative prospects for your business."
-              bgColor="#EEFFEE"
+              title="Convert Leads: Trusted Dynamic Design"
+              text="Make your website dynamics convert your leads into paying customers. Our team will give your website an attractive design and be equipped with mechanics that will provide confidence and professionalism when navigating it."
+              bgColor="#FBE5EB"
             />
             <DesktopContentSection
-              title="Statistics don't lie"
-              text="Companies with compelling websites and top-notch SEO experience a staggering 30% increase in client acquisition every month. With our meticulous strategies, we aim to propel your business towards similar growth."
-              bgColor="#FAEEFF"
-              // backToWhite
+              title="Taiolored Excellence: Unique Websites"
+              text="Don't worry about your niche market, as our team is flexible and able to adapt to different needs, creating unique and customized websites that are attractive no matter the business."
+              bgColor="#F0E9F8"
             />
           </div>
         </div>
@@ -75,47 +74,47 @@ const WhyUs = () => {
           {/* <!-- add mobile content here--> */}
           <div className="mobileContent w-full hidden">
             <MobileContentSections
-              title="Statistics don't lie"
-              text="Companies with compelling websites and top-notch SEO experience a staggering 30% increase in client acquisition every month. With our meticulous strategies, we aim to propel your business towards similar growth."
-              image="/images/orange.png"
-              color="#FFF0E3 #FFDEC7 #FFA057"
-            />
-            <MobileContentSections
-              title="Unleashing Your Sales Potential"
-              text="Are you struggling to convert your leads into paying customers? Our team of experienced marketers and strategists will analyze your sales funnel to identify potential bottlenecks and areas of improvement. We'll craft data-driven strategies to optimize your conversion rates and increase your bottom line."
+              title="Expand Horizons: Captivating Design"
+              text="A website extends the horizons of a business and increasing the number of people who have access to your product. Our team will take care of extending those horizons by presenting an outstanding and eye-catching effect."
               image="/images/blue.png"
-              color="#C5F8FF #8BF5FF #3BD1EC"
+              color="#C5F8FF #8BF5FF #37AFC8"
             />
             <MobileContentSections
-              title="Unlock your potential"
-              text="Uncover untapped opportunities in your target market through in-depth data analysis. Our team of experts leverages cutting-edge analytics to identify the most lucrative prospects for your business."
-              image="/images/green.png"
-              color="#DEFFDE #ACFFAE #78E47A"
+              title="Revolutionize Appeal: Dynamic Presentation"
+              text="Refrain from showing your product or service. Discover revolutionary ways to present it to make it more attractive to customers. Our team will be in charge of generating a much more striking image for customers."
+              image="/images/orange.png"
+              color="#FFE2C2 #FF9F35 #CF7A1B"
             />
             <MobileContentSections
-              title="Statistics don't lie"
-              text="Companies with compelling websites and top-notch SEO experience a staggering 30% increase in client acquisition every month. With our meticulous strategies, we aim to propel your business towards similar growth."
+              title="Convert Leads: Trusted Dynamic Design"
+              text="Make your website dynamics convert your leads into paying customers. Our team will give your website an attractive design and be equipped with mechanics that will provide confidence and professionalism when navigating it."
+              image="/images/pink.png"
+              color="#FEB6CC #DF3866 #AA2147"
+            />
+            <MobileContentSections
+              title="Taiolored Excellence: Unique Websites"
+              text="Don't worry about your niche market, as our team is flexible and able to adapt to different needs, creating unique and customized websites that are attractive no matter the business."
               image="/images/purple.png"
-              color="#F1DEFF #DBACFF #B420FA"
+              color="#D8BBFC #8952CB #4D21AA"
             />
           </div>
           {/* <!-- desktop content --> */}
           <div className="desktopPhotos w-[100%] h-[40vw] relative overflow-hidden rounded-[10px]">
             <DesktopPhoto
-              image="/images/orange.png"
-              color="#FFF0E3 #FFDEC7 #FFA057"
-            />
-            <DesktopPhoto
               image="/images/blue.png"
-              color="#C5F8FF #8BF5FF #3BD1EC"
+              color="#C5F8FF #8BF5FF #37AFC8"
             />
             <DesktopPhoto
-              image="/images/green.png"
-              color="#DEFFDE #ACFFAE #78E47A"
+              image="/images/orange.png"
+              color="#FFE2C2 #FF9F35 #CF7A1B"
+            />
+            <DesktopPhoto
+              image="/images/pink.png"
+              color="#FEB6CC #DF3866 #AA2147"
             />
             <DesktopPhoto
               image="/images/purple.png"
-              color="#F1DEFF #DBACFF #B420FA"
+              color="#D8BBFC #8952CB #4D21AA"
             />
           </div>
         </div>
