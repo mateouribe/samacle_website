@@ -85,17 +85,17 @@ const Contact = () => {
                 </CustomATag>
               </li>
               <li>
-                <CustomATag href="22" colorHover="#9E9E9E">
+                <CustomATag href="tel:=14375186019" colorHover="#9E9E9E">
                   +1 (437) 518-6019
                 </CustomATag>
               </li>
               <li>
-                <CustomATag href="22" colorHover="#9E9E9E">
+                <CustomATag href="tel:=14374730048" colorHover="#9E9E9E">
                   +1 (437) 473-0048
                 </CustomATag>
               </li>
               <li>
-                <CustomATag href="22" colorHover="#9E9E9E">
+                <CustomATag href="/" colorHover="#9E9E9E">
                   Waterloo, ON, Canada.
                 </CustomATag>
               </li>

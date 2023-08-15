@@ -76,7 +76,6 @@ const projects = [
         "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
       figmaDesigns: [
         "/images/figmaDesktopGrooming.png",
-        "/images/figmaMobilePago.png",
       ],
       designSystem: {
         typography: [
