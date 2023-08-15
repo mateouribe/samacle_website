@@ -12,8 +12,8 @@ const Cursor = () => {
       const onMouseMove = (e) => {
         const { clientX, clientY } = e;
         gsap.to(cursor.current, {
-          x: clientX,
-          y: clientY,
+          x: clientX - 10,
+          y: clientY - 10,
         });
       };
 
