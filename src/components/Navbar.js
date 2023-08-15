@@ -199,7 +199,7 @@ const Navbar = () => {
               Contact
             </CustomLink>
           </ul>
-          <li
+          <div
             className="text-black flex text-sm relative uppercase"
             onClick={() => {
               if (language === "en") {
@@ -213,7 +213,7 @@ const Navbar = () => {
             <span className="material-symbols-outlined text-[14px] self-start mt-[3px]">
               language
             </span>
-          </li>
+          </div>
         </li>
       </ul>
 

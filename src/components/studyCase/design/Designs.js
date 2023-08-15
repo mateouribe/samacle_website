@@ -16,6 +16,8 @@ const Designs = ({ project }) => {
     if (project !== undefined && project !== null && project !== []) {
       setIsLoaded(true);
     }
+
+    console.log(`+=${project.studyCase.figmaDesigns.length - 1}00%`)
   }, [project]);
 
   useLayoutEffect(() => {
@@ -29,7 +31,7 @@ const Designs = ({ project }) => {
             translateX: 0,
           },
           {
-            translateX: -window.innerWidth * 1,
+            translateX: -window.innerWidth * (project.studyCase.figmaDesigns.length - 1),
             ease: "none",
             duration: 1,
             scrollTrigger: {
@@ -37,7 +39,7 @@ const Designs = ({ project }) => {
               scrub: 0,
               pin: true,
               start: "top top",
-              end: "+=100%",
+              end: `+=${project.studyCase.figmaDesigns.length - 1}00%`,
             },
           }
         );
@@ -63,6 +65,7 @@ const Designs = ({ project }) => {
       return () => ctx.revert();
     }
   }, [isLoaded]);
+
 
   return (
     <section className="overflow-hidden">
