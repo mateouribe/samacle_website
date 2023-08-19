@@ -125,9 +125,12 @@ body {
 .blackWords {
   color: #282828;
 }
-
-.orangeWords {
-  color: #ff6b00;
+.beigeWords {
+  color: #faf0e6;
+}
+.orangeWords,
+.orangeText {
+  color: #ef4e26;
 }
 .whiteWords {
   color: #ffffff;

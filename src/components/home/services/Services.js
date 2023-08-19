@@ -23,7 +23,7 @@ const Services = () => {
 
     const splitTitle = new SplitText(".servicesTitle", {
       type: "words, chars",
-      charsClass: "orangeWords",
+      charsClass: "beigeWords",
     });
 
     const elementsWorks = gsap.utils.toArray(".item-service");

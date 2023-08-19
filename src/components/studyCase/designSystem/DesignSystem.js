@@ -67,8 +67,8 @@ const DesignSystem = ({ project }) => {
             menuExit: colors.white,
           },
           position: {
-            start: "top 90%",
-            end: "bottom 90%",
+            start: "top 100%",
+            end: "bottom 110%",
           },
         });
       }, container);

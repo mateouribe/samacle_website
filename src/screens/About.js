@@ -56,7 +56,7 @@ const About = () => {
           <CustomImage image="/images/team_working.png" />
         </div>
         <p className="w-[70%] md:w-1/2 text-justify textAbout text-black">
-          We are an agency in Waterloo, ON dedicated to developing and designing
+          We are a premier agency in Waterloo, ON. dedicated to developing and designing
           websites for emerging and mid-market businesses. Our mission is to
           deliver dynamic websites with attractive and intuitive mechanics that
           generate an impact on the future of the business of each of our

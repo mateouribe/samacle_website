@@ -9,8 +9,8 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    gsap.to(body, { duration: 0, backgroundColor: colors.white });
-  }, [pathname]);
+    // gsap.to(body, { duration: 0, backgroundColor: colors.white });
+  }, [pathname, body]);
 
   return null;
 }

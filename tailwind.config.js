@@ -6,9 +6,10 @@ module.exports = {
       colors: {
         black: "#282828",
         white: "#FFFFFF",
-        main: "#FF6B00",
+        main: "#EF4E26",
         lightGray: "#F6F6F6",
         gray: "#808080",
+        beige: "#FAF0E6",
       },
       fontFamily: {
         nHasGrotexk: ["NHaasGroteskTXPro", "sans-serif"],

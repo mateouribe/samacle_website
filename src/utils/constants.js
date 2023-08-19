@@ -1,9 +1,10 @@
 const colors = {
   black: "#282828",
   white: "#FFFFFF",
-  main: "#FF6B00",
+  main: "#EF4E26",
   lightGray: "#F6F6F6",
   gray: "#808080",
+  beige: "#FAF0E6",
 };
 
 const services = [
@@ -11,21 +12,21 @@ const services = [
     title: "Web Design and<br/>Development.",
     subtitle: "UX/UI Design Services.",
     description:
-      "Your website is the face of your business in the digital world. Our talented team of designers and developers create visually stunning, user-friendly websites that leave a lasting impression on your audience. <i>With a focus on responsive design and seamless functionality, we ensure your online presence stands out.</i>",
+      "Your website is the face of your business in the digital world. Our talented team of designers and developers create visually stunning, user-friendly websites that leave a lasting impression on your audience. <i className='orangeText'>With a focus on responsive design and seamless functionality, we ensure your online presence stands out.</i>",
     image: "/images/website.png",
   },
   {
     title: "Search Engine<br/>Optimization (SEO).",
     subtitle: "",
     description:
-      "Unlock the true potential of organic search traffic with our data-driven SEO strategies. <i>We utilize the latest tools and industry insights to optimize your website's ranking on search engines, driving a steady stream of targeted traffic to your site.</i>",
+      "Unlock the true potential of organic search traffic with our data-driven SEO strategies. <i className='orangeText'>We utilize the latest tools and industry insights to optimize your website's ranking on search engines, driving a steady stream of targeted traffic to your site.</i>",
     image: "/images/seo.png",
   },
   {
     title: "Email marketing.",
     subtitle: "",
     description:
-      "Leverage the power of email campaigns to nurture leads and maintain customer relationships. <i>Our team of experts will help you create and execute email marketing strategies that drive conversions and increase revenue.</i>",
+      "Leverage the power of email campaigns to nurture leads and maintain customer relationships. <i className='orangeText'>Our team of experts will help you create and execute email marketing strategies that drive conversions and increase revenue.</i>",
     image: "/images/mail.png",
   },
 ];
