@@ -9,7 +9,7 @@ const AboutLetter = ({
   return (
     <div className="relative flex flex-col items-center lg:block aboutBlock">
       <p
-        className={`font-swearDisplay inline-block leading-[80%] lg:leading-[0] aboutWord relative z-[10] text-black
+        className={`font-swearDisplay inline-block leading-[80%] lg:leading-[0] aboutWord relative z-[10] text-black turn-blue
         ${
           small
             ? "text-[100px]"
@@ -22,22 +22,14 @@ const AboutLetter = ({
       </p>
       <img
         src={large ? "/images/heart.svg" : "/images/finger.svg"}
-        className={`absolute w-[80%] top-1/2 -translate-y-1/2 lg:-top-full lg:translate-y-0 left-1/2 transform -translate-x-1/2 2 z-[1] ${
-          large && "heart"
-        }`}
+        className={`absolute w-[80%] top-1/2 -translate-y-1/2 lg:-top-full lg:translate-y-0 left-1/2 transform -translate-x-1/2 2 z-[1] no-visible`}
         alt="finger svg"
       />
       <div className="w-full h-[1px] lg:h-[3px] block lg:absolute -bottom-20 left-0 bg-black z-[200]">
         <div className="w-full h-full relative">
           <span
-            className={`text-xsm text-black absolute left-1/2  top-1/2 transform -translate-x-1/2  -translate-y-1/2 p-[3px] 
-          ${
-            small
-              ? "bg-white"
-              : medium
-              ? "bg-white lg:bg-lightGray"
-              : "bg-lightGray"
-          }
+            className={`text-xsm text-black absolute left-1/2  top-1/2 transform -translate-x-1/2  -translate-y-1/2 p-[3px] turn-blue 
+          ${small ? "bg-white" : medium ? "bg-white" : "bg-beige turn-beige"}
           `}
           >
             ({subText})

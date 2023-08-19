@@ -20,7 +20,10 @@ const DesktopContentSection = ({
     gsap.to(body, {
       overwrite: "auto",
     });
-    const heart = document.querySelector(".heart");
+    const noVisible = document.querySelectorAll(".no-visible");
+    const turnBlue = document.querySelectorAll(".turn-blue");
+    const turnBeige = document.querySelectorAll(".turn-beige");
+
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container.current,
@@ -33,16 +36,25 @@ const DesktopContentSection = ({
               backgroundColor: bgColor,
               overwrite: "auto",
             });
-            gsap.to(heart, {
+            gsap.to(noVisible, {
               opacity: 0.1,
+            });
+            gsap.to(turnBlue, {
+              backgroundColor: "#E3F9FC",
             });
           } else if (backToWhite) {
             gsap.to("body", {
               backgroundColor: colors.white,
               overwrite: "auto",
             });
-            gsap.to(heart, {
+            gsap.to(noVisible, {
               opacity: 1,
+            });
+            gsap.to(turnBlue, {
+              backgroundColor: colors.white,
+            });
+            gsap.to(turnBeige, {
+              backgroundColor: colors.beige,
             });
           }
         },
