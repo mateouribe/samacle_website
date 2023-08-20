@@ -63,7 +63,7 @@ const ClientsOpinion = ({ project }) => {
     >
       {isLoaded && (
         <>
-          <div className="flex flex-col gap-5 clientOpinion">
+          <div className="flex flex-col gap-5 clientOpinion z-[9999]">
             <p className="text-[22px] md:text-[32px] uppercase text-black">
               To create a groundbreaking operating experience, the NODO Film
               Systems allowed camera operators to adjust the weight of the
@@ -83,7 +83,7 @@ const ClientsOpinion = ({ project }) => {
           </CustomButton>
         </>
       )}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-9999 select-none pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none">
         <img
           src="/images/fingerPrint.png"
           alt="fingerprint"

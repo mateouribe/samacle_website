@@ -173,7 +173,7 @@ const Navbar = () => {
             <CustomLink
               route="/services"
               className="desktopItem"
-              image="/images/homeSs.png"
+              image="/images/servicesSs.png"
             >
               Services
             </CustomLink>

@@ -9,8 +9,8 @@ const LineTitle = ({ title }) => {
       gsap.set(".slideLeft", {
         scaleX: 0,
       });
-      gsap.set(".processTitle", {
-        y: 5,
+      gsap.set(".proccessItemTitle", {
+        bottom: -16,
         opacity: 0,
       });
       ScrollTrigger.create({
@@ -27,8 +27,8 @@ const LineTitle = ({ title }) => {
         trigger: container.current,
         start: "top 50%",
         end: "bottom 50%",
-        animation: gsap.to(".processTitle", {
-          y: -20,
+        animation: gsap.to(".proccessItemTitle", {
+          bottom: -2,
           opacity: 1,
           duration: 1,
           ease: Expo.easeOut,
@@ -41,10 +41,10 @@ const LineTitle = ({ title }) => {
 
   return (
     <div
-      className="w-[30%] hidden md:flex flex-col justify-center items-center relative"
+      className="w-[30%] hidden md:flex flex-col justify-center items-center relative overflow-hidden"
       ref={container}
     >
-      <span className="text-main text-sm absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-[calc(50%+10px)] processTitle">
+      <span className="text-main text-sm relative proccessItemTitle">
         {title}
       </span>
       <div className="w-full h-[1px] bg-main slideLeft origin-left" />

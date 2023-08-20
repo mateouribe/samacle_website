@@ -6,44 +6,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ProcessItem = ({ process }) => {
   const container = useRef(null);
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.set(".slideLeft", {
-        scaleX: 0,
-      });
-      gsap.set(".processTitle", {
-        y: 5,
-        opacity: 0,
-      });
-      ScrollTrigger.create({
-        trigger: container.current,
-        start: "top 50%",
-        end: "bottom 50%",
-        animation: gsap.to(".slideLeft", {
-          scaleX: 1,
-          duration: 1.5,
-          ease: Expo.easeOut,
-        }),
-      });
-      ScrollTrigger.create({
-        trigger: container.current,
-        start: "top 50%",
-        end: "bottom 50%",
-        animation: gsap.to(".processTitle", {
-          y: -20,
-          opacity: 1,
-          duration: 1,
-          ease: Expo.easeOut,
-        }),
-      });
-    }, container);
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <div
-      className="w-ful flex flex-col md:flex-row justify-between items-stretch gap-100"
+      className="w-full flex flex-col md:flex-row justify-between items-center gap-100"
       ref={container}
     >
       <div className="processesContainer w-[70%]">

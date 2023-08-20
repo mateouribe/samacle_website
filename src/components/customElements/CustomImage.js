@@ -32,7 +32,9 @@ const CustomImage = ({
         animationCoverImage.play();
         animationSlideout.delay(0.5);
         animationCoverImage.delay(0.5);
-      } else {
+      }
+      //Reveal on scroll
+      else {
         ScrollTrigger.create({
           trigger: container.current,
           start: position.start,
@@ -47,6 +49,7 @@ const CustomImage = ({
         });
       }
 
+      //Hover effect
       if (!noHover) {
         tl.current = gsap.timeline({ paused: true });
 

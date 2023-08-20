@@ -16,9 +16,9 @@ const About = () => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
-        trigger: container.current,
-        start: "top 70%",
-        end: "bottom 70%",
+        trigger: ".textTrigger",
+        start: "bottom 100%",
+        end: "bottom 100%",
         animation: gsap.fromTo(
           ".textAbout",
           {
@@ -29,7 +29,7 @@ const About = () => {
             yPercent: 0,
             opacity: 1,
             duration: 1,
-            ease: Expo.easeInOut,
+            ease: Expo.easeOut,
           }
         ),
       });
@@ -52,14 +52,14 @@ const About = () => {
         className="w-full py-tablet px-mobile md:px-tablet lg:px-desktop flex flex-col items-end gap-50"
         ref={container}
       >
-        <div className="w-[80%] md:w-[60%] h-[80vh] rounded-10">
-          <CustomImage image="/images/team_working.png" />
+        <div className="w-[80%] md:w-[60%] h-[80vh] rounded-10 textTrigger">
+          <CustomImage image="/images/team_working.png" onLoad noHover />
         </div>
         <p className="w-[70%] md:w-1/2 text-justify textAbout text-black">
-          We are a premier agency in Waterloo, ON. dedicated to developing and designing
-          websites for emerging and mid-market businesses. Our mission is to
-          deliver dynamic websites with attractive and intuitive mechanics that
-          generate an impact on the future of the business of each of our
+          We are a premier agency in Waterloo, ON. dedicated to developing and
+          designing websites for emerging and mid-market businesses. Our mission
+          is to deliver dynamic websites with attractive and intuitive mechanics
+          that generate an impact on the future of the business of each of our
           clients.
         </p>
       </div>

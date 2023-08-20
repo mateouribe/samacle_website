@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { Expo, gsap } from "gsap";
 import { colors } from "../../utils/constants";
 
-const CustomATag = ({ href, children, colorHover }) => {
+const CustomATag = ({ href, children, colorHover, onClick, className }) => {
   const container = useRef(null);
   const tl = useRef(null);
 
@@ -40,11 +40,12 @@ const CustomATag = ({ href, children, colorHover }) => {
       onMouseLeave={() => {
         tl.current.reverse();
       }}
+      onClick={onClick}
       ref={container}
-      className="relative"
+      className={`relative ${className}`}
     >
       {children}
-      <div className="w-full h-[1.5px] bg-main absolute bottom-0 bottomLine origin-left" />
+      <div className="w-full h-[1.5px] bg-main absolute left-0 bottom-0 bottomLine origin-left" />
     </a>
   );
 };
