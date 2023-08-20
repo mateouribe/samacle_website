@@ -24,7 +24,7 @@ const ServiceCard = ({ service }) => {
       <div className="w-full h-full">
         <p
           className="text-white text-text text-justify"
-          dangerouslySetInnerHTML={{ __html: service.description }}
+          dangerouslySetInnerHTML={{ __html: service.shortDescription }}
         ></p>
       </div>
     </div>

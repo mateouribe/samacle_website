@@ -37,7 +37,7 @@ const Hero = () => {
       ScrollTrigger.create({
         trigger: ".imgTriggerS",
         start: "top 10%",
-        end: "bottom 50%",
+        end: "bottom 10%",
         scrub: true,
         animation: gsap.to(".servicesMainImg", {
           scale: 0.9,

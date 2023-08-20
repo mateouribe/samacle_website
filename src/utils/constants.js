@@ -9,24 +9,31 @@ const colors = {
 
 const services = [
   {
-    title: "Web Design and<br/>Development.",
-    subtitle: "UX/UI Design Services.",
-    description:
+    title: "Web Design and Development",
+    subtitle: "UX/UI Design Services",
+    shortDescription:
       "Your website is the face of your business in the digital world. Our talented team of designers and developers create visually stunning, user-friendly websites that leave a lasting impression on your audience. <i className='orangeText'>With a focus on responsive design and seamless functionality, we ensure your online presence stands out.</i>",
+    description:
+      "We specialize in bringing your brand's online presence to life through innovative web design and development. Our team of creative minds and technical experts collaborates closely with you to create websites that not only captivate users but also drive tangible results. With a keen eye for aesthetics and user experience, we design websites that are visually stunning and highly intuitive. Whether it's a captivating landing page or a comprehensive e-commerce platform, our designs are tailored to resonate with your target audience, ensuring an engaging and memorable online journey. <br/> Behind every exceptional design is a robust development process. <br/> Our skilled developers employ cutting-edge technologies to build websites that are not only visually appealing but also function flawlessly across devices and platforms. We prioritize seamless navigation, fast loading times, and responsive layouts, guaranteeing an exceptional user experience for all visitors",
     image: "/images/website.png",
   },
   {
-    title: "Search Engine<br/>Optimization (SEO).",
+    title: "Search Engine Optimization (SEO)",
     subtitle: "",
-    description:
+    shortDescription:
       "Unlock the true potential of organic search traffic with our data-driven SEO strategies. <i className='orangeText'>We utilize the latest tools and industry insights to optimize your website's ranking on search engines, driving a steady stream of targeted traffic to your site.</i>",
+    description:
+      "We specialize in bringing your brand's online presence to life through innovative web design and development. Our team of creative minds and technical experts collaborates closely with you to create websites that not only captivate users but also drive tangible results. With a keen eye for aesthetics and user experience, we design websites that are visually stunning and highly intuitive. Whether it's a captivating landing page or a comprehensive e-commerce platform, our designs are tailored to resonate with your target audience, ensuring an engaging and memorable online journey. <br/> Behind every exceptional design is a robust development process. <br/> Our skilled developers employ cutting-edge technologies to build websites that are not only visually appealing but also function flawlessly across devices and platforms. We prioritize seamless navigation, fast loading times, and responsive layouts, guaranteeing an exceptional user experience for all visitors",
+
     image: "/images/seo.png",
   },
   {
-    title: "Email marketing.",
+    title: "Email marketing",
     subtitle: "",
-    description:
+    shortDescription:
       "Leverage the power of email campaigns to nurture leads and maintain customer relationships. <i className='orangeText'>Our team of experts will help you create and execute email marketing strategies that drive conversions and increase revenue.</i>",
+    description:
+      "We specialize in bringing your brand's online presence to life through innovative web design and development. Our team of creative minds and technical experts collaborates closely with you to create websites that not only captivate users but also drive tangible results. With a keen eye for aesthetics and user experience, we design websites that are visually stunning and highly intuitive. Whether it's a captivating landing page or a comprehensive e-commerce platform, our designs are tailored to resonate with your target audience, ensuring an engaging and memorable online journey. <br/> Behind every exceptional design is a robust development process. <br/> Our skilled developers employ cutting-edge technologies to build websites that are not only visually appealing but also function flawlessly across devices and platforms. We prioritize seamless navigation, fast loading times, and responsive layouts, guaranteeing an exceptional user experience for all visitors",
     image: "/images/mail.png",
   },
 ];

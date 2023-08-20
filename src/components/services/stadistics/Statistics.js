@@ -8,7 +8,7 @@ import { colors } from "../../../utils/constants";
 const Statistics = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full h-full px-mobile pt-[5px] md:px-tablet lg:px-desktop pb-desktop grid grid-cols-1 md:grid-cols-3 gap-50">
+    <div className="w-full h-full px-mobile pt-[5px] md:px-tablet lg:px-desktop grid grid-cols-1 md:grid-cols-3 gap-50">
       <Card title="97%">
         97% of consumers search for local businesses online.{" "}
         <CustomATag
@@ -46,7 +46,7 @@ const Statistics = () => {
           }}
           className="text-main"
         >
-          generate 3 times more leads
+          generate 3 times more leads and sales{" "}
         </CustomATag>
         than traditional methods.
       </Card>

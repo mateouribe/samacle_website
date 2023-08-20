@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet";
 import Transition from "../components/Transition";
 import Hero from "../components/services/Hero";
 import Statistics from "../components/services/stadistics/Statistics";
+import CustomSection from "../components/customElements/CustomSection";
+import CustomButton from "../components/customElements/CustomButton";
+import CustomImage from "../components/customElements/CustomImage";
+import Options from "../components/services/options/Options";
 
 const Services = () => {
   return (
@@ -16,6 +20,7 @@ const Services = () => {
       </Helmet>
       <Hero />
       <Statistics />
+      <Options />
     </main>
   );
 };
