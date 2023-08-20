@@ -11,11 +11,11 @@ const Card = ({ service, index }) => {
         </span>
         <h4 className="text-xl text-black">{service.title}</h4>
       </div>
-      <div className="w-full flex gap-30 justify-between items-stretch">
-        <div className="w-[35%]">
+      <div className="w-full flex flex-col md:flex-row gap-30 justify-between items-stretch">
+        <div className="w-full md:w-[50%] lg:w-[35%] h-[300px] md:h-auto">
           <CustomImage image={service.image} onLoad noHover />
         </div>
-        <div className="w-[65%] flex flex-col gap-20 py-mobile">
+        <div className="w-full md:w-[50%] lg:w-[65%] flex flex-col gap-20 md:py-mobile">
           <p
             className="text-black"
             dangerouslySetInnerHTML={{ __html: service.description }}
