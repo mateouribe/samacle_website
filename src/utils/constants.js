@@ -58,27 +58,27 @@ const projects = [
     },
     studyCase: {
       image: "/images/study-main-grooming.png",
-      meet: "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
+      meet: "AmazingPetGrooming, a family-owned business devoted to animal welfare. With branches in Hamilton and Cambridge, Ontario, they offer top-tier care for cats and dogs of all breeds and sizes. The experienced team provides tailored grooming services, ensuring your pet comfort and happiness. From soothing baths to precise trims, the team prioritize your pet well-being, aiming to enhance their health and appearance. Experience their dedicated approach to pet grooming by scheduling an appointment at either location and witnessing the positive impact on your furry companions lives.",
       background:
-        "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+        "In Canada, a country known for its extreme temperature changes and variations in sunlight exposure, people often experience mood swings that can make mental health somewhat fragile. As a result, individuals turn to different methods to address this issue, with the companionship of a pet proving to be one of the most effective ways to tackle this problem. Just as they care for our mental well-being with loyalty and love, we must provide them with the appropriate care to keep them clean and happy. This feeling of owing is where the concept of AmazingPetGrooming for pet care was born, offering personalized and top-quality services in response to this need.",
       development: [
         {
           image: "/images/development1-pago.png",
-          title: "Registration processes.",
+          title: "Organization and Changes.",
           description:
-            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+            "The development of Amazing Pet Grooming was built upon an existing webpage, which could be referred to as version 1.0. However, it needed more dynamism and contained many repetitive and unappealing designs for both leads and customers. This previous situation led to a complete page redesign, focusing on animations, organization, selection menus, and overall visual content.",
         },
         {
           image: "/images/development1-pago.png",
-          title: "Organization and features.",
+          title: "Design Features.",
           description:
-            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+            "Significant design changes were implemented, including a revamped color palette to create a friendlier and more consistent look in alignment with the business. Dynamic movements and transitions were added to various page elements, enhancing user experience through fluid interactions. Additionally, 3D objects were incorporated to provide more precise visualizations of pet sizes and different sections. This addition allows for accurate representations and a more personal connection with the business offerings, ultimately resulting in a more engaging and immersive user experience.",
         },
         {
           image: "/images/development3-pago.png",
-          title: "Purchase processes.",
+          title: "Booking Process",
           description:
-            "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+            "For the booking process, whether it's for a cat or a dog, you will be presented with various services for your pet, ranging from care like hair cutting to a spa day. Once you choose the desired service, you will be asked for additional information, such as your preferred location and the type of package you'd like. In the case of a dog, you will be prompted to indicate its size based on the provided 3D models, ranging from S to XL. After completing these steps, you will have the option to choose a specific member of Amazing Pet Grooming. Next, a confirmation screen will appear, and a calendar will be displayed to finalize the booking. At that point, your appointment will be set, ensuring that your pet receives the best possible care.",
         },
       ],
       challenges:

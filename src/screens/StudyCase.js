@@ -37,7 +37,8 @@ const StudyCase = () => {
         ScrollTrigger.create({
           trigger: ".imgTrigger",
           start: "top 50%",
-          end: "top 0%",
+          end: "bottom 0%",
+          markers: true,
           scrub: true,
           animation: gsap.to(".projectMainImg", {
             scale: 1,
