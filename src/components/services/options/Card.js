@@ -20,7 +20,7 @@ const Card = ({ service, index }) => {
             className="text-black"
             dangerouslySetInnerHTML={{ __html: service.description }}
           ></p>
-          <CustomButton>Become a client</CustomButton>
+          <CustomButton navigateTo="/contact">Become a client</CustomButton>
         </div>
       </div>
     </div>

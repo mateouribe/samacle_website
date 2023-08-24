@@ -12,6 +12,7 @@ import Projects from "../components/home/projects/Projects";
 import Contact from "../components/home/Contact";
 import SectionTitle from "../components/customElements/SectionTitle";
 import { colors } from "../utils/constants";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -45,13 +46,12 @@ const Home = () => {
           }
         ),
       });
-      // gsap.to(body, {
-      //   backgroundColor: colors.white,
-      // });
     }, textAbout);
 
     return () => ctx.revert();
   }, []);
+
+  const { t } = useTranslation();
 
   return (
     <main>
@@ -65,7 +65,9 @@ const Home = () => {
         className="px-mobile md:px-tablet lg:px-desktop pb-tablet md:ob-0"
         ref={textAbout}
       >
-        <SectionTitle className="whyUs text-main">Why choose us?</SectionTitle>
+        <SectionTitle className="whyUs text-main">
+          {t("whyUsTitle")}
+        </SectionTitle>
       </div>
       <WhyUs />
       <Services />

@@ -5,10 +5,12 @@ import DesktopContentSection from "./DesktopContentSection";
 import { colors } from "../../../utils/constants";
 import DesktopPhoto from "./DesktopPhoto";
 import MobileContentSections from "./MobileContentSections";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const WhyUs = () => {
   const container = useRef();
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const images = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
@@ -45,24 +47,24 @@ const WhyUs = () => {
           {/* Desktop content */}
           <div className="desktopContent m-auto px-desktop">
             <DesktopContentSection
-              title="Expand Horizons: Captivating Design"
-              text="A website extends the horizons of a business and increasing the number of people who have access to your product. Our team will take care of extending those horizons by presenting an outstanding and eye-catching effect."
+              title={t("reasonOneTitle")}
+              text={t("reasonOneDescription")}
               bgColor="#E3F9FC"
               backToWhite
             />
             <DesktopContentSection
-              title="Revolutionize Appeal: Dynamic Presentation"
-              text="Refrain from showing your product or service. Discover revolutionary ways to present it to make it more attractive to customers. Our team will be in charge of generating a much more striking image for customers."
+              title={t("reasonTwoTitle")}
+              text={t("reasonTwoDescription")}
               bgColor="#FFF3E5"
             />
             <DesktopContentSection
-              title="Convert Leads: Trusted Dynamic Design"
-              text="Make your website dynamics convert your leads into paying customers. Our team will give your website an attractive design and be equipped with mechanics that will provide confidence and professionalism when navigating it."
+              title={t("reasonThreeTitle")}
+              text={t("reasonThreeDescription")}
               bgColor="#FBE5EB"
             />
             <DesktopContentSection
-              title="Taiolored Excellence: Unique Websites"
-              text="Don't worry about your niche market, as our team is flexible and able to adapt to different needs, creating unique and customized websites that are attractive no matter the business."
+              title={t("reasonFourTitle")}
+              text={t("reasonFourDescription")}
               bgColor="#F0E9F8"
             />
           </div>
@@ -74,26 +76,26 @@ const WhyUs = () => {
           {/* <!-- add mobile content here--> */}
           <div className="mobileContent w-full hidden">
             <MobileContentSections
-              title="Expand Horizons: Captivating Design"
-              text="A website extends the horizons of a business and increasing the number of people who have access to your product. Our team will take care of extending those horizons by presenting an outstanding and eye-catching effect."
+              ttitle={t("reasonOneTitle")}
+              text={t("reasonOneDescription")}
               image="/images/blue.png"
               color="#C5F8FF #8BF5FF #37AFC8"
             />
             <MobileContentSections
-              title="Revolutionize Appeal: Dynamic Presentation"
-              text="Refrain from showing your product or service. Discover revolutionary ways to present it to make it more attractive to customers. Our team will be in charge of generating a much more striking image for customers."
+              title={t("reasonTwoTitle")}
+              text={t("reasonTwoDescription")}
               image="/images/orange.png"
               color="#FFE2C2 #FF9F35 #CF7A1B"
             />
             <MobileContentSections
-              title="Convert Leads: Trusted Dynamic Design"
-              text="Make your website dynamics convert your leads into paying customers. Our team will give your website an attractive design and be equipped with mechanics that will provide confidence and professionalism when navigating it."
+              title={t("reasonThreeTitle")}
+              text={t("reasonThreeDescription")}
               image="/images/pink.png"
               color="#FEB6CC #DF3866 #AA2147"
             />
             <MobileContentSections
-              title="Taiolored Excellence: Unique Websites"
-              text="Don't worry about your niche market, as our team is flexible and able to adapt to different needs, creating unique and customized websites that are attractive no matter the business."
+              title={t("reasonFourTitle")}
+              text={t("reasonFourDescription")}
               image="/images/purple.png"
               color="#D8BBFC #8952CB #4D21AA"
             />

@@ -4,14 +4,16 @@ import { Expo, gsap } from "gsap";
 import { colors } from "../utils/constants";
 import SplitText from "../utils/Split3.min.js";
 import { useStatesContext } from "../context/StatesProvider";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const mobileTl = useRef(null);
   const mobileContainer = useRef(null);
   const desktopTl = useRef(null);
   const desktopContainer = useRef(null);
+  const languageTl = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { language, setLanguage } = useStatesContext();
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -26,6 +28,16 @@ const Navbar = () => {
       tl.to(desktopContainer.current, {
         y: 0,
         duration: 1,
+        ease: Expo.easeInOut,
+      });
+
+      //Language container animation
+      languageTl.current = gsap.timeline({ paused: true });
+
+      languageTl.current.to(".language-options", {
+        scale: 1,
+        opacity: 1,
+        duration: 0.3,
         ease: Expo.easeInOut,
       });
     }, desktopContainer);
@@ -152,8 +164,25 @@ const Navbar = () => {
       //  mobileTl.current.timeScale(1);
     }
   };
+
+  const onClickLanguage = () => {
+    setIsLanguageOpen(!isLanguageOpen);
+    if (isLanguageOpen) {
+      languageTl.current.reverse();
+      setIsMenuOpen(false);
+    } else {
+      languageTl.current.play();
+    }
+  };
+
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
-    <nav className="w-full ">
+    <nav className="w-full relative z-[10]">
       <ul
         className="hidden lg:flex w-full flex-row justify-between p-mobile md:px-tablet lg:px-desktop"
         ref={desktopContainer}
@@ -200,19 +229,50 @@ const Navbar = () => {
             </CustomLink>
           </ul>
           <div
-            className="text-black flex text-sm relative uppercase"
-            onClick={() => {
-              if (language === "en") {
-                setLanguage("fr");
-              } else {
-                setLanguage("en");
-              }
-            }}
+            className="text-black flex flex-col text-sm relative uppercase language-container z-[990]"
+            onClick={onClickLanguage}
+            onMouseDown={(e) => gsap.to(e.currentTarget, { scale: 0.8 })}
+            onMouseUp={(e) => gsap.to(e.currentTarget, { scale: 1 })}
           >
-            {language}
-            <span className="material-symbols-outlined text-[14px] self-start mt-[3px]">
+            <span className="material-symbols-outlined text-black hover:text-main">
               language
             </span>
+            <div className="bg-white absolute left-0 top-full min-w-max py-5 rounded-10 rounded-tl-[0px] border-[1px] border-gray language-options opacity-0 scale-0 z-[-10]">
+              <ul>
+                <li
+                  className="px-10 hover:bg-lightGray"
+                  onClick={() => {
+                    changeLanguage("en");
+                  }}
+                >
+                  English
+                </li>
+                <li
+                  className="px-10 hover:bg-lightGray"
+                  onClick={() => {
+                    changeLanguage("fr");
+                  }}
+                >
+                  Français
+                </li>
+                <li
+                  className="px-10 hover:bg-lightGray"
+                  onClick={() => {
+                    changeLanguage("sp");
+                  }}
+                >
+                  Español
+                </li>
+                <li
+                  className="px-10 hover:bg-lightGray"
+                  onClick={() => {
+                    changeLanguage("hi");
+                  }}
+                >
+                  Hindi{" "}
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
       </ul>

@@ -47,14 +47,23 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
       <figure className="w-[100%] md:w-[45%] h-[90vh] flex flex-col gap-10">
         <Link
           className="h-full cursor-none"
-          to={`/projects/study_case/${project.info.link}`}
+          to={project.completed && `/projects/study_case/${project.info.link}`}
         >
-          <div className="w-full h-full overflow-hidden rounded-10">
+          <div className="w-full h-full overflow-hidden rounded-10 relative">
             <CustomImage
               image={project.image}
               position={positions}
               index={index}
+              onLoad={!project.completed && true}
+              noHover={!project.completed && true}
             />
+            {!project.completed && (
+              <div className="w-full h-full absolute left-0 top-0 bg-black/80 rounded-10 flex justify-center items-center z-[999]">
+                <span className="text-[20px] md:text-[30px] text-gray">
+                  Coming soon...
+                </span>
+              </div>
+            )}
           </div>
           <figcaption className="flex justify-between items-start projectInfo">
             <h5 className="text-black">

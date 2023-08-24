@@ -63,26 +63,26 @@ const projects = [
         "In Canada, a country known for its extreme temperature changes and variations in sunlight exposure, people often experience mood swings that can make mental health somewhat fragile. As a result, individuals turn to different methods to address this issue, with the companionship of a pet proving to be one of the most effective ways to tackle this problem. Just as they care for our mental well-being with loyalty and love, we must provide them with the appropriate care to keep them clean and happy. This feeling of owing is where the concept of AmazingPetGrooming for pet care was born, offering personalized and top-quality services in response to this need.",
       development: [
         {
-          image: "/images/development1-pago.png",
+          image: "/images/changes_grooming.png",
           title: "Organization and Changes.",
           description:
             "The development of Amazing Pet Grooming was built upon an existing webpage, which could be referred to as version 1.0. However, it needed more dynamism and contained many repetitive and unappealing designs for both leads and customers. This previous situation led to a complete page redesign, focusing on animations, organization, selection menus, and overall visual content.",
         },
+        // {
+        //   image: "/images/development1-pago.png",
+        //   title: "Design Features.",
+        //   description:
+        //     "Significant design changes were implemented, including a revamped color palette to create a friendlier and more consistent look in alignment with the business. Dynamic movements and transitions were added to various page elements, enhancing user experience through fluid interactions. Additionally, 3D objects were incorporated to provide more precise visualizations of pet sizes and different sections. This addition allows for accurate representations and a more personal connection with the business offerings, ultimately resulting in a more engaging and immersive user experience.",
+        // },
         {
-          image: "/images/development1-pago.png",
-          title: "Design Features.",
-          description:
-            "Significant design changes were implemented, including a revamped color palette to create a friendlier and more consistent look in alignment with the business. Dynamic movements and transitions were added to various page elements, enhancing user experience through fluid interactions. Additionally, 3D objects were incorporated to provide more precise visualizations of pet sizes and different sections. This addition allows for accurate representations and a more personal connection with the business offerings, ultimately resulting in a more engaging and immersive user experience.",
-        },
-        {
-          image: "/images/development3-pago.png",
+          image: "/images/booking_process.gif",
           title: "Booking Process",
           description:
             "For the booking process, whether it's for a cat or a dog, you will be presented with various services for your pet, ranging from care like hair cutting to a spa day. Once you choose the desired service, you will be asked for additional information, such as your preferred location and the type of package you'd like. In the case of a dog, you will be prompted to indicate its size based on the provided 3D models, ranging from S to XL. After completing these steps, you will have the option to choose a specific member of Amazing Pet Grooming. Next, a confirmation screen will appear, and a calendar will be displayed to finalize the booking. At that point, your appointment will be set, ensuring that your pet receives the best possible care.",
         },
       ],
       challenges:
-        "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        "Developing this project not only allowed us to connect with our pets and appreciate the excellent care provided to them, but also incorporates innovative design techniques. These techniques include the use of 3D elements to offer users a more comprehensive and interactive guide. Furthermore, multiple features have been integrated, such as maps.",
       figmaDesigns: ["/images/figmaDesktopGrooming.png"],
       designSystem: {
         typography: [
@@ -150,7 +150,7 @@ const projects = [
         },
       ],
       challenges:
-        "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+        "During the development, we gained experience in designing and creating e-commerce type online stores, including their respective sections, shopping carts, and product categorization. An additional challenge for this case was integrating PagoLinea with PagoTienda, a solution designed to streamline the purchasing process.",
       figmaDesigns: [
         "/images/figmaDesktopPago.png",
         "/images/figmaMobilePago.png",
@@ -182,13 +182,13 @@ const projects = [
     completed: false,
     info: {
       link: "pago-tienda",
-      title: "Pago Tienda",
+      title: "UnitradeFX",
       place: "Argentina",
       date: "2023",
       tags: ["UI Design", "Web Development"],
       technologies: ["React JS", "GSAP", "Tailwind CSS"],
     },
-    image: "/images/projects_pago_tienda.png",
+    image: "/images/projects_copy.png",
     mockupImages: {
       big: "/images/mockupBigPago.png",
       mid: "/images/mockupMidPago.png",

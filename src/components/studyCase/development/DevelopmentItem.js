@@ -5,15 +5,15 @@ import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
-const DevelopmentItem = ({ index, item }) => {
+const DevelopmentItem = ({ index, item, gif }) => {
   const container = useRef(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: container.current,
-        start: index === 0 ? "top 92.85%" : "top 120%",
-        end: index === 0 ? "bottom 92.85%" : "bottom 120%",
+        start: index === 0 ? "top 92.85%" : "top 130%",
+        end: index === 0 ? "bottom 92.85%" : "bottom 130%",
         animation: gsap.fromTo(
           ".itemText",
           {
@@ -55,8 +55,8 @@ const DevelopmentItem = ({ index, item }) => {
                   end: "bottom 92.85%",
                 }
               : {
-                  start: "top 120%",
-                  end: "bottom 120%",
+                  start: "top 130%",
+                  end: "bottom 130%",
                 }
           }
           duration={2}

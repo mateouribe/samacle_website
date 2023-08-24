@@ -59,15 +59,12 @@ const Development = ({ project }) => {
           <SectionTitle className="text-black pl-mobile md:pl-tablet lg:pl-desktop developmentTitle">
             Development
           </SectionTitle>
-          <div className="w-full flex flex-col gap-100 md:gap-10">
+          <div className="w-full flex flex-col gap-100 md:gap-0">
             {project.studyCase.development.map((item, index) => (
               <DevelopmentItem index={index} item={item} key={index} />
             ))}
-            <span className="text-black px-mobile md:px-tablet lg:px-desktop py-tablet text-[25px]">
-              To create a groundbreaking operating experience, the NODO Film
-              Systems allowed camera operators to adjust the weight of the
-              wheels, control mass and drag, and create different camera
-              simulations.
+            <span className="text-black px-mobile md:px-tablet lg:px-desktop py-desktop text-[25px]">
+              {project.studyCase.challenges}
             </span>
           </div>
         </>

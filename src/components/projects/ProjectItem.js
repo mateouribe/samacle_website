@@ -50,12 +50,16 @@ const ProjectItem = ({ project, index }) => {
     <figure
       key={index}
       onMouseEnter={() => {
-        tl.current.play();
-        tl.current.duration(2);
+        if (project.completed) {
+          tl.current.play();
+          tl.current.duration(2);
+        }
       }}
       onMouseLeave={() => {
-        tl.current.reverse();
-        tl.current.duration(0.8);
+        if (project.completed) {
+          tl.current.reverse();
+          tl.current.duration(0.8);
+        }
       }}
     >
       <Link
@@ -63,9 +67,9 @@ const ProjectItem = ({ project, index }) => {
           index === 0 && "animateFirstProject"
         }`}
         ref={container}
-        to={`/projects/study_case/${project.info.link}`}
+        to={project.completed && `/projects/study_case/${project.info.link}`}
       >
-        <div className="w-full h-full flex gap-20 projectContainer">
+        <div className="w-full h-full flex gap-20 projectContainer relative">
           {/* image left */}
           <div
             className="w-full md:w-1/2 h-full rounded-10"
@@ -102,6 +106,14 @@ const ProjectItem = ({ project, index }) => {
               }}
             />
           </div>
+
+          {!project.completed && (
+            <div className="w-full h-full absolute left-0 top-0 bg-black/80 rounded-10 flex justify-center items-center">
+              <span className="text-[20px] md:text-[30px] text-gray">
+                Coming soon...
+              </span>
+            </div>
+          )}
         </div>
         <figcaption className="flex justify-between">
           <h5 className="text-black textProject">

@@ -11,7 +11,6 @@ import Cursor from "./components/Cursor";
 import { AnimatePresence } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import Footer from "./components/Footer";
-// import Footer from "./components/Footer";
 
 const App = () => {
   const location = useLocation();
@@ -29,11 +28,9 @@ const App = () => {
     requestAnimationFrame(raf);
   }, []);
 
-
   return (
     <>
       <Navbar />
-
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
