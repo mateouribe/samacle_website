@@ -12,15 +12,20 @@ import DesignSystem from "../components/studyCase/designSystem/DesignSystem";
 import { Expo, gsap } from "gsap";
 import Header from "../components/studyCase/Header";
 import { ScrollTrigger } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const StudyCase = () => {
   const { link } = useParams();
   const [project, setProject] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const container = useRef(null);
+  const { t } = useTranslation();
+  const item = useRef(null);
+
   useLayoutEffect(() => {
     const project = projects.find((project) => project.info.link === link);
     setProject(project);
+    item.current = `studyCases.projects.project${project.id}`;
     setIsLoaded(true);
   }, [link]);
 
@@ -55,7 +60,7 @@ const StudyCase = () => {
       </Helmet>
       {isLoaded && (
         <>
-          <Header project={project} />
+          <Header project={item.current} />
           <div className="w-full h-[80vh] imgTrigger">
             <div className="w-full h-full relative projectMainImg">
               <CustomImage
@@ -66,8 +71,8 @@ const StudyCase = () => {
               />
             </div>
           </div>
-          <Context project={project} />
-          <Development project={project} />
+          <Context project={item.current} />
+          <Development project={project} item={item.current} />
           <Designs project={project} />
           <DesignSystem project={project} />
           <ClientsOpinion project={project} />

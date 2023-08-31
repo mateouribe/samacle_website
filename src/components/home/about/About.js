@@ -5,10 +5,12 @@ import { colors } from "../../../utils/constants";
 import AboutLetter from "./AboutLetter";
 import SplitText from "../../../utils/Split3.min.js";
 import CustomSection from "../../customElements/CustomSection";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const texts = gsap.utils.toArray(".aboutBlock");
@@ -52,11 +54,7 @@ const About = () => {
 
           <div className="hidden lg:block lg:absolute right-0 top-[calc(100%+50px)] max-w-[466.41px] lg:max-w-[600.88px] z-[200]">
             <p className="text-black text-justify aboutBlock">
-              We are an agency in Waterloo, ON dedicated to developing and
-              designing websites for emerging and mid-market businesses. Our
-              mission is to deliver dynamic websites with attractive and
-              intuitive mechanics that generate an impact on the future of the
-              business of each of our clients.
+              {t("home.ourMission")}
             </p>
           </div>
         </div>

@@ -66,7 +66,7 @@ const Home = () => {
         ref={textAbout}
       >
         <SectionTitle className="whyUs text-main">
-          {t("whyUsTitle")}
+          {t("home.whyus.title")}
         </SectionTitle>
       </div>
       <WhyUs />

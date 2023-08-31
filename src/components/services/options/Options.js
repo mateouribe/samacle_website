@@ -1,6 +1,4 @@
-import React from "react";
-import CustomImage from "../../customElements/CustomImage";
-import CustomButton from "../../customElements/CustomButton";
+import React, { useEffect } from "react";
 import CustomSection from "../../customElements/CustomSection";
 import { services } from "../../../utils/constants";
 import Card from "./Card";
@@ -12,7 +10,7 @@ const Options = () => {
       className="h-full flex flex-col gap-100 pt-desktop"
     >
       {services.map((service, index) => (
-        <Card service={service} index={index} key={index} />
+        <Card serviceImage={service.image} index={index} key={index} />
       ))}
     </CustomSection>
   );

@@ -14,6 +14,7 @@ const Navbar = () => {
   const languageTl = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -182,7 +183,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full relative z-[10]">
+    <nav className="w-full relative z-[200]">
       <ul
         className="hidden lg:flex w-full flex-row justify-between p-mobile md:px-tablet lg:px-desktop"
         ref={desktopContainer}
@@ -197,35 +198,35 @@ const Navbar = () => {
               className="desktopItem"
               image="/images/homeSs.png"
             >
-              Home
+              {t("nav.home")}
             </CustomLink>
             <CustomLink
               route="/services"
               className="desktopItem"
               image="/images/servicesSs.png"
             >
-              Services
+              {t("nav.services")}
             </CustomLink>
             <CustomLink
               route="/projects"
               className="desktopItem"
               image="/images/projectsSs.png"
             >
-              Projects
+              {t("nav.projects")}
             </CustomLink>
             <CustomLink
               route="/about"
               className="desktopItem"
               image="/images/aboutSs.png"
             >
-              About
+              {t("nav.about")}
             </CustomLink>
             <CustomLink
               route="/contact"
               className="desktopItem"
               image="/images/contactSs.png"
             >
-              Contact
+              {t("nav.contact")}
             </CustomLink>
           </ul>
           <div
@@ -279,7 +280,7 @@ const Navbar = () => {
 
       {/* Mobile */}
       <div
-        className="fixed flex lg:hidden w-full justify-between items-start p-mobile md:p-tablet z-[9999]"
+        className="fixed flex lg:hidden w-full justify-between items-start p-mobile md:p-tablet z-[999999]"
         ref={mobileContainer}
       >
         {/* Burger */}
@@ -310,35 +311,35 @@ const Navbar = () => {
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
-                Home
+                {t("nav.home")}
               </CustomLink>
               <CustomLink
                 route="/services"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
-                Services
+                {t("nav.services")}
               </CustomLink>
               <CustomLink
                 route="/projects"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
-                Projects
+                {t("nav.projects")}
               </CustomLink>
               <CustomLink
                 route="/about"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
-                About
+                {t("nav.about")}
               </CustomLink>
               <CustomLink
                 route="/contact"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
-                Contact
+                {t("nav.contact")}
               </CustomLink>
             </ul>
           </div>

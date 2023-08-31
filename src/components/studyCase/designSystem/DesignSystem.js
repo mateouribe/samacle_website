@@ -7,11 +7,13 @@ import TableRow from "./TableRow";
 import ColorItem from "./ColorItem";
 import { changeBgColorAnimation } from "../../../utils/gsapAnimations";
 import { colors } from "../../../utils/constants";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
-const DesignSystem = ({ project }) => {
+const DesignSystem = ({ project, item }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (project !== undefined && project !== null && project !== []) {
@@ -79,38 +81,46 @@ const DesignSystem = ({ project }) => {
 
   return (
     <section
-      className="w-full min-h-[100vh] md:h-view flex flex-col gap-50 py-desktop px-mobile md:px-tablet lg:px-desktop bg-black"
+      className="w-full min-h-[100vh] md:min-h-view flex flex-col gap-50 py-desktop px-mobile md:px-tablet lg:px-desktop bg-black"
       ref={container}
     >
       {isLoaded && (
         <>
-          <SectionTitle noMaxHeight className="text-white styleGuideTitle">
-            Style
-            <br />
-            guide.
-          </SectionTitle>
-          <div className="w-full h-full flex flex-col md:flex-row gap-50 tablesContainer">
+          <SectionTitle
+            noMaxHeight
+            className="text-white styleGuideTitle"
+            text={t(`studyCases.text.designSystem.title`)}
+          ></SectionTitle>
+          <div className="w-full flex flex-col md:flex-row gap-50 items-stretch tablesContainer">
             {/* Typography */}
             <Table
-              title="Typography"
+              title={t(`studyCases.text.designSystem.table.typography.title`)}
               subtitle="Font family: Poppins"
               className="overflow-y-scroll"
             >
               <div className="flex flex-col gap-10">
                 {/* Table header */}
-                <div className="grid grid-cols-4 border-b-[1px] border-gray pb-5">
+                <div className="grid grid-cols-4 border-b-[1px] border-gray pb-5 ">
                   <div className="col-span-2 pl-10">
                     <span className="text-xsm text-gray uppercase">
-                      HEADINGS
+                      {t(
+                        `studyCases.text.designSystem.table.typography.heading`
+                      )}
                     </span>
                   </div>
                   <div className="col-span-1">
                     <span className="text-xsm text-gray uppercase">
-                      DESKTOP
+                      {t(
+                        `studyCases.text.designSystem.table.typography.desktop`
+                      )}
                     </span>
                   </div>
                   <div className="col-span-1">
-                    <span className="text-xsm text-gray uppercase">MOBILE</span>
+                    <span className="text-xsm text-gray uppercase">
+                      {t(
+                        `studyCases.text.designSystem.table.typography.mobile`
+                      )}
+                    </span>
                   </div>
                 </div>
 
@@ -131,8 +141,8 @@ const DesignSystem = ({ project }) => {
 
             {/* Colors */}
             <Table
-              title="Colours palette"
-              className="md:gap-50 md:h-full overflow-y-scroll"
+              title={t(`studyCases.text.designSystem.table.colors`)}
+              className="md:gap-50 overflow-y-scroll"
             >
               <div className="w-full h-[60vh] md:h-full grid grid-cols-3 gap-20">
                 {project.studyCase.designSystem.colors.map((item, index) =>

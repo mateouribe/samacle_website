@@ -1,13 +1,14 @@
 import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useTranslation } from "react-i18next";
 
-const ServiceCard = ({ service }) => {
-  const container = useRef(null);
+const ServiceCard = ({ index }) => {
+  const { t } = useTranslation();
+  const item = `services.options.service${index + 1}`;
 
   return (
     <div
       className="item-service w-full grid grid-cols-2 border-b-[1px] border-white py-tablet gap-20 lg:pl-tablet opacity-70 hover:opacity-100 "
-      ref={container}
       style={{
         transition: "0.5s",
       }}
@@ -15,19 +16,21 @@ const ServiceCard = ({ service }) => {
       <div className="w-full h-full">
         <h4
           className="text-white text-[20px]"
-          dangerouslySetInnerHTML={{ __html: service.title }}
+          dangerouslySetInnerHTML={{ __html: t(`${item}.title`) }}
         ></h4>
-        {service.subtitle !== "" && (
-          <span className="text-xsm text-white">{service.subtitle}</span>
+
+        {t(item.subtitle) !== "" && (
+          <span className="text-xsm text-white">{t(`${item}.subtitle`)}</span>
         )}
       </div>
       <div className="w-full h-full">
         <p
           className="text-white text-text text-justify"
-          dangerouslySetInnerHTML={{ __html: service.shortDescription }}
+          dangerouslySetInnerHTML={{ __html: t(`${item}.shortDescription`) }}
         ></p>
       </div>
     </div>
+    // <p>{t(item.title)}</p>
   );
 };
 

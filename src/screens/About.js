@@ -8,11 +8,13 @@ import SplitText from "../utils/Split3.min";
 import Hero from "../components/about/Hero";
 import CustomImage from "../components/customElements/CustomImage";
 import Process from "../components/about/Process";
-import { colors } from "../utils/constants";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
@@ -56,20 +58,10 @@ const About = () => {
           <CustomImage image="/images/team_working.png" onLoad noHover />
         </div>
         <p className="w-[70%] md:w-1/2 text-justify textAbout text-black">
-          We are an agency in Waterloo, ON. dedicated to developing and
-          designing websites for emerging and mid-market businesses. Our mission
-          is to deliver dynamic websites with attractive and intuitive mechanics
-          that generate an impact on the future of the business of each of our
-          clients.
+          {t("home.ourMission")}
         </p>
       </div>
       <Process />
-      <div>
-        {/* Paste here gif */}
-        <div>
-          <img src="/images/mobile.gif" alt="Coming soon" />
-        </div>
-      </div>
     </main>
   );
 };

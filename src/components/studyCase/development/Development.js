@@ -4,11 +4,14 @@ import DevelopmentItem from "./DevelopmentItem";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitText from "../../../utils/Split3.min";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
-const Development = ({ project }) => {
+const Development = ({ project, item }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const container = useRef(null);
+  const { t } = useTranslation();
+
   useEffect(() => {
     if (project !== undefined && project !== null && project !== []) {
       setIsLoaded(true);
@@ -57,14 +60,19 @@ const Development = ({ project }) => {
       {isLoaded && (
         <>
           <SectionTitle className="text-black pl-mobile md:pl-tablet lg:pl-desktop developmentTitle">
-            Development
+            {t("studyCases.text.development.title")}
           </SectionTitle>
           <div className="w-full flex flex-col gap-100 md:gap-0">
-            {project.studyCase.development.map((item, index) => (
-              <DevelopmentItem index={index} item={item} key={index} />
+            {project.studyCase.development.map((element, index) => (
+              <DevelopmentItem
+                index={index}
+                item={item}
+                key={index}
+                image={element.image}
+              />
             ))}
             <span className="text-black px-mobile md:px-tablet lg:px-desktop py-desktop text-[25px]">
-              {project.studyCase.challenges}
+              {t(`${item}.studyCase.challenges`)}
             </span>
           </div>
         </>

@@ -4,10 +4,13 @@ import ContextItem from "./ContextItem";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitText from "../../../utils/Split3.min";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const Context = ({ project }) => {
   const container = useRef(null);
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
@@ -38,18 +41,21 @@ const Context = ({ project }) => {
       className="py-desktop px-mobile md:px-tablet lg:px-desktop"
       ref={container}
     >
-      <SectionTitle className="text-black ctxTitle" noMaxHeight>
-        Some
-        <br />
-        Context.
-      </SectionTitle>
+      <SectionTitle
+        className="text-black ctxTitle"
+        noMaxHeight
+        text={t("studyCases.text.context.title")}
+      ></SectionTitle>
       <div className="w-full h-full flex flex-col">
         <ContextItem
-          title="Meet the team"
-          text={project.studyCase.meet}
+          title={t("studyCases.text.context.team")}
+          text={t(`${project}.studyCase.meet`)}
           hasButton
         />
-        <ContextItem title="Background" text={project.studyCase.background} />
+        <ContextItem
+          title={t("studyCases.text.context.background")}
+          text={t(`${project}.studyCase.background`)}
+        />
       </div>
     </section>
   );

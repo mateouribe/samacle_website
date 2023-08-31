@@ -9,10 +9,11 @@ import SocialMedia from "../components/SocialMedia";
 import CustomATag from "../components/customElements/CustomATag";
 import SectionTitle from "../components/customElements/SectionTitle";
 import { Expo, gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -64,13 +65,11 @@ const Contact = () => {
         className="flex min-h-[100vh] flex-col justify-between md:flex-row md:h-view gap-50 py-desktop contactContainer"
       >
         <div className="w-full md:w-[30%] md:h-full flex flex-row md:flex-col items-start justify-between">
-          <SectionTitle className="text-black leading-[90%]" noMaxHeight>
-            Let's <br />
-            <i>design,</i>
-            <br />
-            let's <br />
-            <i>deliver.</i>
-          </SectionTitle>
+          <SectionTitle
+            className="text-black leading-[90%]"
+            noMaxHeight
+            text={t("contact.welcomeMessage")}
+          ></SectionTitle>
 
           <div className="flex flex-col gap-20">
             <ul className="text-black">
@@ -103,7 +102,7 @@ const Contact = () => {
         </div>
         <div className="w-full md:w-[60%] h-full flex flex-col justify-start items-center gap-30">
           <h4 className="text-black text-text md:text-subtitleTablet">
-            What can we do for you?
+            {t("contact.formTitle")}
           </h4>
           <form
             className="w-full flex flex-col gap-10"
@@ -133,7 +132,7 @@ const Contact = () => {
               required
             />
             <CustomButton className="mt-20" type="submit">
-              Send
+              {t("button.send")}
             </CustomButton>
           </form>
         </div>

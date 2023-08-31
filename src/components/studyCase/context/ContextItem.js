@@ -3,9 +3,12 @@ import CustomButton from "../../customElements/CustomButton";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import LineTitle from "../../customElements/LineTitle";
+import { useTranslation } from "react-i18next";
 
 const ContextItem = ({ title, text, hasButton = false }) => {
   const container = useRef(null);
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
@@ -44,7 +47,7 @@ const ContextItem = ({ title, text, hasButton = false }) => {
         <div className="w-full md:w-[70%] flex flex-col gap-50 contextContainer">
           <span className="text-main text-sm md:hidden">{title}</span>
           <p className="text-black w-full md:w-[90%] text-left">{text}</p>
-          {hasButton && <CustomButton>VISIT SITE</CustomButton>}
+          {hasButton && <CustomButton>{t("button.visitSite")}</CustomButton>}
         </div>
         <LineTitle title={title} />
       </div>

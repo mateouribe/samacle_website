@@ -4,9 +4,11 @@ import { colors } from "../utils/constants";
 import CustomATag from "./customElements/CustomATag";
 import { useNavigate } from "react-router";
 import { navigateToPage } from "../utils/navigateToPage";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   return (
     <footer className="w-full h-[80vh] bg-lightGray px-mobile md:px-tablet lg:px-desktop pt-tablet flex flex-col rounded-t-[10%]">
       <div className="w-full h-full flex flex-col md:flex-row justify-between gap-100 md:gap-0">
@@ -24,7 +26,7 @@ const Footer = () => {
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
-                  Home
+                  {t("nav.home")}
                 </CustomATag>
               </li>
               <li
@@ -34,7 +36,7 @@ const Footer = () => {
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
-                  Services
+                  {t("nav.services")}
                 </CustomATag>
               </li>
               <li
@@ -44,7 +46,7 @@ const Footer = () => {
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
-                  Projects
+                  {t("nav.projects")}
                 </CustomATag>
               </li>
               <li
@@ -54,7 +56,7 @@ const Footer = () => {
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
-                  About
+                  {t("nav.about")}
                 </CustomATag>
               </li>
               <li
@@ -64,12 +66,12 @@ const Footer = () => {
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
-                  Contact
+                  {t("nav.contact")}
                 </CustomATag>
               </li>
             </ul>
             <ul>
-              <li className="text-black">Contact</li>
+              <li className="text-black">{t("nav.contact")}</li>
               <li className="text-black font-light text-sm">
                 <CustomATag href="22" colorHover="#9E9E9E">
                   hello@samacle.com
@@ -99,8 +101,7 @@ const Footer = () => {
         <div className="w-full md:w-[50%] h-full">
           <label className="flex flex-col gap-10 cursor-none">
             <p className="text-[22px] md:text-[32px] text-black">
-              Get 10% discount on your next project! Subscribe to our
-              newsletter.
+              {t("footer.promotionFooter")}
             </p>
             <input
               className="w-full px-20 py-20 bg-transparent border-[1px] border-gray rounded-10 text-gray placeholder:text-gray focus-visible:outline-none focus-visible:border-main cursor-none"

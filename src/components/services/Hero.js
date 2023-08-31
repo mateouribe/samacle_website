@@ -4,9 +4,11 @@ import CustomImage from "../customElements/CustomImage";
 import { gsap, Expo } from "gsap";
 import SplitText from "../../utils/Split3.min";
 import { ScrollTrigger } from "gsap/all";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const splitTitleParent = new SplitText("#servicesText", {
@@ -57,7 +59,7 @@ const Hero = () => {
           className="text-[20px] lg:text-[30px] font-swearDisplay leading-[95%] text-black text-right w-[80%] md:w-1/2 px-mobile md:px-tablet lg:px-desktop"
           id="servicesText"
         >
-          We believe in your success: Unveiling our brand empowerment services
+          {t("services.welcomeMessage")}
         </h4>
         <div className="w-full h-[80vh] imgTriggerS">
           <div className="w-full h-full relative servicesMainImg">

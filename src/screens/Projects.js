@@ -8,10 +8,12 @@ import ProjectItem from "../components/projects/ProjectItem";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitText from "../utils/Split3.min";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     let itemsTitle = [];
@@ -100,20 +102,21 @@ const Projects = () => {
       >
         <div className="w-full flex justify-between items-center">
           <div>
-            <SectionTitle className="text-black italic leading-[100%] projectsPageTitle">
-              Dream,
-            </SectionTitle>
-            <SectionTitle className="text-black italic leading-[100%] projectsPageTitle">
-              Design,
-            </SectionTitle>
-            <SectionTitle className="text-black italic leading-[100%] projectsPageTitle">
-              Deliver.
-            </SectionTitle>
+            <SectionTitle
+              className="text-black italic leading-[100%] projectsPageTitle"
+              text={t("projects.welcomeMessage.one")}
+            ></SectionTitle>
+            <SectionTitle
+              className="text-black italic leading-[100%] projectsPageTitle"
+              text={t("projects.welcomeMessage.two")}
+            ></SectionTitle>
+            <SectionTitle
+              className="text-black italic leading-[100%] projectsPageTitle"
+              text={t("projects.welcomeMessage.three")}
+            ></SectionTitle>
           </div>
           <p className="w-[70%] md:w-[50%] lg:w-[30%] text-justify text-black projectPageText leading-[90%]">
-            We take pride in every collaboration, using statistics and analytics
-            as our guiding beacons to navigate the ever-evolving digital
-            landscape.
+            {t("projects.welcomeMessage.text")}
           </p>
         </div>
         {projects.map((project, index) => (

@@ -7,10 +7,12 @@ import { changeBgColorAnimation } from "../../../utils/gsapAnimations";
 import SplitText from "../../../utils/Split3.min.js";
 import ProjectItem from "./ProjectItem";
 import SectionTitle from "../../customElements/SectionTitle";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const splitTitleParent = new SplitText(".projectTitle", {
@@ -64,9 +66,10 @@ const Projects = () => {
   return (
     <div ref={container}>
       <CustomSection hasPadding className="flex flex-col gap-50 min-h-[100vh]">
-        <SectionTitle className="projectTitle text-main">
-          Our projects
-        </SectionTitle>
+        <SectionTitle
+          className="projectTitle text-main"
+          text={t("home.projects.title")}
+        ></SectionTitle>
         <div className="w-full h-full grid gap-100 md:gap-50 grid-cols-1 md:grid-cols-12 ">
           {projects.map((project, index) =>
             index === 0 ? (

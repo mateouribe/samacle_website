@@ -47,24 +47,24 @@ const WhyUs = () => {
           {/* Desktop content */}
           <div className="desktopContent m-auto px-desktop">
             <DesktopContentSection
-              title={t("reasonOneTitle")}
-              text={t("reasonOneDescription")}
+              title={t("home.whyUs.reasonOneTitle")}
+              text={t("home.whyUs.reasonOneDescription")}
               bgColor="#E3F9FC"
               backToWhite
             />
             <DesktopContentSection
-              title={t("reasonTwoTitle")}
-              text={t("reasonTwoDescription")}
+              title={t("home.whyUs.reasonTwoTitle")}
+              text={t("home.whyUs.reasonTwoDescription")}
               bgColor="#FFF3E5"
             />
             <DesktopContentSection
-              title={t("reasonThreeTitle")}
-              text={t("reasonThreeDescription")}
+              title={t("home.whyUs.reasonThreeTitle")}
+              text={t("home.whyUs.reasonThreeDescription")}
               bgColor="#FBE5EB"
             />
             <DesktopContentSection
-              title={t("reasonFourTitle")}
-              text={t("reasonFourDescription")}
+              title={t("home.whyUs.reasonFourTitle")}
+              text={t("home.whyUs.reasonFourDescription")}
               bgColor="#F0E9F8"
             />
           </div>
@@ -76,26 +76,26 @@ const WhyUs = () => {
           {/* <!-- add mobile content here--> */}
           <div className="mobileContent w-full hidden">
             <MobileContentSections
-              ttitle={t("reasonOneTitle")}
-              text={t("reasonOneDescription")}
+              ttitle={t("home.whyUs.reasonOneTitle")}
+              text={t("home.whyUs.reasonOneDescription")}
               image="/images/blue.png"
               color="#C5F8FF #8BF5FF #37AFC8"
             />
             <MobileContentSections
-              title={t("reasonTwoTitle")}
-              text={t("reasonTwoDescription")}
+              title={t("home.whyUs.reasonTwoTitle")}
+              text={t("home.whyUs.reasonTwoDescription")}
               image="/images/orange.png"
               color="#FFE2C2 #FF9F35 #CF7A1B"
             />
             <MobileContentSections
-              title={t("reasonThreeTitle")}
-              text={t("reasonThreeDescription")}
+              title={t("home.whyUs.reasonThreeTitle")}
+              text={t("home.whyUs.reasonThreeDescription")}
               image="/images/pink.png"
               color="#FEB6CC #DF3866 #AA2147"
             />
             <MobileContentSections
-              title={t("reasonFourTitle")}
-              text={t("reasonFourDescription")}
+              title={t("home.whyUs.reasonFourTitle")}
+              text={t("home.whyUs.reasonFourDescription")}
               image="/images/purple.png"
               color="#D8BBFC #8952CB #4D21AA"
             />

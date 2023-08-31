@@ -2,9 +2,11 @@ import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { Expo, gsap } from "gsap";
 import CustomSection from "../customElements/CustomSection";
 import SplitText from "../../utils/Split3.min";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const splitTitleParent = new SplitText("#aboutTitle", {
@@ -46,8 +48,7 @@ const Hero = () => {
           className="text-[45px] md:text-[55px] lg:text-[65px] xl:text-[75px] font-swearDisplay leading-[95%] w-full lg:w-[90%] text-black"
           id="aboutTitle"
         >
-          We live and breathe design, innovation, and the thrill of helping
-          businesses grow.
+          {t("about.welcomeMessage")}
         </h4>
       </CustomSection>
     </div>

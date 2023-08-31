@@ -1,7 +1,10 @@
 import React from "react";
 import CustomButton from "../../customElements/CustomButton";
+import { useTranslation } from "react-i18next";
 
 const MobileContentSections = ({ image, title, text, color }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full flex flex-col gap-30">
       <div
@@ -26,7 +29,7 @@ const MobileContentSections = ({ image, title, text, color }) => {
           <h3 className="text-black italic text-[20px]]">{title}</h3>
           <p className="text-black">{text}</p>
           <CustomButton navigateTo="/contact" blackColor className="mt-50">
-            Become a client
+            {t("button.becomeClient")}
           </CustomButton>
         </div>
       </div>

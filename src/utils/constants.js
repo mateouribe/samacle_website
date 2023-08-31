@@ -9,29 +9,32 @@ const colors = {
 
 const services = [
   {
+    id: 1,
     title: "Web Design and Development",
     subtitle: "UX/UI Design Services",
     shortDescription:
-      "Your website is the face of your business in the digital world. Our talented team of designers and developers create visually stunning, user-friendly websites that leave a lasting impression on your audience. <i className='orangeText'>With a focus on responsive design and seamless functionality, we ensure your online presence stands out.</i>",
+      "Your website is the face of your business in the digital world. Our talented team of designers and developers create visually stunning, user-friendly websites that leave a lasting impression on your audience. <i class='orangeText'>With a focus on responsive design and seamless functionality, we ensure your online presence stands out.</i>",
     description:
       "We specialize in bringing your brand's online presence to life through innovative web design and development. Our team of creative minds and technical experts collaborates closely with you to create websites that not only captivate users but also drive tangible results. With a keen eye for aesthetics and user experience, we design websites that are visually stunning and highly intuitive. Whether it's a captivating landing page or a comprehensive e-commerce platform, our designs are tailored to resonate with your target audience, ensuring an engaging and memorable online journey. <br/> Behind every exceptional design is a robust development process. <br/> Our skilled developers employ cutting-edge technologies to build websites that are not only visually appealing but also function flawlessly across devices and platforms. We prioritize seamless navigation, fast loading times, and responsive layouts, guaranteeing an exceptional user experience for all visitors",
     image: "/images/website.png",
   },
   {
+    id: 2,
     title: "Search Engine Optimization (SEO)",
     subtitle: "",
     shortDescription:
-      "Unlock the true potential of organic search traffic with our data-driven SEO strategies. <i className='orangeText'>We utilize the latest tools and industry insights to optimize your website's ranking on search engines, driving a steady stream of targeted traffic to your site.</i>",
+      "Unlock the true potential of organic search traffic with our data-driven SEO strategies. <i class='orangeText'>We utilize the latest tools and industry insights to optimize your website's ranking on search engines, driving a steady stream of targeted traffic to your site.</i>",
     description:
       "We specialize in bringing your brand's online presence to life through innovative web design and development. Our team of creative minds and technical experts collaborates closely with you to create websites that not only captivate users but also drive tangible results. With a keen eye for aesthetics and user experience, we design websites that are visually stunning and highly intuitive. Whether it's a captivating landing page or a comprehensive e-commerce platform, our designs are tailored to resonate with your target audience, ensuring an engaging and memorable online journey. <br/> Behind every exceptional design is a robust development process. <br/> Our skilled developers employ cutting-edge technologies to build websites that are not only visually appealing but also function flawlessly across devices and platforms. We prioritize seamless navigation, fast loading times, and responsive layouts, guaranteeing an exceptional user experience for all visitors",
 
     image: "/images/seo.png",
   },
   {
+    id: 3,
     title: "Email marketing",
     subtitle: "",
     shortDescription:
-      "Leverage the power of email campaigns to nurture leads and maintain customer relationships. <i className='orangeText'>Our team of experts will help you create and execute email marketing strategies that drive conversions and increase revenue.</i>",
+      "Leverage the power of email campaigns to nurture leads and maintain customer relationships. <i class='orangeText'>Our team of experts will help you create and execute email marketing strategies that drive conversions and increase revenue.</i>",
     description:
       "We specialize in bringing your brand's online presence to life through innovative web design and development. Our team of creative minds and technical experts collaborates closely with you to create websites that not only captivate users but also drive tangible results. With a keen eye for aesthetics and user experience, we design websites that are visually stunning and highly intuitive. Whether it's a captivating landing page or a comprehensive e-commerce platform, our designs are tailored to resonate with your target audience, ensuring an engaging and memorable online journey. <br/> Behind every exceptional design is a robust development process. <br/> Our skilled developers employ cutting-edge technologies to build websites that are not only visually appealing but also function flawlessly across devices and platforms. We prioritize seamless navigation, fast loading times, and responsive layouts, guaranteeing an exceptional user experience for all visitors",
     image: "/images/mail.png",
@@ -41,6 +44,7 @@ const services = [
 const projects = [
   // Amazing pet grooming
   {
+    id: 1,
     completed: true,
     info: {
       link: "amazing-pet-grooming",
@@ -68,12 +72,6 @@ const projects = [
           description:
             "The development of Amazing Pet Grooming was built upon an existing webpage, which could be referred to as version 1.0. However, it needed more dynamism and contained many repetitive and unappealing designs for both leads and customers. This previous situation led to a complete page redesign, focusing on animations, organization, selection menus, and overall visual content.",
         },
-        // {
-        //   image: "/images/development1-pago.png",
-        //   title: "Design Features.",
-        //   description:
-        //     "Significant design changes were implemented, including a revamped color palette to create a friendlier and more consistent look in alignment with the business. Dynamic movements and transitions were added to various page elements, enhancing user experience through fluid interactions. Additionally, 3D objects were incorporated to provide more precise visualizations of pet sizes and different sections. This addition allows for accurate representations and a more personal connection with the business offerings, ultimately resulting in a more engaging and immersive user experience.",
-        // },
         {
           image: "/images/booking_process.gif",
           title: "Booking Process",
@@ -109,6 +107,7 @@ const projects = [
 
   // Pago Tienda
   {
+    id: 2,
     completed: true,
     info: {
       link: "pago-tienda",
@@ -179,6 +178,7 @@ const projects = [
 
   //Soon
   {
+    id: 3,
     completed: false,
     info: {
       link: "pago-tienda",

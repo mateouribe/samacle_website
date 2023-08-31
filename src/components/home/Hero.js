@@ -88,9 +88,8 @@ const Hero = () => {
         <h2
           className="text-black font-swearDisplay text-[80px] md:text-[100px] lg:text-[138px] xl:text-[150px] leading-[99%] text-left overflow-hidden z-[100] relative"
           id="heroText"
-        >
-          {t("welcomeMessage")}
-        </h2>
+          dangerouslySetInnerHTML={{ __html: t("home.welcomeMessage") }}
+        ></h2>
 
         <figure className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] h-[50%] origin-bottom z-[10]">
           <div className="w-full h-full relative">

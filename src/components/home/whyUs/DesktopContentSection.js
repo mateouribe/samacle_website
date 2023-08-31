@@ -4,6 +4,7 @@ import { colors } from "../../../utils/constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import CustomButton from "../../customElements/CustomButton";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const DesktopContentSection = ({
@@ -14,6 +15,7 @@ const DesktopContentSection = ({
   backToWhite = false,
 }) => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const body = document.querySelector("body");
@@ -74,7 +76,9 @@ const DesktopContentSection = ({
         <h3 className="text-black text-subtitleTablet italic">{title}</h3>
         <p className="text-black">{text}</p>
       </div>
-      <CustomButton navigateTo="/contact">Become a client</CustomButton>
+      <CustomButton navigateTo="/contact">
+        {t("button.becomeClient")}
+      </CustomButton>
     </div>
   );
 };

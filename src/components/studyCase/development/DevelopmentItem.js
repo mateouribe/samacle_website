@@ -3,10 +3,12 @@ import CustomButton from "../../customElements/CustomButton";
 import CustomImage from "../../customElements/CustomImage";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
-const DevelopmentItem = ({ index, item, gif }) => {
+const DevelopmentItem = ({ index, item, image }) => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -47,7 +49,7 @@ const DevelopmentItem = ({ index, item, gif }) => {
         }`}
       >
         <CustomImage
-          image={item.image}
+          image={image}
           position={
             index === 0
               ? {
@@ -71,11 +73,17 @@ const DevelopmentItem = ({ index, item, gif }) => {
         }`}
       >
         <div className="flex flex-col gap-20">
-          <h5 className="text-[20px] text-black">{item.title}</h5>
-          <p className="text-black">{item.description}</p>
+          <h5 className="text-[20px] text-black">
+            {t(`${item}.studyCase.development.${index}.title`)}
+          </h5>
+          <p className="text-black">
+            {t(`${item}.studyCase.development.${index}.description`)}
+          </p>
         </div>
 
-        <CustomButton navigateTo="/contact">BECOME CLIENT</CustomButton>
+        <CustomButton navigateTo="/contact">
+          {t("button.becomeClient")}
+        </CustomButton>
       </div>
     </div>
   );

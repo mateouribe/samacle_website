@@ -9,10 +9,12 @@ import { services } from "../../../utils/constants";
 import ServiceImage from "./ServiceImage";
 import SplitText from "../../../utils/Split3.min.js";
 import SectionTitle from "../../customElements/SectionTitle";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const container = useRef(null);
+  const { t } = useTranslation();
 
   useLayoutEffect(() => {
     const splitTitleParent = new SplitText(".servicesTitle", {
@@ -112,49 +114,49 @@ const Services = () => {
       });
 
       // Animate title
-      ScrollTrigger.create({
-        trigger: container.current,
-        start: "top 60%",
-        end: "bottom 60%",
-        animation: gsap.fromTo(
-          splitTitle.chars,
-          {
-            y: 45,
-          },
-          {
-            y: 0,
-            duration: 1.5,
-            stagger: 0.02,
-            ease: Expo.easeOut,
-          }
-        ),
-      });
+      // ScrollTrigger.create({
+      //   trigger: container.current,
+      //   start: "top 60%",
+      //   end: "bottom 60%",
+      //   animation: gsap.fromTo(
+      //     splitTitle.chars,
+      //     {
+      //       y: 45,
+      //     },
+      //     {
+      //       y: 0,
+      //       duration: 1.5,
+      //       stagger: 0.02,
+      //       ease: Expo.easeOut,
+      //     }
+      //   ),
+      // });
 
       // Animate table
-      ScrollTrigger.create({
-        trigger: container.current,
-        start: "top 60%",
-        end: "bottom 60%",
-        animation: gsap.fromTo(
-          ".content-services",
-          {
-            opacity: 0,
-            yPercent: 50,
-          },
-          {
-            opacity: 1,
-            yPercent: 0,
-            delay: 0.5,
-            duration: 2,
-            ease: Expo.easeOut,
-            onComplete: () => {
-              gsap.to(".content-services", {
-                clearProps: "transform",
-              });
-            },
-          }
-        ),
-      });
+      // ScrollTrigger.create({
+      //   trigger: container.current,
+      //   start: "top 60%",
+      //   end: "bottom 60%",
+      //   animation: gsap.fromTo(
+      //     ".content-services",
+      //     {
+      //       opacity: 0,
+      //       yPercent: 50,
+      //     },
+      //     {
+      //       opacity: 1,
+      //       yPercent: 0,
+      //       delay: 0.5,
+      //       duration: 2,
+      //       ease: Expo.easeOut,
+      //       onComplete: () => {
+      //         gsap.to(".content-services", {
+      //           clearProps: "transform",
+      //         });
+      //       },
+      //     }
+      //   ),
+      // });
     }, container);
 
     return () => ctx.revert();
@@ -163,19 +165,24 @@ const Services = () => {
   return (
     <div ref={container}>
       <CustomSection hasPadding className="flex flex-col gap-50 min-h-[100vh]">
-        <SectionTitle className="textMain servicesTitle">
-          Our services
-        </SectionTitle>
+        <SectionTitle
+          className="servicesTitle text-beige"
+          text={t("home.services.title")}
+        ></SectionTitle>
         <section className="services flex flex-col relative">
           <div className="container-services w-full m-auto">
             <div className="content-services w-full h-full flex flex-col">
               {/* header */}
               <div className="w-full grid grid-cols-2 pb-10 border-b-[1px] border-white gap-20 ">
                 <div className="w-full h-full">
-                  <span className="text-white text-xsm">(TYPE)</span>
+                  <span className="text-white text-xsm">
+                    ({t("home.services.tableHeaderOne")})
+                  </span>
                 </div>
                 <div className="w-full h-full">
-                  <span className="text-white text-xsm">(DESCRIPTION)</span>
+                  <span className="text-white text-xsm">
+                    ({t("home.services.tableHeaderTwo")})
+                  </span>
                 </div>
               </div>
 
@@ -204,7 +211,7 @@ const Services = () => {
               {/* items */}
               <div className="items-service w-full h-full flex flex-col">
                 {services.map((service, index) => (
-                  <ServiceCard key={index} service={service} />
+                  <ServiceCard index={index} key={index} />
                 ))}
               </div>
             </div>
