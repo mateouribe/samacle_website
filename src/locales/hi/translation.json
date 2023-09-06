@@ -1,0 +1,312 @@
+{
+  "nav": {
+    "home": "Ghar",
+    "services": "Sevayein",
+    "about": "Hamare Baare Mein",
+    "contact": "Sampark Karen",
+    "projects": "Projects"
+  },
+  "footer": {
+    "promotionFooter": "Apne agle project par 10% chhoot prapt karen! Hamare newsletter ki sadasyata len."
+  },
+  "home": {
+    "welcomeMessage": "Sapne Design Karna, <br/>Pratipadan Karna",
+    "ourMission": "Ham Waterloo, ON mein ek agency hain jo ubhar rahe aur madhy bazaar ke vyavsayon ke liye websites viksit aur design karne ke liye samarpanit hain. Hamara uddeshya hai ki ham har ek hamare grahakon ke vyavsay ke bhavishya par prabhav dalne vale jivansheel websites prastut karen, jo akarshak aur saralanic yantraon ke saath hoti hain.",
+    "whyUs": {
+      "title": "Hamen Kyon Chunen?",
+      "reasonOneTitle": "Horizons Badhana: Prabhavit Design",
+      "reasonOneDescription": "Ek website ek vyavsay ke horizons ko badhata hai aur un logon ki sankhya ko badhata hai jo aapke utpad tak pahunchte hain. Hamara team ek adbhut aur akarshak prabhavit parichay prastut karke in horizons ko badhane ka dhyan rakhega.",
+      "reasonTwoTitle": "Appeal Ko Kranti Dena: Jivansheel Prastuti",
+      "reasonTwoDescription": "Apne utpad ya seva ko dikhane se bachein. Isse akarshak banane ke liye use prastut karne ke naye tarike khodne ka pata lagaiye. Hamara team customer ke liye adhik akarshak chitran banane ka prabandh karega.",
+      "reasonThreeTitle": "Leads Ko Badal Dena: Vishwashniy Jivansheel Design",
+      "reasonThreeDescription": "Apne website ko dynamics se apne leads ko bhugatne wale grahakon mein badal den. Hamara team aapke website ko akarshak design denge aur usmechanics bhi sajayeinge jo usme navigation karte samay bharosa aur vyavsayikata pradan karenge.",
+      "reasonFourTitle": "Taiolored Utkrishtata: Unique Websites",
+      "reasonFourDescription": "Apni niche market ke liye chinta mat karen, kyun ki hamara team lachila hai aur alag alag jarurat ko anukool banane mein saksham hai, jo vyavsay ho chahe waisi akarshak aur vyaktigat websites banati hai."
+    },
+    "services": {
+      "title": "Hamari Sevayein",
+      "tableHeaderOne": "PRAKAR",
+      "tableHeaderTwo": "VIVARAN"
+    },
+    "projects": {
+      "title": "Hamare Projects"
+    },
+    "contact": {
+      "title": "Chaliye<br/>design karen,<br/>chaliye<br/>pratipadan karen.",
+      "formTitle": "Hum aapke liye kya kar sakte hain?"
+    }
+  },
+  "services": {
+    "welcomeMessage": "Hum aapki safalta mein vishvas karte hain: Hamare brand empowerment sevayein khulkar",
+    "stats": {
+      "statOne": "97% grahak sthaleey vyavsayon ko online khojte hain. <span class='orangeText'>Ek website hone se aapka vyavsay prapt kiya ja sakta hai.</span>",
+      "statTwo": "Chote vyavsay jinme online upasthiti aur website hai <span class='orangeText'>40% tezi se badh rahe hain</span> unke tulna mei.",
+      "statThree": "Websites <span class='orangeText'>3 guna adhik leads aur bikri</span> utpann karti hain, traiditional tariko ke tulna mei."
+    },
+    "options": {
+      "service1": {
+        "title": "Web Design aur Vikas",
+        "subtitle": "UX/UI Design Sevayein",
+        "shortDescription": "Aapki website digital duniya mein aapke vyavsay ka chehra hoti hai. Hamare rachnatmak designers aur developers ki mahir team visually stunning aur user-friendly websites banati hai jo aapke audience par gehra prabhav chhodti hain. <i class='orangeText'>Responsive design aur seamless functionality par dhyan dekar, hum aapke online maujoodgi ko badhava dete hain.</i>",
+        "description": "Hum apke brand ke online maujoodgi ko innovative web design aur development ke madhyam se jivit karna mein visheshajna hai. Hamari rachnatmak mansa aur takneekigya ke pakshdhar upbhogataon ke sath hamari tim mil kar kaam karti hai, jo n keval upbhogataon ko prabhavit karti hai balki saksham prabhav bhi dalte hain. Aesthetics aur user experience ke liye tajdar nazar se, hum visually stunning aur highly intuitive websites design karte hain. Chahe vah ek akarshak landing page ho ya ek vistrit e-commerce platphorm, hamare design aapke target audience ke sath sahamati karenge, yadi uska engaging aur yaadgar online anubhav pradan karne mei bharosa kare. <br/> Pratyek adbhut design ke piche ek majbut vikas prakriya hoti hai. <br/> Hamare mahir developers cuttting-edge takneekon ka istemal karke websites banate hain jo ke sirf visually akarshak hote hain balki devices aur platphorms par bina kisi samasya ke karya karne mei bhi flawlessly kaam karte hain. Hum seamles navigation, fast loading time aur responsive layout par prathamikata dete hain, jo sabhi vyavsayiyo ke liye ek adbhut upbhokta anubhav ki garantee dete hain."
+      },
+      "service2": {
+        "title": "Search Engine Optimization (SEO)",
+        "subtitle": "",
+        "shortDescription": "Hamare data-driven SEO yojnao ke saath organic search traffic ke asli potential ko kholti hai. <i class='orangeText'>Hum latest tools aur industry insights ka istemal karke search engines par aapki website ki ranking ko optimize karte hain, jisse aapki site par nishchit dhar ke traffic ka ek sthir pravah hota hai.</i>",
+        "description": "Ham apke brand ke online maujoodgi ko innovative web design aur development ke madhyam se jivit karna mein visheshajna hai. Hamari rachnatmak mansa aur takneekigya ke pakshdhar upbhogataon ke sath hamari tim mil kar kaam karti hai, jo n keval upbhogataon ko prabhavit karti hai balki saksham prabhav bhi dalte hain. Aesthetics aur user experience ke liye tajdar nazar se, hum visually stunning aur highly intuitive websites design karte hain. Chahe vah ek akarshak landing page ho ya ek vistrit e-commerce platphorm, hamare design aapke target audience ke sath sahamati karenge, yadi uska engaging aur yaadgar online anubhav pradan karne mei bharosa kare. <br/> Pratyek adbhut design ke piche ek majbut vikas prakriya hoti hai. <br/> Hamare mahir developers cutting-edge takneekon ka istemal karke websites banate hain jo ke sirf visually akarshak hote hain balki devices aur platphorms par bina kisi samasya ke karya karne mei bhi flawlessly kaam karte hain. Hum seamles navigation, fast loading time aur responsive layout par prathamikata dete hain, jo sabhi vyavsayiyo ke liye ek adbhut upbhokta anubhav ki garantee dete hain"
+      },
+      "service3": {
+        "title": "Email Marketing",
+        "subtitle": "",
+        "shortDescription": "Lead ko nurture karne aur customer sambandho ko banae rakhne ke liye email campaigns ka mahatva uthaiye. <i class='orangeText'>Hamari visheshagya tim aapko conversion badhane aur aay ko badhane wale email marketing strategies banane aur lagu karne mein madad karegi.</i>",
+        "description": "Ham apke brand ke online maujoodgi ko innovative web design aur development ke madhyam se jivit karna mein visheshajna hai. Hamari rachnatmak mansa aur takneekigya ke pakshdhar upbhogataon ke sath hamari tim mil kar kaam karti hai, jo n keval upbhogataon ko prabhavit karti hai balki saksham prabhav bhi dalte hain. Aesthetics aur user experience ke liye tajdar nazar se, hum visually stunning aur highly intuitive websites design karte hain. Chahe vah ek akarshak landing page ho ya ek vistrit e-commerce platphorm, hamare design aapke target audience ke sath sahamati karenge, yadi uska engaging aur yaadgar online anubhav pradan karne mei bharosa kare. <br/> Pratyek adbhut design ke piche ek majbut vikas prakriya hoti hai. <br/> Hamare mahir developers cutting-edge takneekon ka istemal karke websites banate hain jo ke sirf visually akarshak hote hain balki devices aur platphorms par bina kisi samasya ke karya karne mei bhi flawlessly kaam karte hain. Hum seamles navigation, fast loading time aur responsive layout par prathamikata dete hain, jo sabhi vyavsayiyo ke liye ek adbhut upbhokta anubhav ki garantee dete hain"
+      }
+    }
+  },
+  "projects": {
+    "welcomeMessage": {
+      "one": "Sapna,",
+      "two": "Design,",
+      "three": "Pratipadan,",
+      "text": "Hum har sahyog mein gaurav mante hain, jyotish evam analytics ko hamare margdarshak beacon ke roop mein istemal karke hamesha badalte hue digital manch ke liye navigation karte hain."
+    }
+  },
+  "studyCases": {
+    "projects": {
+      "project1": {
+        "id": 1,
+        "completed": true,
+        "info": {
+          "link": "amazing-pet-grooming",
+          "title": "Amazing Pet Grooming",
+          "place": "Canada",
+          "date": "2023",
+          "tags": ["UI Design", "Web Development"],
+          "technologies": ["React JS", "GSAP", "Tailwind CSS"]
+        },
+        "image": "/images/projects_grooming.png",
+        "mockupImages": {
+          "big": "/images/mockupBigGrooming.png",
+          "mid": "/images/mockupMidGrooming.png",
+          "sm": "/images/mockupSmGrooming.png"
+        },
+        "studyCase": {
+          "image": "/images/study-main-grooming.png",
+          "meet": "AmazingPetGrooming, a family-owned business devoted to animal welfare. With branches in Hamilton and Cambridge, Ontario, they offer top-tier care for cats and dogs of all breeds and sizes. The experienced team provides tailored grooming services, ensuring your pet comfort and happiness. From soothing baths to precise trims, the team prioritize your pet well-being, aiming to enhance their health and appearance. Experience their dedicated approach to pet grooming by scheduling an appointment at either location and witnessing the positive impact on your furry companions lives.",
+          "background": "In Canada, a country known for its extreme temperature changes and variations in sunlight exposure, people often experience mood swings that can make mental health somewhat fragile. As a result, individuals turn to different methods to address this issue, with the companionship of a pet proving to be one of the most effective ways to tackle this problem. Just as they care for our mental well-being with loyalty and love, we must provide them with the appropriate care to keep them clean and happy. This feeling of owing is where the concept of AmazingPetGrooming for pet care was born, offering personalized and top-quality services in response to this need.",
+          "development": [
+            {
+              "image": "/images/changes_grooming.png",
+              "title": "Organization and Changes",
+              "description": "The development of Amazing Pet Grooming was built upon an existing webpage, which could be referred to as version 1.0. However, it needed more dynamism and contained many repetitive and unappealing designs for both leads and customers. This previous situation led to a complete page redesign, focusing on animations, organization, selection menus, and overall visual content."
+            },
+            {
+              "image": "/images/booking_process.gif",
+              "title": "Booking Process",
+              "description": "For the booking process, whether it's for a cat or a dog, you will be presented with various services for your pet, ranging from care like hair cutting to a spa day. Once you choose the desired service, you will be asked for additional information, such as your preferred location and the type of package you'd like. In the case of a dog, you will be prompted to indicate its size based on the provided 3D models, ranging from S to XL. After completing these steps, you will have the option to choose a specific member of Amazing Pet Grooming. Next, a confirmation screen will appear, and a calendar will be displayed to finalize the booking. At that point, your appointment will be set, ensuring that your pet receives the best possible care."
+            }
+          ],
+          "challenges": "Developing this project not only allowed us to connect with our pets and appreciate the excellent care provided to them, but also incorporates innovative design techniques. These techniques include the use of 3D elements to offer users a more comprehensive and interactive guide. Furthermore, multiple features have been integrated, such as maps.",
+          "figmaDesigns": ["/images/figmaDesktopGrooming.png"],
+          "designSystem": {
+            "typography": [
+              { "heading": "H1 heavy", "desktop": "171px", "mobile": "80px" },
+              { "heading": "H2 heavy", "desktop": "80px", "mobile": "60px" },
+              { "heading": "H3 heavy", "desktop": "50px", "mobile": "40px" },
+              { "heading": "H4 medium", "desktop": "45px", "mobile": "30px" },
+              { "heading": "H5 regular", "desktop": "36px", "mobile": "24px" },
+              { "heading": "p regular", "desktop": "16px", "mobile": "16px" }
+            ],
+            "colors": [
+              { "name": "Primary", "hex": "#65BFF8" },
+              { "name": "Secondary", "hex": "#DDF2FF" },
+              { "name": "White", "hex": "#FFFFFF" },
+              { "name": "Black", "hex": "#2A2A2A" },
+              { "name": "Gray", "hex": "#949494" },
+              { "name": "Purple", "hex": "#7B1DF4" },
+              { "name": "Pink", "hex": "#DF2C7C" },
+              { "name": "Blue", "hex": "#3977EC" }
+            ]
+          }
+        }
+      },
+      "project2": {
+        "id": 2,
+        "completed": true,
+        "info": {
+          "link": "pago-tienda",
+          "title": "Pago Tienda",
+          "place": "Argentina",
+          "date": "2023",
+          "tags": ["UI Design", "Web Development"],
+          "technologies": ["React JS", "GSAP", "Tailwind CSS"]
+        },
+        "image": "/images/projects_pago_tienda.png",
+        "mockupImages": {
+          "big": "/images/mockupBigPago.png",
+          "mid": "/images/mockupMidPago.png",
+          "sm": "/images/mockupSmPago.png"
+        },
+        "studyCase": {
+          "image": "/images/study-main-pago.png",
+          "meet": "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
+          "background": "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+          "development": [
+            {
+              "image": "/images/development1-pago.png",
+              "title": "Registration processes",
+              "description": "During the registration process, new users will be asked for information such as their email address, name, and preferred addresses for frequent locations, and finally, the user will be asked to use the pre-designed cryptocurrency wallet to facilitate future payments."
+            },
+            {
+              "image": "/images/development1-pago.png",
+              "title": "Organization and features",
+              "description": "Pago Tienda was developed in different phases. The first was to study the popularity of cryptocurrencies in the region. During the second phase, establishments and businesses willing to accept cryptocurrency payments were sought. The third phase was to design the web page and the fourth phase was to develop the web page."
+            },
+            {
+              "image": "/images/development3-pago.png",
+              "title": "Purchase processes",
+              "description": "Once you have selected all the products you want, there will be a section called the cart, the section to make payment for your purchase. You will be asked for certain information such as delivery address and customer name. For payment, in this case, with the integrated method of payment with cryptocurrencies that are linked to the wallet developed to make the purchase process more accessible, a deposit of the crypto with which you decide to pay will be made, and now you just have to wait and enjoy your order."
+            }
+          ],
+          "challenges": "During the development, we gained experience in designing and creating e-commerce type online stores, including their respective sections, shopping carts, and product categorization. An additional challenge for this case was integrating PagoLinea with PagoTienda, a solution designed to streamline the purchasing process.",
+          "figmaDesigns": [
+            "/images/figmaDesktopPago.png",
+            "/images/figmaMobilePago.png"
+          ],
+          "designSystem": {
+            "typography": [
+              { "heading": "H1 bold", "desktop": "64px", "mobile": "32px" },
+              { "heading": "H2 bold", "desktop": "48px", "mobile": "24px" },
+              { "heading": "H3 bold", "desktop": "32px", "mobile": "22px" },
+              { "heading": "H5 medium", "desktop": "22px", "mobile": "20px" },
+              { "heading": "P regular", "desktop": "16px", "mobile": "14px" }
+            ],
+            "colors": [
+              { "name": "Primary", "hex": "#960FCC" },
+              { "name": "Secondary", "hex": "#F7EEFB" },
+              { "name": "White", "hex": "#FFFFFF" },
+              { "name": "Black", "hex": "#3E3E3E" },
+              { "name": "Dark blue", "hex": "#28292C" },
+              { "name": "Gray", "hex": "#828385" },
+              { "name": "Light gray", "hex": "#B0B0B0" },
+              { "name": "Main gradient", "hex": "#640A88" }
+            ]
+          }
+        }
+      },
+      "project3": {
+        "id": 3,
+        "completed": false,
+        "info": {
+          "link": "pago-tienda",
+          "title": "UnitradeFX",
+          "place": "Argentina",
+          "date": "2023",
+          "tags": ["UI Design", "Web Development"],
+          "technologies": ["React JS", "GSAP", "Tailwind CSS"]
+        },
+        "image": "/images/projects_copy.png",
+        "mockupImages": {
+          "big": "/images/mockupBigPago.png",
+          "mid": "/images/mockupMidPago.png",
+          "sm": "/images/mockupSmPago.png"
+        },
+        "studyCase": {
+          "image": "/images/study-main-pago.png",
+          "meet": "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
+          "background": "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+          "development": [
+            {
+              "image": "/images/development1-pago.png",
+              "title": "Registration processes.",
+              "description": "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations."
+            },
+            {
+              "image": "/images/development1-pago.png",
+              "title": "Organization and features.",
+              "description": "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations."
+            },
+            {
+              "image": "/images/development3-pago.png",
+              "title": "Purchase processes.",
+              "description": "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations."
+            }
+          ],
+          "challenges": "To create a groundbreaking operating experience, the NODO Film Systems allowed camera operators to adjust the weight of the wheels, control mass and drag, and create different camera simulations.",
+          "figmaDesigns": [
+            "/images/figmaDesktopPago.png",
+            "/images/figmaMobilePago.png"
+          ],
+          "designSystem": {
+            "typography": [
+              { "heading": "H1 bold", "desktop": "64px", "mobile": "32px" },
+              { "heading": "H2 bold", "desktop": "48px", "mobile": "24px" },
+              { "heading": "H3 bold", "desktop": "32px", "mobile": "22px" },
+              { "heading": "H5 medium", "desktop": "22px", "mobile": "20px" },
+              { "heading": "P regular", "desktop": "16px", "mobile": "14px" }
+            ],
+            "colors": [
+              { "name": "Primary", "hex": "#960FCC" },
+              { "name": "Secondary", "hex": "#F7EEFB" },
+              { "name": "White", "hex": "#FFFFFF" },
+              { "name": "Black", "hex": "#3E3E3E" },
+              { "name": "Dark blue", "hex": "#28292C" },
+              { "name": "Gray", "hex": "#828385" },
+              { "name": "Light gray", "hex": "#B0B0B0" },
+              { "name": "Main gradient", "hex": "#640A88" }
+            ]
+          }
+        }
+      }
+    },
+    "text": {
+      "context": {
+        "title": "Some<br/>Context",
+        "team": "Meet the team",
+        "background": "Background"
+      },
+      "development": {
+        "title": "Development"
+      },
+      "designSystem": {
+        "title": "Style<br/>Guide",
+        "table": {
+          "typography": {
+            "title": "Typography",
+            "heading": "Heading",
+            "desktop": "Desktop",
+            "mobile": "Mobile"
+          },
+          "colors": "Colors palette"
+        }
+      }
+    }
+  },
+  "about": {
+    "welcomeMessage": "We live and breathe design, innovation, and the thrill of helping businesses grow.",
+    "processes": [
+      {
+        "title": "Strategy",
+        "description": "We kickstart every project with a data-driven strategy that sets the foundation for your success. Our team dives deep into market insights, customer behavior, and industry trends to craft a tailored plan that aligns with your goals."
+      },
+      {
+        "title": "Design",
+        "description": "Our design wizards bring imagination to life, conjuring captivating visuals that leave a lasting impression. From sleek interfaces to stunning graphics, we create an enchanting user experience that keeps visitors spellbound."
+      },
+      {
+        "title": "Development",
+        "description": "Our development sorcerers work their magic, transforming design into functional reality. With cutting-edge technology and meticulous attention to detail, we weave a seamless web of code that powers your website's performance."
+      }
+    ]
+  },
+  "contact": {
+    "welcomeMessage": "Let's<br/><i>design,</i><br/>let's<br/><i>deliver.</i>",
+    "formTitle": "What can we do for you?"
+  },
+  "button": {
+    "send": "Send",
+    "becomeClient": "Become a client",
+    "visitSite": "Visit site"
+  }
+}
