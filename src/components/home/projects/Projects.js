@@ -70,7 +70,7 @@ const Projects = () => {
           className="projectTitle text-main"
           text={t("home.projects.title")}
         ></SectionTitle>
-        <div className="w-full h-full grid gap-100 md:gap-50 grid-cols-1 md:grid-cols-12 ">
+        <div className="grid w-full h-full grid-cols-1 gap-50 md:grid-cols-12 ">
           {projects.map((project, index) =>
             index === 0 ? (
               <ProjectItem

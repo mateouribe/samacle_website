@@ -29,7 +29,6 @@ root.render(
     <React.StrictMode>
       <StatesProvider>
         <Router>
-          <ScrollToTop />
           <Routes>
             <Route path="/*" element={<App />} />
           </Routes>

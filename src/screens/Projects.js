@@ -43,6 +43,8 @@ const Projects = () => {
       type: "words",
       wordsClass: "wordsBlack",
     });
+
+    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       gsap.set(".animateFirstProject", {
         opacity: 0,
@@ -85,6 +87,12 @@ const Projects = () => {
         },
         "-=1.5"
       );
+
+      gsap.to(body, {
+        backgroundColor: colors.white,
+      });
+      //scroll to top right before it mounts
+      window.scrollTo(0, 0);
     }, container);
 
     return () => ctx.revert();
@@ -98,9 +106,9 @@ const Projects = () => {
       </Helmet>
       <CustomSection
         hasPadding
-        className="py-desktop md:py-desktop flex flex-col gap-100"
+        className="flex flex-col py-desktop md:py-desktop gap-100"
       >
-        <div className="w-full flex justify-between items-center">
+        <div className="flex items-center justify-between w-full">
           <div>
             <SectionTitle
               className="text-black italic leading-[100%] projectsPageTitle"

@@ -9,6 +9,8 @@ const ProcessItem = ({ index }) => {
   const container = useRef(null);
   const { t } = useTranslation();
 
+  console.log(index);
+
   return (
     <div
       className="w-full flex flex-col md:flex-row justify-between items-center gap-100"

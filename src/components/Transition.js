@@ -6,7 +6,7 @@ const Transition = (OgComponent) => {
   function checkScreenWidth() {
     const desktopSize = 1024; // The minimum screen width to be considered as a desktop
     window.isDesktop = window.innerWidth >= desktopSize;
-
+    window.scrollTo({ top: 0 });
     // Use the isDesktop variable as needed in your application
     // For example, you can conditionally render content or apply specific styles based on the screen size.
   }

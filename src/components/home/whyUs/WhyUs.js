@@ -41,11 +41,11 @@ const WhyUs = () => {
 
   return (
     <div ref={container}>
-      <div className="gallery flex relative">
+      <div className="relative flex gallery">
         {/* Left side */}
-        <div className="left w-1/2 outline-1">
+        <div className="w-1/2 left outline-1">
           {/* Desktop content */}
-          <div className="desktopContent m-auto px-desktop">
+          <div className="m-auto desktopContent px-desktop">
             <DesktopContentSection
               title={t("home.whyUs.reasonOneTitle")}
               text={t("home.whyUs.reasonOneDescription")}
@@ -71,10 +71,10 @@ const WhyUs = () => {
         </div>
 
         {/* Right side */}
-        <div className="right h-view w-1/2 flex flex-col justify-center px-mobile md:px-desktop lg:pl-0 lg:pr-desktop">
+        <div className="flex flex-col justify-center w-1/2 right h-view px-mobile md:px-desktop lg:pl-0 lg:pr-desktop">
           {/* //TODO:pr-100 */}
           {/* <!-- add mobile content here--> */}
-          <div className="mobileContent w-full hidden">
+          <div className="hidden w-full mobileContent">
             <MobileContentSections
               ttitle={t("home.whyUs.reasonOneTitle")}
               text={t("home.whyUs.reasonOneDescription")}
@@ -104,7 +104,7 @@ const WhyUs = () => {
           <div className="desktopPhotos w-[100%] h-[40vw] relative overflow-hidden rounded-[10px]">
             <DesktopPhoto
               image="/images/blue.png"
-              color="#C5F8FF #8BF5FF #37AFC8"
+              color="#94EFF9 #1BB7C8 #229AB2"
             />
             <DesktopPhoto
               image="/images/orange.png"

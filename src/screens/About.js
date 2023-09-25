@@ -9,6 +9,8 @@ import Hero from "../components/about/Hero";
 import CustomImage from "../components/customElements/CustomImage";
 import Process from "../components/about/Process";
 import { useTranslation } from "react-i18next";
+import { colors } from "../utils/constants";
+import { scroll } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
@@ -16,6 +18,7 @@ const About = () => {
   const { t } = useTranslation();
 
   useLayoutEffect(() => {
+    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: ".textTrigger",
@@ -35,10 +38,13 @@ const About = () => {
           }
         ),
       });
-      // gsap.to(body, {
-      //   backgroundColor: colors.white,
-      // });
+      gsap.to(body, {
+        backgroundColor: colors.white,
+      });
     }, container);
+
+    //scroll to top right before it mounts
+    window.scrollTo(0, 0);
 
     return () => ctx.revert();
   }, []);
@@ -51,7 +57,7 @@ const About = () => {
       </Helmet>
       <Hero />
       <div
-        className="w-full py-tablet px-mobile md:px-tablet lg:px-desktop flex flex-col items-end gap-50"
+        className="flex flex-col items-end w-full py-tablet px-mobile md:px-tablet lg:px-desktop gap-50"
         ref={container}
       >
         <div className="w-[80%] md:w-[60%] h-[80vh] rounded-10 textTrigger">

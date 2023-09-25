@@ -76,32 +76,4 @@ const changeBgColorAnimation = ({
   });
 };
 
-// const showText = ({
-//   trigger,
-//   target,
-//   position = { start: "top 50%", end: "bottom 50%" },
-//   markers = false,
-//   toggleActions = "",
-//   y = 45,
-// }) => {
-//   ScrollTrigger.create({
-//     trigger: trigger,
-//     start: position.start,
-//     end: position.end,
-//     markers: markers,
-//     toggleActions: toggleActions,
-//     animation: gsap.fromTo(
-//       target,
-//       {
-//         y: y,
-//       },
-//       {
-//         y: 0,
-//         duration: 1,
-//         stagger: 0.02,
-//         ease: Expo.easeOut,
-//       }
-//     ),
-//   });
-// };
 export { changeBgColorAnimation };

@@ -35,6 +35,9 @@ const StudyCase = () => {
       gsap.to(body, {
         backgroundColor: colors.white,
       });
+      //scroll to top right before it mounts
+      window.scrollTo(0, 0);
+
       if (isLoaded) {
         gsap.set(".projectMainImg", {
           scale: 0.9,
@@ -62,7 +65,7 @@ const StudyCase = () => {
         <>
           <Header project={item.current} />
           <div className="w-full h-[80vh] imgTrigger">
-            <div className="w-full h-full relative projectMainImg">
+            <div className="relative w-full h-full projectMainImg">
               <CustomImage
                 image={project.studyCase.image}
                 onLoad

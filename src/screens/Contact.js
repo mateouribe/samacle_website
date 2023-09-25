@@ -16,6 +16,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   useLayoutEffect(() => {
+    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       const tl = gsap.timeline();
       tl.fromTo(
@@ -31,6 +32,12 @@ const Contact = () => {
           ease: Expo.easeOut,
         }
       );
+
+      gsap.to(body, {
+        backgroundColor: colors.white,
+      });
+      //scroll to top right before it mounts
+      window.scrollTo(0, 0);
     }, container);
 
     return () => ctx.revert();
@@ -105,7 +112,7 @@ const Contact = () => {
             {t("contact.formTitle")}
           </h4>
           <form
-            className="w-full flex flex-col gap-10"
+            className="flex flex-col w-full gap-10"
             onSubmit={sendEmail}
             ref={form}
           >

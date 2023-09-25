@@ -1,75 +1,75 @@
 {
   "nav": {
-    "home": "Ghar",
-    "services": "Sevayein",
-    "about": "Hamare Baare Mein",
-    "contact": "Sampark Karen",
-    "projects": "Projects"
+    "home": "घर",
+    "services": "सेवाएँ",
+    "about": "हमारे बारे में",
+    "contact": "संपर्क करें",
+    "projects": "परियोजनाएँ"
   },
   "footer": {
-    "promotionFooter": "Apne agle project par 10% chhoot prapt karen! Hamare newsletter ki sadasyata len."
+    "promotionFooter": "अपने अगले परियोजना पर 10% छूट प्राप्त करें! हमारे समाचार पत्रिका की सदस्यता लें।"
   },
   "home": {
-    "welcomeMessage": "Sapne Design Karna, <br/>Pratipadan Karna",
-    "ourMission": "Ham Waterloo, ON mein ek agency hain jo ubhar rahe aur madhy bazaar ke vyavsayon ke liye websites viksit aur design karne ke liye samarpanit hain. Hamara uddeshya hai ki ham har ek hamare grahakon ke vyavsay ke bhavishya par prabhav dalne vale jivansheel websites prastut karen, jo akarshak aur saralanic yantraon ke saath hoti hain.",
+    "welcomeMessage": "सपने डिज़ाइन करें,<br/>परिणाम दें",
+    "ourMission": "हम वॉटरलू, ऑन्टारियो में एक एजेंसी हैं जो उभरते हुए और मध्य बाजार के व्यवसायों के लिए वेबसाइट विकसित और डिज़ाइन करने के लिए समर्पित हैं। हमारा उद्देश्य है कि हम हर एक हमारे ग्राहकों के व्यवसाय के भविष्य पर प्रभाव डालने वाली जीवंत वेबसाइटें प्रस्तुत करें, जो आकर्षक और सरल उपकरणों के साथ होती हैं।",
     "whyUs": {
-      "title": "Hamen Kyon Chunen?",
-      "reasonOneTitle": "Horizons Badhana: Prabhavit Design",
-      "reasonOneDescription": "Ek website ek vyavsay ke horizons ko badhata hai aur un logon ki sankhya ko badhata hai jo aapke utpad tak pahunchte hain. Hamara team ek adbhut aur akarshak prabhavit parichay prastut karke in horizons ko badhane ka dhyan rakhega.",
-      "reasonTwoTitle": "Appeal Ko Kranti Dena: Jivansheel Prastuti",
-      "reasonTwoDescription": "Apne utpad ya seva ko dikhane se bachein. Isse akarshak banane ke liye use prastut karne ke naye tarike khodne ka pata lagaiye. Hamara team customer ke liye adhik akarshak chitran banane ka prabandh karega.",
-      "reasonThreeTitle": "Leads Ko Badal Dena: Vishwashniy Jivansheel Design",
-      "reasonThreeDescription": "Apne website ko dynamics se apne leads ko bhugatne wale grahakon mein badal den. Hamara team aapke website ko akarshak design denge aur usmechanics bhi sajayeinge jo usme navigation karte samay bharosa aur vyavsayikata pradan karenge.",
-      "reasonFourTitle": "Taiolored Utkrishtata: Unique Websites",
-      "reasonFourDescription": "Apni niche market ke liye chinta mat karen, kyun ki hamara team lachila hai aur alag alag jarurat ko anukool banane mein saksham hai, jo vyavsay ho chahe waisi akarshak aur vyaktigat websites banati hai."
+      "title": "हमें क्यों चुनें?",
+      "reasonOneTitle": "Horizons बढ़ाना: प्रभावित डिज़ाइन",
+      "reasonOneDescription": "एक वेबसाइट एक व्यवसाय के horizons को बढ़ाती है और उन लोगों की संख्या को बढ़ाती है जो आपके उत्पाद तक पहुंचते हैं। हमारी टीम एक अद्भुत और आकर्षक प्रभावित परिचय प्रस्तुत करके इन horizons को बढ़ाने का ध्यान रखेगी।",
+      "reasonTwoTitle": "Appeal को क्रांति देना: जीवंत प्रस्तुति",
+      "reasonTwoDescription": "अपने उत्पाद या सेवा को दिखाने से बचें। इसे आकर्षक बनाने के लिए उपयोग करने के नए तरीकों को खोजें। हमारी टीम ग्राहक के लिए अधिक आकर्षक चित्रण बनाने का इंतजाम करेगी।",
+      "reasonThreeTitle": "लीड्स को बदल देना: विश्वसनीय जीवंत डिज़ाइन",
+      "reasonThreeDescription": "अपनी वेबसाइट को डायनेमिक रूप से अपने लीड्स को भुगतने वाले ग्राहकों में बदल दें। हमारी टीम आपकी वेबसाइट को आकर्षक डिज़ाइन देगी और उसमें उन मैकेनिक्स को सजाएगी जो उसमें नेविगेशन करते समय भरोसा और व्यवसायिकता प्रदान करेंगे।",
+      "reasonFourTitle": "टेलर्ड उत्कृष्टता: अद्वितीय वेबसाइटें",
+      "reasonFourDescription": "अपनी नीचे की बाजार के लिए चिंता मत करें, क्योंकि हमारी टीम लचीली है और विभिन्न आवश्यकताओं को अनुकूल बनाने में सक्षम है, जो व्यवसाय हो चाहे वैसी आकर्षक और व्यक्तिगत वेबसाइटें बनाती हैं।"
     },
     "services": {
-      "title": "Hamari Sevayein",
-      "tableHeaderOne": "PRAKAR",
-      "tableHeaderTwo": "VIVARAN"
+      "title": "हमारी सेवाएँ",
+      "tableHeaderOne": "प्रकार",
+      "tableHeaderTwo": "विवरण"
     },
     "projects": {
-      "title": "Hamare Projects"
+      "title": "हमारे प्रोजेक्ट्स"
     },
     "contact": {
-      "title": "Chaliye<br/>design karen,<br/>chaliye<br/>pratipadan karen.",
-      "formTitle": "Hum aapke liye kya kar sakte hain?"
+      "title": "चलिए<br/>डिज़ाइन करें,<br/>चलिए<br/>प्रतिपदन करें।",
+      "formTitle": "हम आपके लिए क्या कर सकते हैं?"
     }
   },
   "services": {
-    "welcomeMessage": "Hum aapki safalta mein vishvas karte hain: Hamare brand empowerment sevayein khulkar",
+    "welcomeMessage": "हम आपकी सफलता में विश्वास करते हैं: हमारे ब्रांड एम्पावरमेंट सेवाएँ खुलकर",
     "stats": {
-      "statOne": "97% grahak sthaleey vyavsayon ko online khojte hain. <span class='orangeText'>Ek website hone se aapka vyavsay prapt kiya ja sakta hai.</span>",
-      "statTwo": "Chote vyavsay jinme online upasthiti aur website hai <span class='orangeText'>40% tezi se badh rahe hain</span> unke tulna mei.",
-      "statThree": "Websites <span class='orangeText'>3 guna adhik leads aur bikri</span> utpann karti hain, traiditional tariko ke tulna mei."
+      "statOne": "97% ग्राहक स्थानीय व्यवसायों को ऑनलाइन खोजते हैं। <span class='orangeText'>एक वेबसाइट होने से आपका व्यवसाय प्राप्त किया जा सकता है।</span>",
+      "statTwo": "छोटे व्यवसाय जिनमें ऑनलाइन उपस्थिति और वेबसाइट हैं <span class='orangeText'>40% तेजी से बढ़ रहे हैं</span> उनके तुलना में।",
+      "statThree": "वेबसाइट <span class='orangeText'>3 गुना अधिक लीड्स और बिक्री</span> उत्पन्न करती हैं, पारंपरिक तरीकों के तुलना में।"
     },
     "options": {
       "service1": {
-        "title": "Web Design aur Vikas",
-        "subtitle": "UX/UI Design Sevayein",
-        "shortDescription": "Aapki website digital duniya mein aapke vyavsay ka chehra hoti hai. Hamare rachnatmak designers aur developers ki mahir team visually stunning aur user-friendly websites banati hai jo aapke audience par gehra prabhav chhodti hain. <i class='orangeText'>Responsive design aur seamless functionality par dhyan dekar, hum aapke online maujoodgi ko badhava dete hain.</i>",
-        "description": "Hum apke brand ke online maujoodgi ko innovative web design aur development ke madhyam se jivit karna mein visheshajna hai. Hamari rachnatmak mansa aur takneekigya ke pakshdhar upbhogataon ke sath hamari tim mil kar kaam karti hai, jo n keval upbhogataon ko prabhavit karti hai balki saksham prabhav bhi dalte hain. Aesthetics aur user experience ke liye tajdar nazar se, hum visually stunning aur highly intuitive websites design karte hain. Chahe vah ek akarshak landing page ho ya ek vistrit e-commerce platphorm, hamare design aapke target audience ke sath sahamati karenge, yadi uska engaging aur yaadgar online anubhav pradan karne mei bharosa kare. <br/> Pratyek adbhut design ke piche ek majbut vikas prakriya hoti hai. <br/> Hamare mahir developers cuttting-edge takneekon ka istemal karke websites banate hain jo ke sirf visually akarshak hote hain balki devices aur platphorms par bina kisi samasya ke karya karne mei bhi flawlessly kaam karte hain. Hum seamles navigation, fast loading time aur responsive layout par prathamikata dete hain, jo sabhi vyavsayiyo ke liye ek adbhut upbhokta anubhav ki garantee dete hain."
+        "title": "वेब डिज़ाइन और विकास",
+        "subtitle": "UX/UI डिज़ाइन सेवाएँ",
+        "shortDescription": "आपकी वेबसाइट डिजिटल दुनिया में आपके व्यवसाय का चेहरा होती है। हमारे प्रतिभाशाली डिज़ाइनर और डेवलपर्स की महान टीम व्यक्तिगत रूप से आपके दर्शकों पर गहरा प्रभाव डालने वाली दृश्य सुंदर और उपयोगकर्ता मित्रपूर्ण वेबसाइट बनाती है। <i class='orangeText'>रिस्पॉन्सिव डिज़ाइन और संघटित कार्यक्षमता पर ध्यान केंद्रित करके, हम आपकी ऑनलाइन मौजूदगी को बढ़ावा देते हैं।</i>",
+        "description": "हम आपके ब्रांड की ऑनलाइन मौजूदगी को नवाचारी वेब डिज़ाइन और विकास के माध्यम से जीवंत करने में विशेषज्ञ हैं। हमारे रचनात्मक मानसिकता और तकनीकी विशेषज्ञों की टीम आपके साथ घनिष्ठता से सहयोग करके उन वेबसाइटों को बनाती है, जो सिर्फ उपयोगकर्ताओं को प्रभावित करती हैं, बल्कि प्रत्यापन परिणाम भी दिलाती हैं। सौंदर्यशास्त्र और उपयोगकर्ता अनुभव के लिए साहसी दृष्टिकोण से, हम विजुअली सुंदर और अत्यंत सुसंगत वेबसाइट डिज़ाइन करते हैं। चाहे वह एक आकर्षक लैंडिंग पेज हो या एक व्यापक ई-कॉमर्स प्लेटफ़ॉर्म हो, हमारे डिज़ाइन आपके लक्ष्य दर्शकों के साथ समरसता देते हैं, एक गुब्बारे और यादगार ऑनलाइन यात्रा सुनिश्चित करके। <br/> हर अद्भुत डिज़ाइन के पीछे एक मजबूत विकास प्रक्रिया होती है। <br/> हमारे निपुण डेवलपर्स डिवाइस और प्लेटफ़ॉर्म के अच्छे दिखाई देने वाले तकनीकों का उपयोग करके वेबसाइट बनाते हैं, जो सिर्फ विजुअली प्रिय ही नहीं होते, बल्कि उपकरणों और प्लेटफ़ॉर्मों पर किसी समस्या के बिना दिनचर्या रूप से काम करते हैं। हम संघटित नेविगेशन, तेजी से लोड होने वाले समय, और प्रतिकृति लेआउट को प्राथमिकता देते हैं, जो सभी आगंतुकों के लिए एक अद्भुत उपयोगकर्ता अनुभव की गारंटी देते हैं।"
       },
       "service2": {
-        "title": "Search Engine Optimization (SEO)",
+        "title": "सर्च इंजन ऑप्टिमाइजेशन (SEO)",
         "subtitle": "",
-        "shortDescription": "Hamare data-driven SEO yojnao ke saath organic search traffic ke asli potential ko kholti hai. <i class='orangeText'>Hum latest tools aur industry insights ka istemal karke search engines par aapki website ki ranking ko optimize karte hain, jisse aapki site par nishchit dhar ke traffic ka ek sthir pravah hota hai.</i>",
-        "description": "Ham apke brand ke online maujoodgi ko innovative web design aur development ke madhyam se jivit karna mein visheshajna hai. Hamari rachnatmak mansa aur takneekigya ke pakshdhar upbhogataon ke sath hamari tim mil kar kaam karti hai, jo n keval upbhogataon ko prabhavit karti hai balki saksham prabhav bhi dalte hain. Aesthetics aur user experience ke liye tajdar nazar se, hum visually stunning aur highly intuitive websites design karte hain. Chahe vah ek akarshak landing page ho ya ek vistrit e-commerce platphorm, hamare design aapke target audience ke sath sahamati karenge, yadi uska engaging aur yaadgar online anubhav pradan karne mei bharosa kare. <br/> Pratyek adbhut design ke piche ek majbut vikas prakriya hoti hai. <br/> Hamare mahir developers cutting-edge takneekon ka istemal karke websites banate hain jo ke sirf visually akarshak hote hain balki devices aur platphorms par bina kisi samasya ke karya karne mei bhi flawlessly kaam karte hain. Hum seamles navigation, fast loading time aur responsive layout par prathamikata dete hain, jo sabhi vyavsayiyo ke liye ek adbhut upbhokta anubhav ki garantee dete hain"
+        "shortDescription": "हमारे डेटा-ड्राइवन SEO रणनीतियों के साथ संघटित खोज यातायात की असली संभावना को खोलें। <i class='orangeText'>हम खोज इंजनों पर आपकी वेबसाइट की रैंकिंग को अनुकूलित करने के लिए नवीनतम उपकरण और उद्योग के दृष्टिकोण का उपयोग करते हैं, जिससे आपकी साइट पर निश्चित दिशा के यातायात का एक स्थिर प्रवाह होता है।</i>",
+        "description": "हम आपके ब्रांड की ऑनलाइन मौजूदगी को नवाचारी वेब डिज़ाइन और विकास के माध्यम से जीवंत करने में विशेषज्ञ हैं। हमारे रचनात्मक मानसिकता और तकनीकी विशेषज्ञों की टीम आपके साथ घनिष्ठता से सहयोग करके उन वेबसाइटों को बनाती है, जो सिर्फ उपयोगकर्ताओं को प्रभावित करती हैं, बल्कि प्रत्यापन परिणाम भी दिलाती हैं। सौंदर्यशास्त्र और उपयोगकर्ता अनुभव के लिए साहसी दृष्टिकोण से, हम विजुअली सुंदर और अत्यंत सुसंगत वेबसाइट डिज़ाइन करते हैं। चाहे वह एक आकर्षक लैंडिंग पेज हो या एक व्यापक ई-कॉमर्स प्लेटफ़ॉर्म हो, हमारे डिज़ाइन आपके लक्ष्य दर्शकों के साथ समरसता देते हैं, एक गुब्बारे और यादगार ऑनलाइन यात्रा सुनिश्चित करके। <br/> हर अद्भुत डिज़ाइन के पीछे एक मजबूत विकास प्रक्रिया होती है। <br/> हमारे निपुण डेवलपर्स डिवाइस और प्लेटफ़ॉर्मों पर किसी समस्या के बिना दिनचर्या रूप से काम करने वाले तकनीकों का उपयोग करके वेबसाइट बनाते हैं, जो सिर्फ विजुअली प्रिय ही नहीं होते, बल्कि उपकरणों और प्लेटफ़ॉर्मों पर किसी समस्या के बिना दिनचर्या रूप से काम करते हैं। हम संघटित नेविगेशन, तेजी से लोड होने वाले समय, और प्रतिकृति लेआउट को प्राथमिकता देते हैं, जो सभी आगंतुकों के लिए एक अद्भुत उपयोगकर्ता अनुभव की गारंटी देते हैं।"
       },
       "service3": {
-        "title": "Email Marketing",
+        "title": "ईमेल मार्केटिंग",
         "subtitle": "",
-        "shortDescription": "Lead ko nurture karne aur customer sambandho ko banae rakhne ke liye email campaigns ka mahatva uthaiye. <i class='orangeText'>Hamari visheshagya tim aapko conversion badhane aur aay ko badhane wale email marketing strategies banane aur lagu karne mein madad karegi.</i>",
-        "description": "Ham apke brand ke online maujoodgi ko innovative web design aur development ke madhyam se jivit karna mein visheshajna hai. Hamari rachnatmak mansa aur takneekigya ke pakshdhar upbhogataon ke sath hamari tim mil kar kaam karti hai, jo n keval upbhogataon ko prabhavit karti hai balki saksham prabhav bhi dalte hain. Aesthetics aur user experience ke liye tajdar nazar se, hum visually stunning aur highly intuitive websites design karte hain. Chahe vah ek akarshak landing page ho ya ek vistrit e-commerce platphorm, hamare design aapke target audience ke sath sahamati karenge, yadi uska engaging aur yaadgar online anubhav pradan karne mei bharosa kare. <br/> Pratyek adbhut design ke piche ek majbut vikas prakriya hoti hai. <br/> Hamare mahir developers cutting-edge takneekon ka istemal karke websites banate hain jo ke sirf visually akarshak hote hain balki devices aur platphorms par bina kisi samasya ke karya karne mei bhi flawlessly kaam karte hain. Hum seamles navigation, fast loading time aur responsive layout par prathamikata dete hain, jo sabhi vyavsayiyo ke liye ek adbhut upbhokta anubhav ki garantee dete hain"
+        "shortDescription": "लीड को पोषण देने और ग्राहक संबंध बनाए रखने के लिए ईमेल अभियांओं का सहारा लें। <i class='orangeText'>हमारी विशेषज्ञ टीम आपको संवर्धन बढ़ाने और राजस्व बढ़ाने वाले ईमेल मार्केटिंग रणनीतियों को बनाने और लागू करने में मदद करेगी।</i>",
+        "description": "हम आपके ब्रांड की ऑनलाइन मौजूदगी को नवाचारी वेब डिज़ाइन और विकास के माध्यम से जीवंत करने में विशेषज्ञ हैं। हमारे रचनात्मक मानसिकता और तकनीकी विशेषज्ञों की टीम आपके साथ घनिष्ठता से सहयोग करके उन वेबसाइटों को बनाती है, जो सिर्फ उपयोगकर्ताओं को प्रभावित करती हैं, बल्कि प्रत्यापन परिणाम भी दिलाती हैं। सौंदर्यशास्त्र और उपयोगकर्ता अनुभव के लिए साहसी दृष्टिकोण से, हम विजुअली सुंदर और अत्यंत सुसंगत वेबसाइट डिज़ाइन करते हैं। चाहे वह एक आकर्षक लैंडिंग पेज हो या एक व्यापक ई-कॉमर्स प्लेटफ़ॉर्म हो, हमारे डिज़ाइन आपके लक्ष्य दर्शकों के साथ समरसता देते हैं, एक गुब्बारे और यादगार ऑनलाइन यात्रा सुनिश्चित करके। <br/> हर अद्भुत डिज़ाइन के पीछे एक मजबूत विकास प्रक्रिया होती है। <br/> हमारे निपुण डेवलपर्स डिवाइस और प्लेटफ़ॉर्मों पर किसी समस्या के बिना दिनचर्या रूप से काम करने वाले तकनीकों का उपयोग करके वेबसाइट बनाते हैं, जो सिर्फ विजुअली प्रिय ही नहीं होते, बल्कि उपकरणों और प्लेटफ़ॉर्मों पर किसी समस्या के बिना दिनचर्या रूप से काम करते हैं। हम संघटित नेविगेशन, तेजी से लोड होने वाले समय, और प्रतिकृति लेआउट को प्राथमिकता देते हैं, जो सभी आगंतुकों के लिए एक अद्भुत उपयोगकर्ता अनुभव की गारंटी देते हैं।"
       }
     }
   },
   "projects": {
     "welcomeMessage": {
-      "one": "Sapna,",
-      "two": "Design,",
-      "three": "Pratipadan,",
-      "text": "Hum har sahyog mein gaurav mante hain, jyotish evam analytics ko hamare margdarshak beacon ke roop mein istemal karke hamesha badalte hue digital manch ke liye navigation karte hain."
+      "one": "सपना,",
+      "two": "डिज़ाइन,",
+      "three": "प्रस्तुत करें,",
+      "text": "हम हर सहयोग में गर्व करते हैं, सांख्यिकी और विश्लेषण को हमारे मार्गदर्शक द्वीपकों के रूप में उपयोग करते हैं, जो हमें सदैव बदलते हुए डिजिटल दृश्य को नेविगेट करने में मदद करते हैं।"
     }
   },
   "studyCases": {
@@ -93,21 +93,22 @@
         },
         "studyCase": {
           "image": "/images/study-main-grooming.png",
-          "meet": "AmazingPetGrooming, a family-owned business devoted to animal welfare. With branches in Hamilton and Cambridge, Ontario, they offer top-tier care for cats and dogs of all breeds and sizes. The experienced team provides tailored grooming services, ensuring your pet comfort and happiness. From soothing baths to precise trims, the team prioritize your pet well-being, aiming to enhance their health and appearance. Experience their dedicated approach to pet grooming by scheduling an appointment at either location and witnessing the positive impact on your furry companions lives.",
-          "background": "In Canada, a country known for its extreme temperature changes and variations in sunlight exposure, people often experience mood swings that can make mental health somewhat fragile. As a result, individuals turn to different methods to address this issue, with the companionship of a pet proving to be one of the most effective ways to tackle this problem. Just as they care for our mental well-being with loyalty and love, we must provide them with the appropriate care to keep them clean and happy. This feeling of owing is where the concept of AmazingPetGrooming for pet care was born, offering personalized and top-quality services in response to this need.",
+          "meet": "अमेज़िंग पेट ग्रूमिंग, जो जानवर के कल्याण के प्रति समर्पित एक परिवारिक स्वामित्व वाला व्यवसाय है। हैमिल्टन और कैम्ब्रिज, ऑंटारियो में शाखाएँ हैं, जहाँ वे सभी प्रजातियों और आकारों के बिल्लियों और कुत्तों के लिए श्रेष्ठ देखभाल प्रदान करते हैं। अनुभवी टीम विशेष रूप से तैयारी देने की सेवाएँ प्रदान करती है, आपके पालतू जानवर की आराम और खुशी की सुनिश्चित करती है। सुखद स्नान से सटीक छवियों तक, टीम आपके पालतू जानवर की भलाइ को महत्वपूर्ण मानती है, उनके स्वास्थ्य और उनके रूप को सुधारने का उद्देश्य रखती है। अपने निर्धारित तरीके से पेट ग्रूमिंग के प्रति उनके समर्पित दृष्टिकोण का अनुभव करें, इन दोनों स्थानों में किसी भी समय अपॉइंटमेंट बुक करके और अपने बाल-बिल्लों के जीवन पर सकारात्मक प्रभाव को देखें।",
+
+          "background": "कैनेडा में, एक देश के रूप में जाने जाने वाले बहुत अधिक तापमान के परिवर्तनों और सूरज की प्रकारभेदों के लिए, लोग अक्सर उन्हें मानसिक स्वास्थ्य को कुछ भी बना सकते हैं जो मानसिक स्वास्थ्य को कमजोर कर सकता है। इस परिणामस्वरूप, व्यक्तियाँ इस समस्या का समाधान करने के लिए विभिन्न तरीकों का सहारा लेती हैं, जिसमें पालतू जानवर की साथीपन सबसे प्रभावी तरीकों में से एक होती है। जैसे ही वे हमारे मानसिक भलाइ की देखभाल करते हैं वफादारी और प्यार के साथ, हमें उन्हें साफ और खुश रखने की उपयुक्त देखभाल प्रदान करनी चाहिए। इस कर्ज की भावना कहां से उत्पन्न हुई है, इस जरूरत के जवाब में अमेज़िंग पेट ग्रूमिंग की अवश्यकता के लिए व्यक्तिगत और श्रेष्ठ देखभाल की प्रस्तावना करने के रूप में उत्पन्न हुई है,।",
           "development": [
             {
               "image": "/images/changes_grooming.png",
-              "title": "Organization and Changes",
-              "description": "The development of Amazing Pet Grooming was built upon an existing webpage, which could be referred to as version 1.0. However, it needed more dynamism and contained many repetitive and unappealing designs for both leads and customers. This previous situation led to a complete page redesign, focusing on animations, organization, selection menus, and overall visual content."
+              "title": "संगठन और परिवर्तन",
+              "description": "अमेज़िंग पेट ग्रूमिंग के विकास का आधार परिस्थित एक मौजूदा वेबपेज पर बनाया गया था, जिसे संस्करण 1.0 के रूप में संदर्भित किया जा सकता है। हालांकि, इसमें और जीवंतता की आवश्यकता थी और यह लीड्स और ग्राहकों के लिए कई बार दोहरापन और अप्रिय डिज़ाइन्स को शामिल करता था। इस पूर्व स्थिति ने सम्पूर्ण पृष्ठ पुनर्विचार की ओर मोड़ दिया, जिसमें व्यापन, संगठन, चयन मेनू, और समग्र दृश्य सामग्र के माध्यम से फोकस किया गया।"
             },
             {
               "image": "/images/booking_process.gif",
-              "title": "Booking Process",
-              "description": "For the booking process, whether it's for a cat or a dog, you will be presented with various services for your pet, ranging from care like hair cutting to a spa day. Once you choose the desired service, you will be asked for additional information, such as your preferred location and the type of package you'd like. In the case of a dog, you will be prompted to indicate its size based on the provided 3D models, ranging from S to XL. After completing these steps, you will have the option to choose a specific member of Amazing Pet Grooming. Next, a confirmation screen will appear, and a calendar will be displayed to finalize the booking. At that point, your appointment will be set, ensuring that your pet receives the best possible care."
+              "title": "बुकिंग प्रक्रिया",
+              "description": "बुकिंग प्रक्रिया के लिए, चाहे यह एक बिल्ली के लिए हो या एक कुत्ते के लिए हो, आपको अपने पालतू के लिए विभिन्न सेवाओं के साथ प्रस्तुत किया जाएगा, हेयर कटिंग जैसे देखभाल से लेकर एक स्पा दिन जैसी सेवाओं तक। एक बार जब आप चुनी हुई सेवा का चयन करते हैं, तो आपसे अतिरिक्त जानकारी की मांग की जाएगी, जैसे कि आपकी पसंदीदा स्थान और आपकी पसंद की पैकेज के प्रकार। कुत्ते के मामले में, आपको प्रदान किए गए 3D मॉडल्स के आधार पर उसके आकार को सूचित करने के लिए प्रोड्डिंग किया जाएगा, जिसमें S से XL तक के विकल्प हो सकते हैं। इन चरणों को पूरा करने के बाद, आपको अमेज़िंग पेट ग्रूमिंग के एक विशिष्ट सदस्य का चयन करने का विकल्प मिलेगा। इसके बाद, एक पुष्टि स्क्रीन प्रकट होगी, और बुकिंग को पुष्टि करने के लिए एक कैलेंडर प्रदर्शित किया जाएगा। उस समय, आपका अपॉइंटमेंट सेट हो जाएगा, इसके साथ ही सुनिश्चित किया जाएगा कि आपका पालतू पर्याप्त देखभाल प्राप्त करता है।"
             }
           ],
-          "challenges": "Developing this project not only allowed us to connect with our pets and appreciate the excellent care provided to them, but also incorporates innovative design techniques. These techniques include the use of 3D elements to offer users a more comprehensive and interactive guide. Furthermore, multiple features have been integrated, such as maps.",
+          "challenges": "इस परियोजना को विकसित करने ने हमें न केवल हमारे पालतू जानवरों से जुड़ने की अनुमति दी है और उन्हें उन्हें प्रदान की जाने वाली उत्कृष्ट देखभाल की मूल्यांकन करने की सौभाग्य भी प्राप्त हुआ है, बल्कि यह नवाचारी डिज़ाइन तकनीकों को भी शामिल करता है। इन तकनीकों में 3D तत्वों का उपयोग शामिल है ताकि उपयोगकर्ताओं को एक और अधिक व्यापक और इंटरैक्टिव गाइड प्रदान किया जा सके। इसके अलावा, कई विशेषताएँ भी एकीकृत की गई हैं, जैसे कि मानचित्र।",
           "figmaDesigns": ["/images/figmaDesktopGrooming.png"],
           "designSystem": {
             "typography": [
@@ -150,26 +151,27 @@
         },
         "studyCase": {
           "image": "/images/study-main-pago.png",
-          "meet": "Pago Tienda is a web page where business partners exhibit and market their products or services so customers can purchase them. Pago Tienda Integrates the cryptocurrency payment method that is currently relatively recent and innovative in Argentina.",
-          "background": "In a market that is expanding in large proportions, not only in the Argentine region, it is vital to access the most significant number of products or services quickly and easily. In the case of Argentina, due to its current economic situation, which is not favorable at all, the local currency has been devalued abysmally. This event has caused the inhabitants of this country to be forced to resort to different ways of preserving liquidity, such as dollars or cryptocurrencies. This situation has motivated the Pago Tienda team to design an online store with payment options like cryptocurrencies.",
+          "meet": "पागो टिएंडा एक वेब पेज है जहाँ व्यवसाय साथी अपने उत्पादों या सेवाओं का प्रदर्शन और विपणन करते हैं ताकि ग्राहक उन्हें खरीद सकें। पागो टिएंडा एर्जेंटीना में मौजूद क्रिप्टोकरेंसी भुगतान विधि को एक बेहद हाल ही और नवाचारी तरीके से एकीकृत करता है।",
+
+          "background": "एक बड़े प्रमाण में विस्तार हो रहे बाजार में, न केवल आर्जेंटीना क्षेत्र में, बल्कि अंतर्राष्ट्रीय बाजार में जल्दी और आसानी से सबसे बड़ी संख्या में उत्पाद या सेवाओं तक पहुँचना जीवनीय है। आर्जेंटीना के मामले में, वर्तमान आर्थिक स्थिति के कारण, जो किसी भी तरह से सुखकारी नहीं है, स्थानीय मुद्रा की मूल्य कम हो गई है। इस घटना ने इस देश के निवासियों को नकदी की रक्षा के विभिन्न तरीकों का सहारा लेने के लिए मजबूर किया है, जैसे कि डॉलर या क्रिप्टोकरेंसी की ओर रुखने के। यह स्थिति ने पागो टिएंडा टीम को एक ऑनलाइन स्टोर डिज़ाइन करने के लिए प्रोत्साहित किया है जिसमें क्रिप्टोकरेंसी जैसे भुगतान विकल्प शामिल हैं।",
           "development": [
             {
               "image": "/images/development1-pago.png",
-              "title": "Registration processes",
-              "description": "During the registration process, new users will be asked for information such as their email address, name, and preferred addresses for frequent locations, and finally, the user will be asked to use the pre-designed cryptocurrency wallet to facilitate future payments."
+              "title": "पंजीकरण प्रक्रिया",
+              "description": "पंजीकरण प्रक्रिया के दौरान, नए उपयोगकर्ताओं से उनके ईमेल पते, नाम और आकस्मिक स्थानों के लिए पसंदीदा पतों जैसी जानकारी की मांग की जाएगी, और आखिर में, उपयोगकर्ता से भविष्य के भुगतान को सुगम बनाने के लिए पूर्व-डिज़ाइन क्रिप्टोकरेंसी वॉलेट का उपयोग करने के लिए कहा जाएगा।"
             },
             {
               "image": "/images/development1-pago.png",
-              "title": "Organization and features",
-              "description": "Pago Tienda was developed in different phases. The first was to study the popularity of cryptocurrencies in the region. During the second phase, establishments and businesses willing to accept cryptocurrency payments were sought. The third phase was to design the web page and the fourth phase was to develop the web page."
+              "title": "संगठन और विशेषताएँ",
+              "description": "पागो टिएंडा को विभिन्न चरणों में विकसित किया गया था। पहला चरण था क्रिप्टोकरेंसीज की प्रशंसा का अध्ययन करना। दूसरे चरण के दौरान, क्रिप्टोकरेंसी भुगतान स्वीकार करने के इच्छुक स्थानों और व्यवसायों की तलाश की गई। तीसरा चरण वेब पेज का डिज़ाइन करने का था और चौथा चरण वेब पेज को विकसित करने का था।"
             },
             {
               "image": "/images/development3-pago.png",
-              "title": "Purchase processes",
-              "description": "Once you have selected all the products you want, there will be a section called the cart, the section to make payment for your purchase. You will be asked for certain information such as delivery address and customer name. For payment, in this case, with the integrated method of payment with cryptocurrencies that are linked to the wallet developed to make the purchase process more accessible, a deposit of the crypto with which you decide to pay will be made, and now you just have to wait and enjoy your order."
+              "title": "खरीदी प्रक्रिया",
+              "description": "जब आपने जो भी उत्पाद खरीदने का निर्णय लिया है, तो एक ऐसा खरीददारी के लिए विभाग होगा, जिसे कार्ट कहा जाता है, आपके खरीददारी के लिए भुगतान करने का विभाग। आपसे कुछ जानकारी की मांग की जाएगी, जैसे कि वितरण पता और ग्राहक का नाम। भुगतान के लिए, इस मामले में, क्रिप्टोकरेंसी के साथ जुड़ी हुई भुगतान की विधि के साथ, जो खरीददारी प्रक्रिया को और पहुँचने योग्य बनाने के लिए विकसित किए गए वॉलेट से जुड़े हुए होते हैं, आपके द्वारा चुनी गई क्रिप्टो की जमा की जाएगी, और अब आपको बस इंतजार करना है और अपने ऑर्डर का आनंद लेना है।"
             }
           ],
-          "challenges": "During the development, we gained experience in designing and creating e-commerce type online stores, including their respective sections, shopping carts, and product categorization. An additional challenge for this case was integrating PagoLinea with PagoTienda, a solution designed to streamline the purchasing process.",
+          "challenges": "विकास के दौरान, हमें ई-कॉमर्स प्रकार की ऑनलाइन स्टोर्स के डिज़ाइन और निर्माण में अनुभव प्राप्त हुआ, जिसमें उनके संबंधित खंड, खरीददारी कार्ट, और उत्पाद वर्गीकरण शामिल थे। इस मामले के लिए एक अतिरिक्त चुनौती यह थी कि PagoLinea को PagoTienda के साथ एकीकृत किया जाए, जो खरीददारी प्रक्रिया को सरलीकृत करने के लिए डिज़ाइन किया गया था।",
           "figmaDesigns": [
             "/images/figmaDesktopPago.png",
             "/images/figmaMobilePago.png"
@@ -262,51 +264,52 @@
     },
     "text": {
       "context": {
-        "title": "Some<br/>Context",
-        "team": "Meet the team",
-        "background": "Background"
+        "title": "कुछ<br/>संदर्भ",
+        "team": "टीम से मिलिए",
+        "background": "पृष्ठभूमि"
       },
       "development": {
-        "title": "Development"
+        "title": "विकास"
       },
       "designSystem": {
-        "title": "Style<br/>Guide",
+        "title": "स्टाइल<br/>गाइड",
         "table": {
           "typography": {
-            "title": "Typography",
-            "heading": "Heading",
-            "desktop": "Desktop",
-            "mobile": "Mobile"
+            "title": "टाइपोग्राफी",
+            "heading": "शीर्षक",
+            "desktop": "डेस्कटॉप",
+            "mobile": "मोबाइल"
           },
-          "colors": "Colors palette"
+          "colors": "रंग पैलेट"
         }
       }
     }
   },
   "about": {
-    "welcomeMessage": "We live and breathe design, innovation, and the thrill of helping businesses grow.",
+    "welcomeMessage": "हम डिज़ाइन, नवाचार और व्यवसायों के विकास में मदद करने के उत्साह के साथ जीते हैं और सासते हैं।",
+    "title": "हमारी प्रक्रियाएँ",
     "processes": [
       {
-        "title": "Strategy",
-        "description": "We kickstart every project with a data-driven strategy that sets the foundation for your success. Our team dives deep into market insights, customer behavior, and industry trends to craft a tailored plan that aligns with your goals."
+        "title": "रणनीति",
+        "description": "हम हर प्रोजेक्ट की शुरुआत एक डेटा-ड्राइवन रणनीति के साथ करते हैं जो आपके सफलता के लिए नींव रखती है। हमारी टीम बाजार जानकारी, ग्राहक व्यवहार, और उद्योग के रुझानों में गहराई से गुस्सने के बाद आपके लक्ष्यों के साथ मेल खाने वाली एक विशेष योजना तैयार करने के लिए।"
       },
       {
-        "title": "Design",
-        "description": "Our design wizards bring imagination to life, conjuring captivating visuals that leave a lasting impression. From sleek interfaces to stunning graphics, we create an enchanting user experience that keeps visitors spellbound."
+        "title": "डिज़ाइन",
+        "description": "हमारे डिज़ाइन जादूगर विचारकों को जीवन में लाते हैं, जो एक दुर्लभ दृश्य को जीवित करते हैं और एक दीर्घकालिक प्रभाव छोड़ते हैं। चिकनी इंटरफेस से लेकर आकर्षक ग्राफिक्स तक, हम एक आकर्षक उपयोगकर्ता अनुभव बनाते हैं जो आगंतुकों को वश में कर देता है।"
       },
       {
-        "title": "Development",
-        "description": "Our development sorcerers work their magic, transforming design into functional reality. With cutting-edge technology and meticulous attention to detail, we weave a seamless web of code that powers your website's performance."
+        "title": "विकास",
+        "description": "हमारे विकास जादूगर अपना जादू काम करते हैं, डिज़ाइन को कार्यात्मक वास्तविकता में बदलते हैं। नवाचारी तकनीक और सूक्ष्म विवरण के साथ, हम एक अद्वितीय कोड की सार्वजनिक वेब बुनते हैं जो आपकी वेबसाइट के प्रदर्शन को संचालित करता है।"
       }
     ]
   },
   "contact": {
-    "welcomeMessage": "Let's<br/><i>design,</i><br/>let's<br/><i>deliver.</i>",
-    "formTitle": "What can we do for you?"
+    "welcomeMessage": "चलिए<br/><i>डिज़ाइन</i><br/>करें,<br/><i>प्रस्तुत करें।</i>",
+    "formTitle": "हम आपके लिए क्या कर सकते हैं?"
   },
   "button": {
-    "send": "Send",
-    "becomeClient": "Become a client",
-    "visitSite": "Visit site"
+    "send": "भेजें",
+    "becomeClient": "ग्राहक बनें",
+    "visitSite": "साइट पर जाएं"
   }
 }

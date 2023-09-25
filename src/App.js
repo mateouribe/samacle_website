@@ -9,14 +9,16 @@ import { Home, Services, Projects, About, Contact, StudyCase } from "./screens";
 import Navbar from "./components/Navbar";
 import Cursor from "./components/Cursor";
 import { AnimatePresence } from "framer-motion";
-import Lenis from "@studio-freight/lenis";
+
 import Footer from "./components/Footer";
+import ScrollToTop from "./utils/ScrollToTop";
+import Lenis from "@studio-freight/lenis";
 
 const App = () => {
   const location = useLocation();
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 4,
+      duration: 1.5,
       infinite: false,
     });
 
@@ -30,6 +32,7 @@ const App = () => {
 
   return (
     <>
+      {/* <ScrollToTop /> */}
       <Navbar />
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>

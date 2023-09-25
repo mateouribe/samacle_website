@@ -86,17 +86,17 @@ const Hero = () => {
         hasPadding
       >
         <h2
-          className="text-black font-swearDisplay text-[80px] md:text-[100px] lg:text-[138px] xl:text-[150px] leading-[99%] text-left overflow-hidden z-[100] relative"
+          className="text-black font-swearDisplay text-[80px] md:text-[100px] lg:text-[120px] xl:text-[130px] leading-[99%] text-left overflow-hidden z-[100] relative"
           id="heroText"
           dangerouslySetInnerHTML={{ __html: t("home.welcomeMessage") }}
         ></h2>
 
         <figure className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] h-[50%] origin-bottom z-[10]">
-          <div className="w-full h-full relative">
-            <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 bg-white z-[9] origin-top slideOut" />
-            <div className="w-full h-full overflow-hidden relative">
+          <div className="relative w-full h-full">
+            <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 bg-white z-[9] origin-top slideOut rounded-t-10 overflow-hidden" />
+            <div className="relative w-full h-full overflow-hidden rounded-t-10">
               <div
-                className="w-full h-full absolute top-0 left-0 z-[5] coverImage"
+                className="w-full h-full absolute top-0 left-0 z-[5] coverImage rounded-t-10"
                 style={{
                   backgroundImage: "url(images/orange_process.png)",
                   backgroundSize: "cover",

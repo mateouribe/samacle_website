@@ -1,11 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Helmet } from "react-helmet";
 import Transition from "../components/Transition";
 import Hero from "../components/services/Hero";
 import Statistics from "../components/services/stadistics/Statistics";
 import Options from "../components/services/options/Options";
+import gsap from "gsap";
+import { colors } from "../utils/constants";
 
 const Services = () => {
+  useLayoutEffect(() => {
+    const body = document.querySelector("body");
+    gsap.to(body, {
+      backgroundColor: colors.white,
+    });
+    //scroll to top right before it mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       <Helmet>

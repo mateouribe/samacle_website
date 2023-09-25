@@ -112,51 +112,6 @@ const Services = () => {
           end: "bottom 30.5%",
         },
       });
-
-      // Animate title
-      // ScrollTrigger.create({
-      //   trigger: container.current,
-      //   start: "top 60%",
-      //   end: "bottom 60%",
-      //   animation: gsap.fromTo(
-      //     splitTitle.chars,
-      //     {
-      //       y: 45,
-      //     },
-      //     {
-      //       y: 0,
-      //       duration: 1.5,
-      //       stagger: 0.02,
-      //       ease: Expo.easeOut,
-      //     }
-      //   ),
-      // });
-
-      // Animate table
-      // ScrollTrigger.create({
-      //   trigger: container.current,
-      //   start: "top 60%",
-      //   end: "bottom 60%",
-      //   animation: gsap.fromTo(
-      //     ".content-services",
-      //     {
-      //       opacity: 0,
-      //       yPercent: 50,
-      //     },
-      //     {
-      //       opacity: 1,
-      //       yPercent: 0,
-      //       delay: 0.5,
-      //       duration: 2,
-      //       ease: Expo.easeOut,
-      //       onComplete: () => {
-      //         gsap.to(".content-services", {
-      //           clearProps: "transform",
-      //         });
-      //       },
-      //     }
-      //   ),
-      // });
     }, container);
 
     return () => ctx.revert();
@@ -169,9 +124,9 @@ const Services = () => {
           className="servicesTitle text-beige"
           text={t("home.services.title")}
         ></SectionTitle>
-        <section className="services flex flex-col relative">
-          <div className="container-services w-full m-auto">
-            <div className="content-services w-full h-full flex flex-col">
+        <section className="relative flex flex-col services">
+          <div className="w-full m-auto container-services">
+            <div className="flex flex-col w-full h-full content-services">
               {/* header */}
               <div className="w-full grid grid-cols-2 pb-10 border-b-[1px] border-white gap-20 ">
                 <div className="w-full h-full">
@@ -209,7 +164,7 @@ const Services = () => {
               </div>
 
               {/* items */}
-              <div className="items-service w-full h-full flex flex-col">
+              <div className="flex flex-col w-full h-full items-service">
                 {services.map((service, index) => (
                   <ServiceCard index={index} key={index} />
                 ))}

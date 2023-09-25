@@ -11,7 +11,7 @@ const CustomSection = ({
   return (
     <section
       className={`w-full 
-      ${fullHeightNav ? "h-view lg:h-[calc(100vh-66px)]" : "h-full"} 
+      ${fullHeightNav ? "h-view lg:h-[calc(100vh-66px)]" : "h-full"}
       ${hasPadding ? "p-mobile md:p-tablet lg:p-desktop" : ""} 
       ${fullHeight ? "h-view" : "h-auto"}
       ${className} 

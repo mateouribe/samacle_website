@@ -28,6 +28,8 @@ const Home = () => {
       type: "words, chars",
       charsClass: "orangeWords",
     });
+
+    const body = document.querySelector("body");
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: textAbout.current,
@@ -46,6 +48,11 @@ const Home = () => {
           }
         ),
       });
+      gsap.to(body, {
+        backgroundColor: colors.white,
+      });
+      //scroll to top right before it mounts
+      window.scrollTo(0, 0);
     }, textAbout);
 
     return () => ctx.revert();

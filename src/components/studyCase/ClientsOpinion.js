@@ -13,19 +13,20 @@ const ClientsOpinion = ({ project }) => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      changeBgColorAnimation({
-        trigger: container.current,
-        colors: {
-          enter: colors.main,
-          exit: colors.main,
-          menuEnter: colors.black,
-          menuExit: colors.black,
-        },
-        position: {
-          start: "top 80%",
-          end: "bottom 80%",
-        },
-      });
+      // changeBgColorAnimation({
+      //   trigger: container.current,
+      //   colors: {
+      //     enter: colors.main,
+      //     exit: colors.main,
+      //     menuEnter: colors.black,
+      //     menuExit: colors.black,
+      //   },
+      //   position: {
+      //     start: "top 80%",
+      //     end: "bottom 80%",
+      //   },
+      //   // markers: true,
+      // });
       ScrollTrigger.create({
         trigger: container.current,
         start: "top 70%",
@@ -55,22 +56,23 @@ const ClientsOpinion = ({ project }) => {
       ref={container}
     >
       <div className="flex flex-col gap-5 clientOpinion z-[9999]">
-        <p className="text-[22px] md:text-[32px] uppercase text-black">
-          To create a groundbreaking operating experience, the NODO Film Systems
-          allowed camera operators to adjust the weight of the wheels, control
-          mass and drag, and create different camera simulations.
+        <p className="text-[22px] md:text-[32px] uppercase text-white">
+          <span className="text-[50px]">"</span>To create a groundbreaking
+          operating experience, the NODO Film Systems allowed camera operators
+          to adjust the weight of the wheels, control mass and drag, and create
+          different camera simulations.<span className="text-[50px]">"</span>
         </p>
-        <span className="text-black text-sm">Andrés. Pago Tienda, CEO.</span>
+        <span className="text-sm text-white">Andrés. Pago Tienda, CEO.</span>
       </div>
       <CustomButton
         className="self-start clientOpinion"
         navigateTo="/contact"
-        blackColor
+        // blackColor
       >
         {t("button.becomeClient")}
       </CustomButton>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none">
+      <div className="absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none top-1/2 left-1/2">
         <img
           src="/images/fingerPrint.png"
           alt="fingerprint"

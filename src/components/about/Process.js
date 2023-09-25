@@ -7,9 +7,11 @@ import { changeBgColorAnimation } from "../../utils/gsapAnimations";
 import { colors, processes } from "../../utils/constants";
 import SplitText from "../../utils/Split3.min";
 import ProcessItem from "./ProcessItem";
+import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
 const Process = () => {
+  const { t } = useTranslation();
   const container = useRef(null);
   useLayoutEffect(() => {
     const splitTitleParent = new SplitText(".processTitle", {
@@ -84,12 +86,12 @@ const Process = () => {
         className="w-full min-h-[100vh] md:h-view flex flex-col gap-50"
       >
         <SectionTitle
-          className="text-white processTitle"
-          text="Our process"
+          className="text-main processTitle"
+          text={t("about.title")}
         ></SectionTitle>
         <div className="w-full h-full flex justify-end">
           <div className="w-full md:w-[80%] lg:w-[70%] h-full flex flex-col gap-50 justify-center">
-            {processes.map((index) => (
+            {processes.map((el, index) => (
               <ProcessItem key={index} index={index} />
             ))}
           </div>
