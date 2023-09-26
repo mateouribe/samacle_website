@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutLetter = ({
   subText,
@@ -6,6 +7,8 @@ const AboutLetter = ({
   medium = false,
   large = false,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative flex flex-col items-center lg:block aboutBlock">
       <p
@@ -26,7 +29,7 @@ const AboutLetter = ({
         alt="finger svg"
       />
       <div className="w-full h-[1px] lg:h-[3px] block lg:absolute -bottom-20 left-0 bg-black z-[200]">
-        <div className="w-full h-full relative">
+        <div className="relative w-full h-full">
           <span
             className={`text-xsm text-black absolute left-1/2  top-1/2 transform -translate-x-1/2  -translate-y-1/2 p-[3px] turn-blue 
           ${small ? "bg-white" : medium ? "bg-white" : "bg-beige turn-beige"}
@@ -38,10 +41,7 @@ const AboutLetter = ({
       </div>
       {large && (
         <p className="text-black text-justify max-w-[466.41px] lg:hidden mt-[20px] block z-[200]">
-          We are a digital agency in Waterloo, ON, Canada! We are not confined
-          by borders; we thrive on collaborating with clients from all corners
-          of the world. Our mission is to deliver exceptional digital solutions
-          that leave a lasting impact on your brand.
+          {t("home.ourMission")}
         </p>
       )}
     </div>

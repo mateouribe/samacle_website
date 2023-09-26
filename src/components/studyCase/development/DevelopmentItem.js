@@ -38,13 +38,13 @@ const DevelopmentItem = ({ index, item, image }) => {
 
   return (
     <div
-      className="w-full flex flex-col md:flex-row  gap-20 md:gap-0 rounded-10"
+      className="flex flex-col w-full gap-20 md:flex-row md:gap-0"
       key={index}
       ref={container}
     >
       {/* Image */}
       <div
-        className={`w-full md:w-1/2 h-[80vh] bg-lightGray rounded-10 ${
+        className={`w-full md:w-1/2 h-[80vh] bg-lightGray ${
           index % 2 !== 0 ? "order-1 md:order-2" : "order-1"
         }`}
       >

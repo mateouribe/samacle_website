@@ -303,7 +303,12 @@
   },
   "contact": {
     "welcomeMessage": "Let's<br/><i>design,</i><br/>let's<br/><i>deliver.</i>",
-    "formTitle": "What can we do for you?"
+    "formTitle": "What can we do for you?",
+    "placeholder": {
+      "name": "Type your name",
+      "email": "Type your email",
+      "message": "What's on your mind?"
+    }
   },
   "button": {
     "send": "Send",

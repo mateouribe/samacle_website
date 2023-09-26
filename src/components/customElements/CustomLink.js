@@ -52,13 +52,15 @@ const CustomLink = ({ children, className, route, image = "", onClick }) => {
     tl.current.reverse();
   };
 
+  // ${image !== "" && isDesktop && "max-h-[20px]"}
   return (
     <li
       onClick={() => {
         onClick && onClick();
         navigateToPage(navigate, route);
       }}
-      className={`${className} relative hoverMouse`}
+      className={`${className} relative hoverMouse        
+        `}
       ref={container}
       onMouseEnter={onMouseEnterItem}
       onMouseLeave={onMouseLeaveItem}
@@ -69,7 +71,7 @@ const CustomLink = ({ children, className, route, image = "", onClick }) => {
           <img
             src={image}
             alt="Screenshot of about page"
-            className="absolute min-w-[70px] left-1/2 transform -translate-x-1/2 top-full link pointer-events-none rounded-[2px]"
+            className="absolute min-w-[70px] left-1/2 transform -translate-x-1/2 top-full link pointer-events-none "
           />
           <div className="absolute w-[70px] h-[45.5px] bg-white left-1/2 transform -translate-x-1/2 top-full screenshot origin-bottom pointer-events-none" />
         </>

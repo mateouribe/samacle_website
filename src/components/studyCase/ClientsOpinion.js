@@ -56,13 +56,14 @@ const ClientsOpinion = ({ project }) => {
       ref={container}
     >
       <div className="flex flex-col gap-5 clientOpinion z-[9999]">
-        <p className="text-[22px] md:text-[32px] uppercase text-white">
-          <span className="text-[50px]">"</span>To create a groundbreaking
-          operating experience, the NODO Film Systems allowed camera operators
-          to adjust the weight of the wheels, control mass and drag, and create
-          different camera simulations.<span className="text-[50px]">"</span>
+        <p className="text-[22px] md:text-[32px] uppercase text-beige">
+          <span className="text-[50px] leading-[0px]">"</span>To create a
+          groundbreaking operating experience, the NODO Film Systems allowed
+          camera operators to adjust the weight of the wheels, control mass and
+          drag, and create different camera simulations.
+          <span className="text-[50px] leading-[0px]">"</span>
         </p>
-        <span className="text-sm text-white">Andrés. Pago Tienda, CEO.</span>
+        <span className="text-sm text-beige">Andrés. Pago Tienda, CEO.</span>
       </div>
       <CustomButton
         className="self-start clientOpinion"

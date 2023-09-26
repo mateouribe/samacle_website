@@ -91,12 +91,12 @@ const Hero = () => {
           dangerouslySetInnerHTML={{ __html: t("home.welcomeMessage") }}
         ></h2>
 
-        <figure className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[30%] h-[50%] origin-bottom z-[10]">
+        <figure className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] lg:w-[40%] lg:h-[50%] h-[50%] origin-bottom z-[10]">
           <div className="relative w-full h-full">
-            <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 bg-white z-[9] origin-top slideOut rounded-t-10 overflow-hidden" />
-            <div className="relative w-full h-full overflow-hidden rounded-t-10">
+            <div className="w-[calc(100%+20px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 bg-white z-[9] origin-top slideOut overflow-hidden" />
+            <div className="relative w-full h-full overflow-hidden">
               <div
-                className="w-full h-full absolute top-0 left-0 z-[5] coverImage rounded-t-10"
+                className="w-full h-full absolute top-0 left-0 z-[5] coverImage"
                 style={{
                   backgroundImage: "url(images/orange_process.png)",
                   backgroundSize: "cover",

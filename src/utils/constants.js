@@ -136,7 +136,7 @@ const projects = [
             "During the registration process, new users will be asked for information such as their email address, name, and preferred addresses for frequent locations, and finally, the user will be asked to use the pre-designed cryptocurrency wallet to facilitate future payments.",
         },
         {
-          image: "/images/development1-pago.png",
+          image: "/images/development2-pago.png",
           title: "Organization and features.",
           description:
             "Pago Tienda was developed in different phases. The first was to study the popularity of cryptocurrencies in the region. During the second phase, establishments and businesses willing to accept cryptocurrency payments were sought. The third phase was to design the web page and the fourth phase was to develop the web page.",
@@ -190,9 +190,9 @@ const projects = [
     },
     image: "/images/projects_copy.png",
     mockupImages: {
-      big: "/images/mockupBigPago.png",
-      mid: "/images/mockupMidPago.png",
-      sm: "/images/mockupSmPago.png",
+      big: "/images/mockupBigUnitrade.png",
+      mid: "/images/mockupMidUnitrade.png",
+      sm: "/images/mockupSmUnitrade.png",
     },
     studyCase: {
       image: "/images/study-main-pago.png",

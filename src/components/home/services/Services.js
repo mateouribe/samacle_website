@@ -10,11 +10,14 @@ import ServiceImage from "./ServiceImage";
 import SplitText from "../../../utils/Split3.min.js";
 import SectionTitle from "../../customElements/SectionTitle";
 import { useTranslation } from "react-i18next";
+import { useStatesContext } from "../../../context/StatesProvider";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
   const container = useRef(null);
   const { t } = useTranslation();
+  const { isDesktop } = useStatesContext();
 
   useLayoutEffect(() => {
     const splitTitleParent = new SplitText(".servicesTitle", {
@@ -103,7 +106,7 @@ const Services = () => {
         trigger: container.current,
         colors: {
           enter: colors.black,
-          exit: "#FAEEFF",
+          exit: !isDesktop ? colors.white : "#FAEEFF",
           menuEnter: colors.white,
           menuExit: colors.black,
         },
@@ -144,7 +147,7 @@ const Services = () => {
               {/* gallery */}
               <div
                 id="gallery-services"
-                className="flex fixed w-[385px] h-[280px] transform z-[999] overflow-hidden pointer-events-none rounded-[10px]"
+                className="flex fixed w-[385px] h-[280px] transform z-[999] overflow-hidden pointer-events-none"
                 style={{
                   transform: "translateY(-50%, 50%)",
                   transition: "all cubic-bezier(0.19, 1, 0.22, 1) 1s",
@@ -152,7 +155,7 @@ const Services = () => {
               >
                 <div
                   id="services-images"
-                  className="w-full h-[calc(280px*3)] flex flex-col rounded-[10px]"
+                  className="w-full h-[calc(280px*3)] flex flex-col"
                   style={{
                     transition: "all cubic-bezier(0.19, 1, 0.22, 1) 1s",
                   }}

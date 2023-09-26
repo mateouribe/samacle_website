@@ -69,10 +69,10 @@ const ProjectItem = ({ project, index }) => {
         ref={container}
         to={project.completed && `/projects/study_case/${project.info.link}`}
       >
-        <div className="w-full h-full flex gap-20 projectContainer relative">
+        <div className="relative flex w-full h-full gap-20 projectContainer">
           {/* image left */}
           <div
-            className="w-full md:w-1/2 h-full rounded-10"
+            className="w-full h-full md:w-1/2"
             style={{
               backgroundImage: `url(${project.mockupImages.big})`,
               backgroundSize: "cover",
@@ -82,9 +82,9 @@ const ProjectItem = ({ project, index }) => {
           />
 
           {/* images right */}
-          <div className="w-1/2 h-full md:flex flex-col gap-20 hidden">
+          <div className="flex-col hidden w-1/2 h-full gap-20 md:flex">
             <div
-              className={`w-full h-[60%] rounded-10 ${
+              className={`w-full h-[60%] ${
                 index % 2 === 0 ? "order-2" : "order-1"
               }`}
               style={{
@@ -95,7 +95,7 @@ const ProjectItem = ({ project, index }) => {
               }}
             />
             <div
-              className={`w-full h-[40%] rounded-10 ${
+              className={`w-full h-[40%] ${
                 index % 2 === 0 ? "order-1" : "order-2"
               }`}
               style={{
@@ -108,7 +108,7 @@ const ProjectItem = ({ project, index }) => {
           </div>
 
           {!project.completed && (
-            <div className="w-full h-full absolute left-0 top-0 bg-black/80 rounded-10 flex justify-center items-center">
+            <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full bg-black/80">
               <span className="text-[20px] md:text-[30px] text-gray">
                 Coming soon...
               </span>

@@ -120,21 +120,21 @@ const Contact = () => {
               name="user_name"
               type="text"
               label="Name"
-              placeholder="Type your name"
+              placeholder={t("contact.placeholder.name")}
               required
             />
             <CustomInput
               name="user_email"
               type="email"
               label="Email"
-              placeholder="Type your email"
+              placeholder={t("contact.placeholder.email")}
               required
             />
             <CustomInput
               name="message"
               type="text"
               label="Message"
-              placeholder="What's on your mind?"
+              placeholder={t("contact.placeholder.message")}
               textarea
               required
             />

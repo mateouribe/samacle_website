@@ -440,7 +440,12 @@
   },
   "contact": {
     "welcomeMessage": "Diseñemos,<br/>entreguemos.",
-    "formTitle": "¿Qué podemos hacer por usted?"
+    "formTitle": "¿Qué podemos hacer por usted?",
+    "placeholder": {
+      "name": "Escriba su nombre",
+      "email": "Escriba su correo electrónico",
+      "message": "¿Qué desea decirnos?"
+    }
   },
   "button": {
     "send": "Enviar",

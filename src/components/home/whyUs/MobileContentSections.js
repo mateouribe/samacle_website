@@ -6,9 +6,9 @@ const MobileContentSections = ({ image, title, text, color }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full flex flex-col gap-30">
+    <div className="flex flex-col w-full gap-30">
       <div
-        className="mobilePhoto w-full h-[80vh] flex flex-col justify-center items-center px-mobile py-tablet gap-20 rounded-10"
+        className="mobilePhoto w-full h-[80vh] flex flex-col justify-center items-center px-mobile py-tablet gap-20 "
         style={{
           background: `linear-gradient(180deg, ${color.split(" ")[0]} 0%, ${
             color.split(" ")[1]

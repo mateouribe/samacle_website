@@ -14,7 +14,13 @@ const Navbar = () => {
   const languageTl = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+
   const { t } = useTranslation();
+
+  useEffect(() => {
+    console.log("currentLanguage", currentLanguage);
+  }, [currentLanguage]);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -42,6 +48,16 @@ const Navbar = () => {
         ease: Expo.easeInOut,
       });
     }, desktopContainer);
+
+    return () => ctx.revert();
+  }, []);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to([".topLine", ".bottomLine"], {
+        backgroundColor: colors.black,
+      });
+    }, mobileContainer);
 
     return () => ctx.revert();
   }, []);
@@ -74,6 +90,7 @@ const Navbar = () => {
       gsap.set(".whiteLogo", {
         opacity: 0,
       });
+
       //Animate burger
       tl.to(".topLine", {
         y: 4,
@@ -107,10 +124,16 @@ const Navbar = () => {
       );
 
       //Animate black logo
-      tl.to(
+      tl.fromTo(
         ".blacklogo",
+
+        {
+          opacity: 1,
+          scale: 1,
+        },
         {
           opacity: 0,
+          scale: 0.8,
           duration: 0.5,
         },
         "-=0.5"
@@ -128,11 +151,16 @@ const Navbar = () => {
       );
 
       //Animate white logo
-      tl.to(
+      tl.fromTo(
         ".whiteLogo",
         {
+          opacity: 0,
+          scale: 0.8,
+        },
+        {
           opacity: 1,
-          duration: 0.3,
+          scale: 1,
+          duration: 0.5,
         },
         "-=0.2"
       );
@@ -148,7 +176,7 @@ const Navbar = () => {
           stagger: 0.05,
           ease: Expo.easeInOut,
         },
-        "-=0.3"
+        "-=0.5"
       );
     }, mobileContainer);
   }, []);
@@ -180,19 +208,20 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setCurrentLanguage(lng);
   };
 
   return (
     <nav className="w-full relative z-[200]">
       <ul
-        className="hidden lg:flex w-full flex-row justify-between p-mobile md:px-tablet lg:px-desktop"
+        className="flex-row items-center justify-between hidden w-full lg:flex p-mobile md:px-tablet lg:px-desktop"
         ref={desktopContainer}
       >
         <CustomLink route="/" className="text-black">
           <img className="" src="/images/icon.svg" alt="Samacle icon" />
         </CustomLink>
-        <li className="flex gap-30 justify-start">
-          <ul className="w-full flex gap-30 text-sm text-black">
+        <li className="flex justify-start gap-30">
+          <ul className="flex w-full text-sm text-black gap-30">
             <CustomLink
               route="/"
               className="desktopItem"
@@ -235,7 +264,7 @@ const Navbar = () => {
             onMouseDown={(e) => gsap.to(e.currentTarget, { scale: 0.8 })}
             onMouseUp={(e) => gsap.to(e.currentTarget, { scale: 1 })}
           >
-            <span className="material-symbols-outlined text-black hover:text-main">
+            <span className="text-black material-symbols-outlined hover:text-main">
               language
             </span>
             <div className="bg-white absolute left-0 top-full min-w-max py-5 rounded-10 rounded-tl-[0px] border-[1px] border-gray language-options opacity-0 scale-0 z-[-10]">
@@ -304,8 +333,8 @@ const Navbar = () => {
             alt="Samacle icon"
             className="w-[134px] whiteLogo"
           />
-          <div className="w-full h-full flex justify-center items-center ">
-            <ul className="w-full flex flex-col text-white justify-center items-start ">
+          <div className="flex items-center justify-center w-full h-full ">
+            <ul className="flex flex-col items-start justify-center w-full text-white ">
               <CustomLink
                 route="/"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
@@ -343,8 +372,51 @@ const Navbar = () => {
               </CustomLink>
             </ul>
           </div>
-          <ul>
-            <li className="text-main mobileItem">EN</li>
+          <ul className="flex gap-20 text-white">
+            <li
+              className={`mobileItem ${
+                currentLanguage !== "en" ? "text-white opacity-70" : "text-main"
+              }`}
+              onClick={() => {
+                changeLanguage("en");
+                onClickBurgerMenu();
+              }}
+            >
+              EN
+            </li>
+            <li
+              className={`mobileItem ${
+                currentLanguage === "fr" ? "text-main" : "text-white opacity-70"
+              }`}
+              onClick={() => {
+                changeLanguage("fr");
+                onClickBurgerMenu();
+              }}
+            >
+              FR
+            </li>
+            <li
+              className={`mobileItem ${
+                currentLanguage === "sp" ? "text-main" : "text-white opacity-70"
+              }`}
+              onClick={() => {
+                changeLanguage("sp");
+                onClickBurgerMenu();
+              }}
+            >
+              ES
+            </li>
+            <li
+              className={`mobileItem ${
+                currentLanguage === "hi" ? "text-main" : "text-white opacity-70"
+              }`}
+              onClick={() => {
+                changeLanguage("hi");
+                onClickBurgerMenu();
+              }}
+            >
+              HI
+            </li>
           </ul>
         </div>
       </div>

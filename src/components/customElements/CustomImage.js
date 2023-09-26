@@ -66,7 +66,7 @@ const CustomImage = ({
 
   return (
     <div
-      className="w-full h-full relative"
+      className="relative w-full h-full"
       ref={container}
       onMouseEnter={() => {
         if (!noHover) {
@@ -81,10 +81,10 @@ const CustomImage = ({
         }
       }}
     >
-      <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 z-[9] origin-top slideOut dependsOnBgColor bg-white rounded-t-10" />
-      <div className="w-full h-full overflow-hidden relative containerScale rounded-10">
+      <div className="w-[calc(100%+4px)] h-full absolute top-0 left-1/2 transform -translate-x-1/2 z-[9] origin-top slideOut dependsOnBgColor bg-white" />
+      <div className="relative w-full h-full overflow-hidden containerScale">
         <div
-          className="w-full h-full absolute top-0 left-0 z-[5] coverImage rounded-10"
+          className="w-full h-full absolute top-0 left-0 z-[5] coverImage"
           style={{
             backgroundImage: `url(${image})`,
             backgroundSize: "cover",

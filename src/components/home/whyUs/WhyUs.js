@@ -5,6 +5,7 @@ import DesktopContentSection from "./DesktopContentSection";
 import { colors } from "../../../utils/constants";
 import DesktopPhoto from "./DesktopPhoto";
 import MobileContentSections from "./MobileContentSections";
+//isDesktop context
 import { useTranslation } from "react-i18next";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +75,7 @@ const WhyUs = () => {
         <div className="flex flex-col justify-center w-1/2 right h-view px-mobile md:px-desktop lg:pl-0 lg:pr-desktop">
           {/* //TODO:pr-100 */}
           {/* <!-- add mobile content here--> */}
-          <div className="hidden w-full mobileContent">
+          <div className="hidden w-full mobileContent mb-100">
             <MobileContentSections
               ttitle={t("home.whyUs.reasonOneTitle")}
               text={t("home.whyUs.reasonOneDescription")}
@@ -101,7 +102,7 @@ const WhyUs = () => {
             />
           </div>
           {/* <!-- desktop content --> */}
-          <div className="desktopPhotos w-[100%] h-[40vw] relative overflow-hidden rounded-[10px]">
+          <div className="desktopPhotos w-[100%] h-[40vw] relative overflow-hidden rounded-10">
             <DesktopPhoto
               image="/images/blue.png"
               color="#94EFF9 #1BB7C8 #229AB2"

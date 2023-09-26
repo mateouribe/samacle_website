@@ -49,7 +49,7 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
           className="h-full cursor-none projectItemScroll"
           to={project.completed && `/projects/study_case/${project.info.link}`}
         >
-          <div className="relative w-full h-full overflow-hidden rounded-10">
+          <div className="relative w-full h-full overflow-hidden">
             <CustomImage
               image={project.image}
               position={positions}
@@ -58,7 +58,7 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
               noHover={!project.completed && true}
             />
             {!project.completed && (
-              <div className="w-full h-full absolute left-0 top-0 bg-black/80 rounded-10 flex justify-center items-center z-[999]">
+              <div className="w-full h-full absolute left-0 top-0 bg-black/80 flex justify-center items-center z-[999]">
                 <span className="text-[20px] md:text-[30px] text-gray">
                   Coming soon...
                 </span>

@@ -303,7 +303,12 @@
   },
   "contact": {
     "welcomeMessage": "Créons,<br/>Livrons.",
-    "formTitle": "Que pouvons-nous faire pour vous?"
+    "formTitle": "Que pouvons-nous faire pour vous?",
+    "placeholder": {
+      "name": "Ecrivez votre nom",
+      "email": "Ecrivez votre email",
+      "message": "Quel est votre message?"
+    }
   },
   "button": {
     "send": "Envoyer",
