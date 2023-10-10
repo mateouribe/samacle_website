@@ -46,7 +46,7 @@ const StudyCase = () => {
           trigger: ".imgTrigger",
           start: "top 50%",
           end: "bottom 0%",
-          scrub: true,
+          scrub: 1.5,
           animation: gsap.to(".projectMainImg", {
             scale: 1,
           }),

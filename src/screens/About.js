@@ -63,7 +63,7 @@ const About = () => {
         <div className="w-[80%] md:w-[60%] h-[80vh] textTrigger">
           <CustomImage image="/images/team_working.png" onLoad noHover />
         </div>
-        <p className="w-[70%] md:w-1/2 text-justify textAbout text-black">
+        <p className="w-[70%] md:w-1/2 textAbout text-black">
           {t("home.ourMission")}
         </p>
       </div>

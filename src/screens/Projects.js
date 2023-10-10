@@ -123,7 +123,7 @@ const Projects = () => {
               text={t("projects.welcomeMessage.three")}
             ></SectionTitle>
           </div>
-          <p className="w-[70%] md:w-[50%] lg:w-[30%] text-justify text-black projectPageText leading-[90%]">
+          <p className="w-[70%] md:w-[50%] lg:w-[30%] text-black projectPageText leading-[90%]">
             {t("projects.welcomeMessage.text")}
           </p>
         </div>

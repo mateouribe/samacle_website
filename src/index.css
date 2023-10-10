@@ -169,6 +169,7 @@ body {
   }
 }
 
+/* Why us */
 @media screen and (max-width: 900px) {
   .left {
     display: none;

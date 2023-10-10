@@ -40,7 +40,7 @@ const Hero = () => {
         trigger: ".imgTriggerS",
         start: "top 10%",
         end: "bottom 10%",
-        scrub: true,
+        scrub: 1.5,
         animation: gsap.to(".servicesMainImg", {
           scale: 0.9,
         }),
@@ -53,7 +53,7 @@ const Hero = () => {
     <div ref={container}>
       <CustomSection
         fullHeightNav
-        className="pt-desktop md:pt-tablet flex flex-col items-end"
+        className="flex flex-col items-end pt-desktop md:pt-tablet"
       >
         <h4
           className="text-[20px] lg:text-[30px] font-swearDisplay leading-[95%] text-black text-right w-[80%] md:w-1/2 px-mobile md:px-tablet lg:px-desktop"
@@ -62,7 +62,7 @@ const Hero = () => {
           {t("services.welcomeMessage")}
         </h4>
         <div className="w-full h-[80vh] imgTriggerS">
-          <div className="w-full h-full relative servicesMainImg">
+          <div className="relative w-full h-full servicesMainImg">
             <CustomImage
               image="/images/rocket_services.png"
               onLoad

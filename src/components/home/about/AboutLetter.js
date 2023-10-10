@@ -40,7 +40,7 @@ const AboutLetter = ({
         </div>
       </div>
       {large && (
-        <p className="text-black text-justify max-w-[466.41px] lg:hidden mt-[20px] block z-[200]">
+        <p className="text-black max-w-[466.41px] lg:hidden mt-[20px] block z-[200]">
           {t("home.ourMission")}
         </p>
       )}

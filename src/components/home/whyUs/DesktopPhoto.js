@@ -3,7 +3,7 @@ import React from "react";
 const DesktopPhoto = ({ image, color }) => {
   return (
     <div
-      className="desktopPhoto absolute w-full lg:w-[80%] h-full right-0"
+      className="desktopPhoto absolute w-full lg:w-[80%] h-full right-0 rounded-10"
       style={{
         background: `linear-gradient(180deg, ${color.split(" ")[0]} 0%, ${
           color.split(" ")[1]

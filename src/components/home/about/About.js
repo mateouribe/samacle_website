@@ -47,15 +47,13 @@ const About = () => {
         hasPadding
         className="flex justify-center items-center lg:h-view py-[150px] lg:py-desktop select-none"
       >
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:items-end w-full gap-50 lg:gap-0 relative">
+        <div className="relative flex flex-col items-center justify-between w-full lg:flex-row lg:items-end gap-50 lg:gap-0">
           <AboutLetter subText="You" small />
           <AboutLetter subText="You" medium />
           <AboutLetter subText="Our mission" large />
 
           <div className="hidden lg:block lg:absolute right-0 top-[calc(100%+50px)] max-w-[466.41px] lg:max-w-[600.88px] z-[200]">
-            <p className="text-black text-justify aboutBlock">
-              {t("home.ourMission")}
-            </p>
+            <p className="text-black aboutBlock">{t("home.ourMission")}</p>
           </div>
         </div>
       </CustomSection>

@@ -74,7 +74,7 @@ const DesktopContentSection = ({
     >
       <div className="flex flex-col gap-5">
         <h3 className="font-medium text-black text-subtitleTablet">{title}</h3>
-        <p className="text-justify text-black">{text}</p>
+        <p className="text-black">{text}</p>
       </div>
       <CustomButton navigateTo="/contact">
         {t("button.becomeClient")}

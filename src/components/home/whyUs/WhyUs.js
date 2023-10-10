@@ -32,7 +32,7 @@ const WhyUs = () => {
           end: "bottom bottom",
           pin: ".right",
           animation: animation,
-          scrub: true,
+          scrub: 2,
         });
       });
     }, container);

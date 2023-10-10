@@ -85,7 +85,7 @@ const Designs = ({ project }) => {
           </div>
 
           {/* Tablet */}
-          <div className="w-full h-full flex flex-col gap-100 py-tablet lg:hidden bg-black">
+          <div className="flex flex-col w-full h-full bg-black gap-100 py-tablet lg:hidden">
             {project.studyCase.figmaDesigns.map((design, index) => (
               <div
                 className="w-full h-[80vh]"
