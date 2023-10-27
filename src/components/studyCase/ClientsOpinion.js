@@ -68,7 +68,6 @@ const ClientsOpinion = ({ project }) => {
       <CustomButton
         className="self-start clientOpinion"
         navigateTo="/contact-us"
-        // blackColor
       >
         {t("button.becomeClient")}
       </CustomButton>
@@ -78,6 +77,7 @@ const ClientsOpinion = ({ project }) => {
           src="/images/fingerPrint.png"
           alt="fingerprint"
           className="w-full h-full"
+          loading="lazy"
         />
       </div>
     </section>

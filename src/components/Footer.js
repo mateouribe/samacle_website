@@ -73,8 +73,8 @@ const Footer = () => {
             <ul>
               <li className="text-black">{t("nav.contact")}</li>
               <li className="text-sm font-light text-black">
-                <CustomATag href="22" colorHover="#9E9E9E">
-                  hello@samacle.com
+                <CustomATag href="mailto:team@samacle.com" colorHover="#9E9E9E">
+                  team@samacle.com
                 </CustomATag>
               </li>
               <li className="text-sm font-light text-black">
@@ -113,6 +113,7 @@ const Footer = () => {
       <img
         src="/images/icon.svg"
         alt="logo"
+        loading="lazy"
         className="w-full relative top-[5%]"
       />
     </footer>

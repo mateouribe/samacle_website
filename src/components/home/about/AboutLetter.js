@@ -27,6 +27,7 @@ const AboutLetter = ({
         src={large ? "/images/heart.svg" : "/images/finger.svg"}
         className={`absolute w-[80%] top-1/2 -translate-y-1/2 lg:-top-full lg:translate-y-0 left-1/2 transform -translate-x-1/2 2 z-[1] no-visible`}
         alt="finger svg"
+        loading="lazy"
       />
       <div className="w-full h-[1px] lg:h-[3px] block lg:absolute -bottom-20 left-0 bg-black z-[200]">
         <div className="relative w-full h-full">

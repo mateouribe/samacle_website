@@ -81,9 +81,8 @@ const Contact = () => {
           <div className="flex flex-col gap-20">
             <ul className="text-black">
               <li>
-                {/* <a href="22">hello@samacle.com</a> */}
-                <CustomATag href="22" colorHover="#9E9E9E">
-                  hello@samacle.com
+                <CustomATag href="mailto:team@samacle.com" colorHover="#9E9E9E">
+                  team@samacle.com
                 </CustomATag>
               </li>
               <li>
@@ -108,11 +107,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-full md:w-[60%] h-full flex flex-col justify-start items-center gap-30">
-          <h4 className="text-black text-text md:text-subtitleTablet">
+          <h3 className="text-black text-text md:text-subtitleTablet">
             {t("home.contact.formTitle")}
-          </h4>
+          </h3>
           <form
-            className="w-full flex flex-col gap-10"
+            className="flex flex-col w-full gap-10"
             onSubmit={sendEmail}
             ref={form}
           >

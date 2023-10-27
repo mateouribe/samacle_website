@@ -71,7 +71,8 @@ const CustomLink = ({ children, className, route, image = "", onClick }) => {
           <img
             src={image}
             alt="Screenshot of about page"
-            className="absolute min-w-[70px] left-1/2 transform -translate-x-1/2 top-full link pointer-events-none "
+            className="absolute min-w-[70px] left-1/2 transform -translate-x-1/2 top-full link pointer-events-none"
+            loading="lazy"
           />
           <div className="absolute w-[70px] h-[45.5px] bg-white left-1/2 transform -translate-x-1/2 top-full screenshot origin-bottom pointer-events-none" />
         </>

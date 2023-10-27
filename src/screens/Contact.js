@@ -87,9 +87,8 @@ const Contact = () => {
           <div className="flex flex-col gap-20">
             <ul className="text-black">
               <li>
-                {/* <a href="22">hello@samacle.com</a> */}
-                <CustomATag href="22" colorHover="#9E9E9E">
-                  hello@samacle.com
+                <CustomATag href="mailto:team@samacle.com" colorHover="#9E9E9E">
+                  team@samacle.com
                 </CustomATag>
               </li>
               <li>

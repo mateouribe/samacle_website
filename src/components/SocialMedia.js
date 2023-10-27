@@ -31,10 +31,8 @@ const SocialMedia = ({ color, bgColor }) => {
         style={{
           backgroundColor: bgColor,
         }}
-        // onMouseEnter={onMouseEnter}
-        // onMouseLeave={onMouseLeave}
       >
-        <a href="22">
+        <a href="https://www.instagram.com/samacle.inc/?hl=es">
           <AiOutlineInstagram color={color} size={20} />
         </a>
       </li>
@@ -46,7 +44,7 @@ const SocialMedia = ({ color, bgColor }) => {
         // onMouseEnter={onMouseEnter}
         // onMouseLeave={onMouseLeave}
       >
-        <a href="22">
+        <a href="https://www.behance.net/samacle">
           <AiOutlineBehance color={color} size={20} />
         </a>
       </li>

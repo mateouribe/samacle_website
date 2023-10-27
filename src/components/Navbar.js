@@ -218,7 +218,12 @@ const Navbar = () => {
         ref={desktopContainer}
       >
         <CustomLink route="/" className="text-black">
-          <img className="" src="/images/icon.svg" alt="Samacle icon" />
+          <img
+            className=""
+            src="/images/icon.svg"
+            alt="Samacle icon"
+            loading="lazy"
+          />
         </CustomLink>
         <li className="flex justify-start gap-30">
           <ul className="flex w-full text-sm text-black gap-30">
@@ -317,6 +322,7 @@ const Navbar = () => {
           src="/images/icon.svg"
           alt="Samacle icon"
           className="w-[134px] blacklogo bg-white rounded-full"
+          loading="lazy"
         />
         <div
           className="w-[50px] h-[50px] border-[3px] border-black flex flex-col justify-center items-center gap-[5px] rounded-full z-[9999] burgerCircle"
@@ -332,6 +338,7 @@ const Navbar = () => {
             src="/images/iconWhite.svg"
             alt="Samacle icon"
             className="w-[134px] whiteLogo"
+            loading="lazy"
           />
           <div className="flex items-center justify-center w-full h-full ">
             <ul className="flex flex-col items-start justify-center w-full text-white ">
