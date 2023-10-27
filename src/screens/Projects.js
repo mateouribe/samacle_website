@@ -2,13 +2,14 @@ import React, { useEffect, useLayoutEffect, useRef } from "react";
 import Transition from "../components/Transition";
 import CustomSection from "../components/customElements/CustomSection";
 import SectionTitle from "../components/customElements/SectionTitle";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import { colors, projects } from "../utils/constants";
 import ProjectItem from "../components/projects/ProjectItem";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitText from "../utils/Split3.min";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -101,8 +102,12 @@ const Projects = () => {
   return (
     <main ref={container}>
       <Helmet>
-        <title>Projects - Samacle</title>
-        <meta name="description" content="Web agency in Waterloo, ON, CA." />
+        <title>Samacle - Our Projects</title>
+        <meta
+          name="description"
+          content="Samacle - Our Projects: Unlock the Power of Web Design & Development | Canadian Web Agency."
+        />
+        <link rel="canonical" href="/our-projects" />
       </Helmet>
       <CustomSection
         hasPadding

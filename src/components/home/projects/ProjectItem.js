@@ -47,7 +47,9 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
       <figure className="w-[100%] md:w-[45%] h-[90vh] flex flex-col gap-10">
         <Link
           className="h-full cursor-none projectItemScroll"
-          to={project.completed && `/projects/study_case/${project.info.link}`}
+          to={
+            project.completed && `/our-projects/study_case/${project.info.link}`
+          }
         >
           <div className="relative w-full h-full overflow-hidden">
             <CustomImage
@@ -66,9 +68,9 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
             )}
           </div>
           <figcaption className="flex items-start justify-between projectInfo">
-            <h5 className="text-black">
+            <h3 className="text-black">
               {project.info.title} - {project.info.place}
-            </h5>
+            </h3>
             <div className="flex flex-col">
               {project.info.tags.map((tag) => (
                 <span className="text-xsm text-gray">{tag}</span>

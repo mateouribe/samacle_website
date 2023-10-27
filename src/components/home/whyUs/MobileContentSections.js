@@ -28,7 +28,7 @@ const MobileContentSections = ({ image, title, text, color }) => {
         <div className="flex flex-col gap-5">
           <h3 className="text-black italic text-[20px]]">{title}</h3>
           <p className="text-black">{text}</p>
-          <CustomButton navigateTo="/contact" blackColor className="mt-50">
+          <CustomButton navigateTo="/contact-us" blackColor className="mt-50">
             {t("button.becomeClient")}
           </CustomButton>
         </div>

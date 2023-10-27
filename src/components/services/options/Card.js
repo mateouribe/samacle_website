@@ -24,7 +24,7 @@ const Card = ({ serviceImage, index }) => {
             className="text-black"
             dangerouslySetInnerHTML={{ __html: t(`${item}.description`) }}
           ></p>
-          <CustomButton navigateTo="/contact">
+          <CustomButton navigateTo="/contact-us">
             {t("button.becomeClient")}
           </CustomButton>
         </div>

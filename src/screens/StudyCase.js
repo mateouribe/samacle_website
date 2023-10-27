@@ -1,5 +1,5 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet";
+import React, { useLayoutEffect, useRef, useState } from "react";
+// import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import Transition from "../components/Transition";
 import { colors, projects } from "../utils/constants";
@@ -57,10 +57,10 @@ const StudyCase = () => {
 
   return (
     <main ref={container}>
-      <Helmet>
+      {/* <Helmet>
         <title>Web Agency - Samacle</title>
         <meta name="description" content="Web agency in Waterloo, ON, CA." />
-      </Helmet>
+      </Helmet> */}
       {isLoaded && (
         <>
           <Header project={item.current} />

@@ -230,28 +230,28 @@ const Navbar = () => {
               {t("nav.home")}
             </CustomLink>
             <CustomLink
-              route="/services"
+              route="/our-services"
               className="desktopItem"
               image="/images/servicesSs.png"
             >
               {t("nav.services")}
             </CustomLink>
             <CustomLink
-              route="/projects"
+              route="/our-projects"
               className="desktopItem"
               image="/images/projectsSs.png"
             >
               {t("nav.projects")}
             </CustomLink>
             <CustomLink
-              route="/about"
+              route="/about-us"
               className="desktopItem"
               image="/images/aboutSs.png"
             >
               {t("nav.about")}
             </CustomLink>
             <CustomLink
-              route="/contact"
+              route="/contact-us"
               className="desktopItem"
               image="/images/contactSs.png"
             >
@@ -343,28 +343,28 @@ const Navbar = () => {
                 {t("nav.home")}
               </CustomLink>
               <CustomLink
-                route="/services"
+                route="/our-services"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
                 {t("nav.services")}
               </CustomLink>
               <CustomLink
-                route="/projects"
+                route="/our-projects"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
                 {t("nav.projects")}
               </CustomLink>
               <CustomLink
-                route="/about"
+                route="/about-us"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >
                 {t("nav.about")}
               </CustomLink>
               <CustomLink
-                route="/contact"
+                route="/contact-us"
                 className="text-subtitleDesktop w-full border-b-[1px] border-black text-white mobileItem"
                 onClick={onClickBurgerMenu}
               >

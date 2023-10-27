@@ -1,21 +1,26 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
-import { Helmet } from "react-helmet";
 import { Expo, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Transition from "../components/Transition";
-import CustomSection from "../components/customElements/CustomSection";
-import SplitText from "../utils/Split3.min";
 import Hero from "../components/about/Hero";
 import CustomImage from "../components/customElements/CustomImage";
 import Process from "../components/about/Process";
 import { useTranslation } from "react-i18next";
 import { colors } from "../utils/constants";
-import { scroll } from "framer-motion";
+import ReactGA from "react-ga";
+import { Helmet } from "react-helmet-async";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const container = useRef(null);
   const { t } = useTranslation();
+
+  //GOOGLE ANALYTICS
+  //No interaction event
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   useLayoutEffect(() => {
     const body = document.querySelector("body");
@@ -52,8 +57,12 @@ const About = () => {
   return (
     <main>
       <Helmet>
-        <title>About - Samacle</title>
-        <meta name="description" content="Web agency in Waterloo, ON, CA." />
+        <title>Samacle - About Us</title>
+        <meta
+          name="description"
+          content="Samacle - About Us: Top Web Agency in Canada | We live and breathe design, innovation, and the thrill of helping businesses grow."
+        />
+        <link rel="canonical" href="/about-us" />
       </Helmet>
       <Hero />
       <div

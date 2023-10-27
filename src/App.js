@@ -13,6 +13,10 @@ import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer";
 import ScrollToTop from "./utils/ScrollToTop";
 import Lenis from "@studio-freight/lenis";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-FDSS402GVD";
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   const location = useLocation();
@@ -37,11 +41,14 @@ const App = () => {
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/study_case/:link" element={<StudyCase />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/our-services" element={<Services />} />
+          <Route path="/our-projects" element={<Projects />} />
+          <Route
+            path="/our-projects/study_case/:link"
+            element={<StudyCase />}
+          />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
         </Routes>
       </AnimatePresence>
       <Cursor />

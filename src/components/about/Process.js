@@ -28,6 +28,7 @@ const Process = () => {
     const ctx = gsap.context(() => {
       changeBgColorAnimation({
         trigger: container.current,
+        // markers: true,
         colors: {
           enter: colors.black,
           exit: colors.white,
@@ -40,6 +41,7 @@ const Process = () => {
         trigger: container.current,
         start: "top 50%",
         end: "bottom 50%",
+        // markers: true,
         animation: gsap.fromTo(
           splitTitle.chars,
           {
@@ -89,7 +91,7 @@ const Process = () => {
           className="text-main processTitle"
           text={t("about.title")}
         ></SectionTitle>
-        <div className="w-full h-full flex justify-end">
+        <div className="flex justify-end w-full h-full">
           <div className="w-full md:w-[80%] lg:w-[70%] h-full flex flex-col gap-50 justify-center">
             {processes.map((el, index) => (
               <ProcessItem key={index} index={index} />

@@ -67,7 +67,9 @@ const ProjectItem = ({ project, index }) => {
           index === 0 && "animateFirstProject"
         }`}
         ref={container}
-        to={project.completed && `/projects/study_case/${project.info.link}`}
+        to={
+          project.completed && `/our-projects/study_case/${project.info.link}`
+        }
       >
         <div className="relative flex w-full h-full gap-20 projectContainer">
           {/* image left */}

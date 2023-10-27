@@ -67,7 +67,7 @@ const ClientsOpinion = ({ project }) => {
       </div>
       <CustomButton
         className="self-start clientOpinion"
-        navigateTo="/contact"
+        navigateTo="/contact-us"
         // blackColor
       >
         {t("button.becomeClient")}

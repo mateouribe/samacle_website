@@ -81,7 +81,7 @@ const DevelopmentItem = ({ index, item, image }) => {
           </p>
         </div>
 
-        <CustomButton navigateTo="/contact">
+        <CustomButton navigateTo="/contact-us">
           {t("button.becomeClient")}
         </CustomButton>
       </div>

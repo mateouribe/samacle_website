@@ -44,12 +44,12 @@ const Hero = () => {
         hasPadding
         className="py-desktop md:py-desktop lg:py-tablet"
       >
-        <h4
+        <h1
           className="text-[45px] md:text-[55px] lg:text-[65px] xl:text-[75px] font-swearDisplay leading-[95%] w-full lg:w-[90%] text-black"
           id="aboutTitle"
         >
           {t("about.welcomeMessage")}
-        </h4>
+        </h1>
       </CustomSection>
     </div>
   );

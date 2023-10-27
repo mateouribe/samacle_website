@@ -76,7 +76,7 @@ const DesktopContentSection = ({
         <h3 className="font-medium text-black text-subtitleTablet">{title}</h3>
         <p className="text-black">{text}</p>
       </div>
-      <CustomButton navigateTo="/contact">
+      <CustomButton navigateTo="/contact-us">
         {t("button.becomeClient")}
       </CustomButton>
     </div>

@@ -10,6 +10,7 @@ import CustomATag from "../components/customElements/CustomATag";
 import SectionTitle from "../components/customElements/SectionTitle";
 import { Expo, gsap } from "gsap";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const container = useRef(null);
@@ -66,7 +67,15 @@ const Contact = () => {
   };
 
   return (
-    <div ref={container}>
+    <main ref={container}>
+      <Helmet>
+        <title>Samacle - Contact Us</title>
+        <meta
+          name="description"
+          content="Samacle - Contact Us: Reach Out to Your Trusted Web Agency in Canada."
+        />
+        <link rel="canonical" href="/contact-us" />
+      </Helmet>
       <CustomSection
         hasPadding
         className="flex min-h-[100vh] flex-col justify-between md:flex-row md:h-view gap-50 py-desktop contactContainer"
@@ -144,7 +153,7 @@ const Contact = () => {
           </form>
         </div>
       </CustomSection>
-    </div>
+    </main>
   );
 };
 

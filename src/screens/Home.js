@@ -1,6 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import Transition from "../components/Transition";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import Hero from "../components/home/Hero";
 import About from "../components/home/about/About";
 import WhyUs from "../components/home/whyUs/WhyUs";
@@ -13,6 +13,7 @@ import Contact from "../components/home/Contact";
 import SectionTitle from "../components/customElements/SectionTitle";
 import { colors } from "../utils/constants";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -63,8 +64,12 @@ const Home = () => {
   return (
     <main>
       <Helmet>
-        <title>Web Agency - Samacle</title>
-        <meta name="description" content="Web agency in Waterloo, ON, CA." />
+        <title>Samacle - Web Agency in Canada</title>
+        <meta
+          name="description"
+          content="Samacle - Web Agency in Canada: Elevating Businesses with Dynamic Web Solutions."
+        />
+        <link rel="canonical" href="/" />
       </Helmet>
       <Hero />
       <About />

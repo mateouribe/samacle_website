@@ -11,6 +11,7 @@ import common_en from "./locales/en/translation.json";
 import common_fr from "./locales/fr/translation.json";
 import common_sp from "./locales/sp/translation.json";
 import common_hi from "./locales/hi/translation.json";
+import { HelmetProvider } from "react-helmet-async";
 
 i18next.init({
   interpolation: { escapeValue: false }, // React already escapes
@@ -25,15 +26,17 @@ i18next.init({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <I18nextProvider i18n={i18next}>
-    <React.StrictMode>
-      <StatesProvider>
-        <Router>
-          <Routes>
-            <Route path="/*" element={<App />} />
-          </Routes>
-        </Router>
-      </StatesProvider>
-    </React.StrictMode>
-  </I18nextProvider>
+  <HelmetProvider>
+    <I18nextProvider i18n={i18next}>
+      <React.StrictMode>
+        <StatesProvider>
+          <Router>
+            <Routes>
+              <Route path="/*" element={<App />} />
+            </Routes>
+          </Router>
+        </StatesProvider>
+      </React.StrictMode>
+    </I18nextProvider>
+  </HelmetProvider>
 );

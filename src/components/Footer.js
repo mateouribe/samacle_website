@@ -11,16 +11,16 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <footer className="w-full h-[80vh] bg-lightGray px-mobile md:px-tablet lg:px-desktop pt-tablet flex flex-col rounded-t-[10%]">
-      <div className="w-full h-full flex flex-col md:flex-row justify-between gap-100 md:gap-0">
+      <div className="flex flex-col justify-between w-full h-full md:flex-row gap-100 md:gap-0">
         <div className="w-full md:w-[20%] flex flex-row md:flex-col gap-50">
-          <span className="text-gray text-sm">
+          <span className="text-sm text-gray">
             © 2023 Samacle. All right Reserved.
           </span>
-          <div className="w-full flex gap-30">
+          <div className="flex w-full gap-30">
             <ul>
               <li className="text-black">Menu</li>
               <li
-                className="text-black font-light text-sm "
+                className="text-sm font-light text-black "
                 onClick={() => {
                   navigateToPage(navigate, "/");
                 }}
@@ -30,9 +30,9 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm "
+                className="text-sm font-light text-black "
                 onClick={() => {
-                  navigateToPage(navigate, "/services");
+                  navigateToPage(navigate, "/our-services");
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
@@ -40,9 +40,9 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm "
+                className="text-sm font-light text-black "
                 onClick={() => {
-                  navigateToPage(navigate, "/projects");
+                  navigateToPage(navigate, "/our-projects");
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
@@ -50,9 +50,9 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm "
+                className="text-sm font-light text-black "
                 onClick={() => {
-                  navigateToPage(navigate, "/about");
+                  navigateToPage(navigate, "/about-us");
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
@@ -60,9 +60,9 @@ const Footer = () => {
                 </CustomATag>
               </li>
               <li
-                className="text-black font-light text-sm "
+                className="text-sm font-light text-black "
                 onClick={() => {
-                  navigateToPage(navigate, "/contact");
+                  navigateToPage(navigate, "/contact-us");
                 }}
               >
                 <CustomATag href={undefined} colorHover="#9E9E9E">
@@ -72,29 +72,29 @@ const Footer = () => {
             </ul>
             <ul>
               <li className="text-black">{t("nav.contact")}</li>
-              <li className="text-black font-light text-sm">
+              <li className="text-sm font-light text-black">
                 <CustomATag href="22" colorHover="#9E9E9E">
                   hello@samacle.com
                 </CustomATag>
               </li>
-              <li className="text-black font-light text-sm">
+              <li className="text-sm font-light text-black">
                 <CustomATag href="tel:=14375186019" colorHover="#9E9E9E">
                   +1 (437) 518-6019
                 </CustomATag>
               </li>
-              <li className="text-black font-light text-sm">
+              <li className="text-sm font-light text-black">
                 <CustomATag href="tel:=14374730048" colorHover="#9E9E9E">
                   +1 (437) 473-0048
                 </CustomATag>
               </li>
-              <li className="text-black font-light text-sm">
+              <li className="text-sm font-light text-black">
                 <CustomATag href="/" colorHover="#9E9E9E">
                   Waterloo, ON, Canada.
                 </CustomATag>
               </li>
             </ul>
           </div>
-          <ul className="flex flex-col md:flex-row gap-5">
+          <ul className="flex flex-col gap-5 md:flex-row">
             <SocialMedia color={colors.gray} bgColor="#ECECEC" />
           </ul>
         </div>

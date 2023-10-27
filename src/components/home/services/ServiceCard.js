@@ -14,10 +14,10 @@ const ServiceCard = ({ index }) => {
       }}
     >
       <div className="w-full h-full">
-        <h4
+        <h3
           className="text-white text-[20px]"
           dangerouslySetInnerHTML={{ __html: t(`${item}.title`) }}
-        ></h4>
+        ></h3>
 
         {t(item.subtitle) !== "" && (
           <span className="text-white text-xsm">{t(`${item}.subtitle`)}</span>

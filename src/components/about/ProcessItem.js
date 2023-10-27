@@ -17,9 +17,9 @@ const ProcessItem = ({ index }) => {
       ref={container}
     >
       <div className="processesContainer w-[70%]">
-        <h5 className="text-main text-[20px] block md:hidden">
+        <h3 className="text-main text-[20px] block md:hidden">
           {t(`about.processes.${index}.title`)}
-        </h5>
+        </h3>
         <p className="w-full text-white md:w-full">
           {t(`about.processes.${index}.description`)}
         </p>
