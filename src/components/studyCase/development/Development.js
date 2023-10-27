@@ -13,7 +13,7 @@ const Development = ({ project, item }) => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    if (project !== undefined && project !== null && project !== []) {
+    if (project !== undefined && project !== null) {
       setIsLoaded(true);
     }
   }, [project]);
@@ -56,13 +56,13 @@ const Development = ({ project, item }) => {
   }, [isLoaded]);
 
   return (
-    <section className="py-tablet flex flex-col gap-50" ref={container}>
+    <section className="flex flex-col py-tablet gap-50" ref={container}>
       {isLoaded && (
         <>
           <SectionTitle className="text-black pl-mobile md:pl-tablet lg:pl-desktop developmentTitle">
             {t("studyCases.text.development.title")}
           </SectionTitle>
-          <div className="w-full flex flex-col gap-100 md:gap-0">
+          <div className="flex flex-col w-full gap-100 md:gap-0">
             {project.studyCase.development.map((element, index) => (
               <DevelopmentItem
                 index={index}

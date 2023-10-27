@@ -57,11 +57,8 @@ const About = () => {
   return (
     <main>
       <Helmet>
-        <title>Samacle - About Us</title>
-        <meta
-          name="description"
-          content="Samacle - About Us: Top Web Agency in Canada | We live and breathe design, innovation, and the thrill of helping businesses grow."
-        />
+        <title>{t("seo.about.title")}</title>
+        <meta name="description" content={t("seo.about.metaDescription")} />
         <link rel="canonical" href="/about-us" />
       </Helmet>
       <Hero />

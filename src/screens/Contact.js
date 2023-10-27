@@ -69,11 +69,8 @@ const Contact = () => {
   return (
     <main ref={container}>
       <Helmet>
-        <title>Samacle - Contact Us</title>
-        <meta
-          name="description"
-          content="Samacle - Contact Us: Reach Out to Your Trusted Web Agency in Canada."
-        />
+        <title>{t("seo.contact.title")}</title>
+        <meta name="description" content={t("seo.contact.metaDescription")} />
         <link rel="canonical" href="/contact-us" />
       </Helmet>
       <CustomSection

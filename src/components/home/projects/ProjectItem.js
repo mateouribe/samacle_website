@@ -48,7 +48,7 @@ const ProjectItem = ({ project, alignLeft = false, isFirstOne, index }) => {
         <Link
           className="h-full cursor-none projectItemScroll"
           to={
-            project.completed && `/our-projects/study_case/${project.info.link}`
+            project.completed && `/our-projects/study-case/${project.info.link}`
           }
         >
           <div className="relative w-full h-full overflow-hidden">

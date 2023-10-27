@@ -7,8 +7,11 @@ import Options from "../components/services/options/Options";
 import gsap from "gsap";
 import { colors } from "../utils/constants";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     const body = document.querySelector("body");
     gsap.to(body, {
@@ -20,19 +23,9 @@ const Services = () => {
 
   return (
     <main>
-      {/* <Helmet>
-        <title>Services - Samacle</title>
-        <meta
-          name="description"
-          content="Web agency in Waterloo, ON, CA. This is what we do good."
-        />
-      </Helmet> */}
       <Helmet>
-        <title>Samacle - Our Services</title>
-        <meta
-          name="description"
-          content="Samacle - Our Services: Explore our full suite of web services in Canada, including web design, development, SEO, e-commerce solutions, and more. Our dedicated team is committed to helping your business thrive online. Discover how we can tailor our expertise to meet your unique needs. Partner with us for your digital journey today."
-        />
+        <title>{t("seo.services.title")}</title>
+        <meta name="description" content={t("seo.services.metaDescription")} />
         <link rel="canonical" href="/our-services" />
       </Helmet>
       <Hero />

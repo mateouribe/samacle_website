@@ -102,11 +102,8 @@ const Projects = () => {
   return (
     <main ref={container}>
       <Helmet>
-        <title>Samacle - Our Projects</title>
-        <meta
-          name="description"
-          content="Samacle - Our Projects: Unlock the Power of Web Design & Development | Canadian Web Agency."
-        />
+        <title>{t("seo.projects.title")}</title>
+        <meta name="description" content={t("seo.projects.metaDescription")} />
         <link rel="canonical" href="/our-projects" />
       </Helmet>
       <CustomSection

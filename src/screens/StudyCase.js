@@ -13,6 +13,7 @@ import { Expo, gsap } from "gsap";
 import Header from "../components/studyCase/Header";
 import { ScrollTrigger } from "gsap/all";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 
 const StudyCase = () => {
   const { link } = useParams();
@@ -57,10 +58,16 @@ const StudyCase = () => {
 
   return (
     <main ref={container}>
-      {/* <Helmet>
-        <title>Web Agency - Samacle</title>
-        <meta name="description" content="Web agency in Waterloo, ON, CA." />
-      </Helmet> */}
+      <Helmet>
+        <title>Samacle - {item.current.info.title}</title>
+        <meta
+          name="description"
+          content={`Samacle - ${item.current.info.title}: ${t(
+            "seo.studyCases.metaDescription"
+          )}`}
+        />
+        {/* <link rel="canonical" href="/our-projects/study-case/" /> */}
+      </Helmet>
       {isLoaded && (
         <>
           <Header project={item.current} />

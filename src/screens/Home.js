@@ -64,11 +64,8 @@ const Home = () => {
   return (
     <main>
       <Helmet>
-        <title>Samacle - Web Agency in Canada</title>
-        <meta
-          name="description"
-          content="Samacle - Web Agency in Canada: Elevating Businesses with Dynamic Web Solutions."
-        />
+        <title>{t("seo.home.title")}</title>
+        <meta name="description" content={t("seo.home.metaDescription")} />
         <link rel="canonical" href="/" />
       </Helmet>
       <Hero />

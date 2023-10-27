@@ -314,5 +314,30 @@
     "send": "Send",
     "becomeClient": "Become a client",
     "visitSite": "Visit site"
+  },
+  "seo": {
+    "home": {
+      "title": "Samacle - Web Agency in Canada",
+      "metaDescription": "Samacle - Web Agency in Canada: Elevating Businesses with Dynamic Web Solutions."
+    },
+    "about": {
+      "title": "Samacle - About Us",
+      "metaDescription": "Samacle - About Us: Top Web Agency in Canada | We live and breathe design, innovation, and the thrill of helping businesses grow."
+    },
+    "services": {
+      "title": "Samacle - Our Services",
+      "metaDescription": "Samacle - Our Services: Explore our full suite of web services in Canada, including web design, development, SEO, e-commerce solutions, and more. Our dedicated team is committed to helping your business thrive online. Discover how we can tailor our expertise to meet your unique needs. Partner with us for your digital journey today."
+    },
+    "projects": {
+      "title": "Samacle - Our Projects",
+      "metaDescription": "Samacle - Our Projects: Unlock the Power of Web Design & Development | Canadian Web Agency."
+    },
+    "contact": {
+      "title": "Samacle - Contact Us",
+      "metaDescription": "Samacle - Contact Us: Reach Out to Your Trusted Web Agency in Canada."
+    },
+    "studyCases": {
+      "metaDescription": "Discover the strategies, challenges, and solutions that led to success, demonstrating our commitment to delivering impactful solutions for our clients."
+    }
   }
 }
