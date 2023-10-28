@@ -112,7 +112,7 @@ const Footer = () => {
       </div>
       <img
         src="/images/icon.svg"
-        alt="logo"
+        alt="A Big icon representing Samacle - a web agency in Canada, positioned in the footer of the web page."
         loading="lazy"
         className="w-full relative top-[5%]"
       />

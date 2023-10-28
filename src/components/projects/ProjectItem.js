@@ -68,7 +68,7 @@ const ProjectItem = ({ project, index }) => {
         }`}
         ref={container}
         to={
-          project.completed && `/our-projects/study_case/${project.info.link}`
+          project.completed && `/our-projects/study-case/${project.info.link}`
         }
       >
         <div className="relative flex w-full h-full gap-20 projectContainer">

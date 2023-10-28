@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 // import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import Transition from "../components/Transition";
@@ -56,13 +56,15 @@ const StudyCase = () => {
     }, container);
   }, [isLoaded]);
 
+
+  
   return (
     <main ref={container}>
       <Helmet>
-        <title>Samacle - {item.current.info.title}</title>
+        <title>Samacle - {t(`${item.current}.info.title`)}</title>
         <meta
           name="description"
-          content={`Samacle - ${item.current.info.title}: ${t(
+          content={`Samacle - ${t(`${item.current}.info.title`)}: ${t(
             "seo.studyCases.metaDescription"
           )}`}
         />

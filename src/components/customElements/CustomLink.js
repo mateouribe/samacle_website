@@ -70,7 +70,7 @@ const CustomLink = ({ children, className, route, image = "", onClick }) => {
         <>
           <img
             src={image}
-            alt="Screenshot of about page"
+            alt="A small preview of a small section of Samacle - Web Agency in Canada web page in the navigation menu."
             className="absolute min-w-[70px] left-1/2 transform -translate-x-1/2 top-full link pointer-events-none"
             loading="lazy"
           />

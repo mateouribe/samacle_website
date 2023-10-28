@@ -221,7 +221,7 @@ const Navbar = () => {
           <img
             className=""
             src="/images/icon.svg"
-            alt="Samacle icon"
+            alt="A small black-colored icon representing Samacle - Web Agency in Canada, positioned in the header of the web page."
             loading="lazy"
           />
         </CustomLink>
@@ -320,7 +320,7 @@ const Navbar = () => {
         {/* Burger */}
         <img
           src="/images/icon.svg"
-          alt="Samacle icon"
+          alt="A small black-colored icon representing Samacle - Web Agency in Canada for mobile devices, positioned in the header of the web page."
           className="w-[134px] blacklogo bg-white rounded-full"
           loading="lazy"
         />
@@ -336,7 +336,7 @@ const Navbar = () => {
         <div className="w-full h-[100vh] absolute bg-black top-0 right-0 p-mobile md:p-tablet flex flex-col contentMobileContainer">
           <img
             src="/images/iconWhite.svg"
-            alt="Samacle icon"
+            alt="A small white-colored icon representing Samacle - Web Agency in Canada for mobile devices, positioned in the header of the web page."
             className="w-[134px] whiteLogo"
             loading="lazy"
           />

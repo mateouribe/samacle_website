@@ -26,7 +26,7 @@ const AboutLetter = ({
       <img
         src={large ? "/images/heart.svg" : "/images/finger.svg"}
         className={`absolute w-[80%] top-1/2 -translate-y-1/2 lg:-top-full lg:translate-y-0 left-1/2 transform -translate-x-1/2 2 z-[1] no-visible`}
-        alt="finger svg"
+        alt={large ? "A beige-colored inverted heart within the Samacle - About Us section, behind text." : "A beige-colored hand pointing to the right within the Samacle - About Us section, behind text."}
         loading="lazy"
       />
       <div className="w-full h-[1px] lg:h-[3px] block lg:absolute -bottom-20 left-0 bg-black z-[200]">

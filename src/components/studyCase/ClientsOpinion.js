@@ -75,7 +75,7 @@ const ClientsOpinion = ({ project }) => {
       <div className="absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none top-1/2 left-1/2">
         <img
           src="/images/fingerPrint.png"
-          alt="fingerprint"
+          alt="A grey fingerprint behind a portion of text in the Samacle - Our Projects web page section."
           className="w-full h-full"
           loading="lazy"
         />
