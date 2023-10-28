@@ -314,5 +314,32 @@
     "send": "Envoyer",
     "becomeClient": "Devenir un client",
     "visitSite": "Visiter le site web"
-  }
+  },
+  "seo": {
+    "home": {
+        "title": "Samacle - Agence Web au Canada",
+        "metaDescription": "Samacle - Agence Web au Canada : Élever les entreprises grâce à des solutions web dynamiques."
+    },
+    "about": {
+        "title": "Samacle - À propos de nous",
+        "metaDescription": "Samacle - À propos de nous : Meilleure agence web au Canada | Nous vivons et respirons le design, l'innovation et le plaisir d'aider les entreprises à se développer."
+    },
+    "services": {
+        "title": "Samacle - Nos services",
+        "metaDescription": "Samacle - Nos services : Découvrez notre gamme complète de services web au Canada, comprenant la conception web, le développement, les solutions de référencement, le commerce électronique, et plus encore. Notre équipe dévouée s'engage à aider votre entreprise à prospérer en ligne. Découvrez comment nous pouvons adapter notre expertise à vos besoins uniques. Partenairez avec nous pour votre parcours numérique dès aujourd'hui."
+    },
+    "projects": {
+        "title": "Samacle - Nos projets",
+        "metaDescription": "Samacle - Nos projets : Libérez la puissance du design et du développement web | Agence web canadienne."
+    },
+    "contact": {
+        "title": "Samacle - Contactez-nous",
+        "metaDescription": "Samacle - Contactez-nous : Contactez votre agence web de confiance au Canada."
+    },
+    "studyCases": {
+        "metaDescription": "Découvrez les stratégies, les défis et les solutions qui ont conduit au succès, démontrant notre engagement à fournir des solutions impactantes pour nos clients."
+    }
+}
+ 
+  
 }
